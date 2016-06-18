@@ -1,0 +1,199 @@
+=========
+Sentences
+=========
+Text.0) A small company manufactures customized bicycles .
+Text.1) Whenever the sales department receives an order , a new process instance is created .
+Text.2) A member of the sales department can then reject or accept the order for a customized bike .
+Text.3) In the former case , the process instance is finished .
+Text.4) In the latter case , the storehouse and the engineering department are informed .
+Text.5) The storehouse immediately processes the part list of the order and checks the required quantity of each part .
+Text.6) If the part is available in-house , it is reserved .
+Text.7) If it is not available , it is back-ordered .
+Text.8) This procedure is repeated for each item on the part list .
+Text.9) In_the_meantime , the engineering department prepares everything for the assembling of the ordered bicycle .
+Text.10) If the storehouse has successfully reserved or back-ordered every item of the part list and the preparation activity has finished , the engineering department assembles the bicycle .
+Text.11) Afterwards , the sales department ships the bicycle to the customer and finishes the process instance .
+
+=====
+Tasks
+=====
+Task.0) Reserve Part
+Task.1) Back-order Part
+Task.2) Prepare for Assembling
+Task.3) Assemble Bicycle
+Task.4) Select Unchecked Part
+Task.5) Inform Storehouse and Engineering Department
+Task.6) Receive Order
+Task.7) Check Part Quantity
+Task.8) Ship Bicycle to Customer
+
+=================
+Similarity Matrix
+=================
+
+|    0 |    1 |    2 |    3 |    4 |    5 |    6 |    7 |    8 |
+|------+------+------+------+------+------+------+------+------|
+| 0.00 | 0.00 | 0.00 | 0.10 | 0.00 | 0.00 | 0.00 | 0.00 | 0.10 |
+| 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.64 | 0.00 | 0.00 |
+| 0.00 | 0.00 | 0.00 | 0.02 | 0.00 | 0.00 | 0.05 | 0.00 | 0.02 |
+| 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 |
+| 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.43 | 0.00 | 0.00 | 0.00 |
+| 0.11 | 0.00 | 0.00 | 0.00 | 0.00 | 0.04 | 0.04 | 0.54 | 0.00 |
+| 0.11 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 |
+| 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 |
+| 0.11 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 |
+| 0.00 | 0.00 | 0.37 | 0.22 | 0.00 | 0.00 | 0.00 | 0.00 | 0.04 |
+| 0.27 | 0.00 | 0.00 | 0.76 | 0.00 | 0.04 | 0.00 | 0.00 | 0.10 |
+| 0.00 | 0.00 | 0.00 | 0.04 | 0.00 | 0.00 | 0.00 | 0.00 | 0.10 |
+
+=========
+threshold
+=========
+0.004621672771494001
+
+=========
+Matchings
+=========
+Sentence  10 :
+"If the storehouse has successfully reserved or back-ordered every item of the part list and the preparation activity has finished , the engineering department assembles the bicycle ."
+Task  0 :
+"Reserve Part"
+Matching score: 0.26833976833976836
+
+    Comon features: 
+
+    * Contains the synset "component"
+    * Contains an hyponym of "relation"
+    * Contains an hyponym of "relation"
+    * Contains an hyponym of "abstract_entity"
+    * Contains the noun "part"
+    * The agent of verb "reserve" contains the noun "storehouse"
+
+
+Sentence  9 :
+"In_the_meantime , the engineering department prepares everything for the assembling of the ordered bicycle ."
+Task  2 :
+"Prepare for Assembling"
+Matching score: 0.3695906432748538
+
+    Comon features: 
+
+    * Contains the synset "prepare"
+    * Contains an hyponym of "learn"
+    * Contains the verb "prepare"
+    * Contains the action "prepare"
+    * The agent of verb "prepare" contains the noun "engineering"
+    * The agent of verb "prepare" contains the noun "department"
+
+
+Sentence  10 :
+"If the storehouse has successfully reserved or back-ordered every item of the part list and the preparation activity has finished , the engineering department assembles the bicycle ."
+Task  3 :
+"Assemble Bicycle"
+Matching score: 0.7608370702541107
+
+    Comon features: 
+
+    * Contains the synset "assemble"
+    * Contains the synset "bicycle"
+    * Contains an hyponym of "interact"
+    * Contains an hyponym of "act"
+    * Contains an hyponym of "wheeled_vehicle"
+    * Contains an hyponym of "03094503-n:04524313-n"
+    * Contains the verb "assemble"
+    * Contains the noun "bicycle"
+    * Contains the action "assemble"
+    * The agent of verb "assemble" contains the noun "engineering"
+    * The agent of verb "assemble" contains the noun "department"
+    * The agent of verb "bicycle" contains the noun "engineering"
+    * The agent of verb "bicycle" contains the noun "department"
+    * The direct object of verb "assemble" is "bicycle" (noun)
+    * The object of verb "assemble" contains the noun "bicycle"
+
+
+Sentence  4 :
+"In the latter case , the storehouse and the engineering department are informed ."
+Task  5 :
+"Inform Storehouse and Engineering Department"
+Matching score: 0.42874692874692877
+
+    Comon features: 
+
+    * Contains the synset "depot"
+    * Contains the synset "inform"
+    * Contains an hyponym of "deposit"
+    * Contains an hyponym of "facility"
+    * Contains an hyponym of "communicate"
+    * Contains an hyponym of "interact"
+    * Contains the noun "storehouse"
+    * Contains the verb "inform"
+    * Contains the action "inform"
+    * The direct object of verb "inform" is "storehouse" (noun)
+    * The object of verb "inform" contains the noun "storehouse"
+
+
+Sentence  1 :
+"Whenever the sales department receives an order , a new process instance is created ."
+Task  6 :
+"Receive Order"
+Matching score: 0.6404494382022472
+
+    Comon features: 
+
+    * Contains the synset "have"
+    * Contains the synset "order"
+    * Contains an hyponym of "acquire"
+    * Contains an hyponym of "organisation"
+    * Contains an hyponym of "activity"
+    * Contains an hyponym of "activity"
+    * Contains the verb "receive"
+    * Contains the noun "order"
+    * Contains the action "receive"
+    * The agent of verb "receive" contains the noun "sale"
+    * The agent of verb "receive" contains the noun "department"
+    * The direct object of verb "receive" is "order" (noun)
+    * The object of verb "receive" contains the noun "order"
+
+
+Sentence  5 :
+"The storehouse immediately processes the part list of the order and checks the required quantity of each part ."
+Task  7 :
+"Check Part Quantity"
+Matching score: 0.5412844036697247
+
+    Comon features: 
+
+    * Contains the synset "bank_check"
+    * Contains an hyponym of "bill_of_exchange"
+    * Contains an hyponym of "negotiable_instrument"
+    * Contains the noun "check"
+
+
+Sentence  11 :
+"Afterwards , the sales department ships the bicycle to the customer and finishes the process instance ."
+Task  8 :
+"Ship Bicycle to Customer"
+Matching score: 0.10249307479224377
+
+    Comon features: 
+
+    * Contains the synset "bicycle"
+    * Contains the synset "client"
+    * Contains an hyponym of "wheeled_vehicle"
+    * Contains an hyponym of "03094503-n:04524313-n"
+    * Contains an hyponym of "consumer"
+    * Contains an hyponym of "user"
+    * Contains the noun "bicycle"
+    * Contains the particle "to"
+    * Contains the noun "customer"
+
+
+
+========================
+Tasks with no good match
+========================
+Task  1 :
+"Back-order Part"
+Task  4 :
+"Select Unchecked Part"
+

@@ -1,0 +1,135 @@
+=========
+Sentences
+=========
+Text.0) The workflow of a computer repair service ( CRS ) can be described as follows .
+Text.1) A customer brings in a defective computer and the CRS checks the defect and hands out a repair cost calculation back .
+Text.2) If the customer decides that the costs are acceptable , the process continues , otherwise she takes her computer home unrepaired .
+Text.3) The ongoing repair consists of two activities , which are executed , in an arbitrary order .
+Text.4) The first activity is to check and repair the hardware , whereas the second activity checks and configures the software .
+Text.5) After each of these activities , the proper system functionality is tested .
+Text.6) If an error is detected another arbitrary repair activity is executed , otherwise the repair is finished .
+
+=====
+Tasks
+=====
+Task.0) Test System Functionality
+Task.1) Bring in Defective Computer
+Task.2) Receive Repair Cost Calculation
+Task.3) Check and Configure Software
+Task.4) Check and Repair Hardware
+Task.5) Take Computer Home
+Task.6) Prepare Repair Cost Calculation
+Task.7) Continue Process
+
+=================
+Similarity Matrix
+=================
+
+|    0 |    1 |    2 |    3 |    4 |    5 |    6 |    7 |
+|------+------+------+------+------+------+------+------|
+| 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 |
+| 0.00 | 0.83 | 0.00 | 0.22 | 0.22 | 0.03 | 0.00 | 0.00 |
+| 0.01 | 0.10 | 0.00 | 0.00 | 0.00 | 0.19 | 0.00 | 0.81 |
+| 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 |
+| 0.00 | 0.00 | 0.00 | 0.22 | 0.22 | 0.00 | 0.00 | 0.00 |
+| 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 |
+| 0.01 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 |
+
+=========
+threshold
+=========
+0.04499916354893879
+
+=========
+Matchings
+=========
+Sentence  1 :
+"A customer brings in a defective computer and the CRS checks the defect and hands out a repair cost calculation back ."
+Task  1 :
+"Bring in Defective Computer"
+Matching score: 0.8269896193771626
+
+    Comon features: 
+
+    * Contains the synset "bring"
+    * Contains an hyponym of "carry"
+    * Contains an hyponym of "displace"
+    * Contains the verb "bring"
+    * Contains the action "bring"
+    * The agent of verb "bring" contains the noun "customer"
+
+
+Sentence  4 :
+"The first activity is to check and repair the hardware , whereas the second activity checks and configures the software ."
+Task  3 :
+"Check and Configure Software"
+Matching score: 0.21933085501858732
+
+    Comon features: 
+
+    * Contains the synset "balk"
+    * Contains an hyponym of "difficulty"
+    * Contains an hyponym of "cognitive_factor"
+    * Contains the noun "check"
+
+
+Sentence  4 :
+"The first activity is to check and repair the hardware , whereas the second activity checks and configures the software ."
+Task  4 :
+"Check and Repair Hardware"
+Matching score: 0.21933085501858732
+
+    Comon features: 
+
+    * Contains the synset "balk"
+    * Contains an hyponym of "difficulty"
+    * Contains an hyponym of "cognitive_factor"
+    * Contains the noun "check"
+
+
+Sentence  2 :
+"If the customer decides that the costs are acceptable , the process continues , otherwise she takes her computer home unrepaired ."
+Task  5 :
+"Take Computer Home"
+Matching score: 0.18727915194346292
+
+    Comon features: 
+
+    * Contains the synset "bring"
+    * Contains an hyponym of "carry"
+    * Contains an hyponym of "displace"
+    * Contains the verb "take"
+    * Contains the action "take"
+
+
+Sentence  2 :
+"If the customer decides that the costs are acceptable , the process continues , otherwise she takes her computer home unrepaired ."
+Task  7 :
+"Continue Process"
+Matching score: 0.8128654970760234
+
+    Comon features: 
+
+    * Contains the synset "procedure"
+    * Contains the synset "continue"
+    * Contains an hyponym of "activity"
+    * Contains an hyponym of "act"
+    * Contains an hyponym of "go"
+    * Contains the noun "process"
+    * Contains the verb "continue"
+    * Contains the action "continue"
+    * The direct object of verb "continue" is "process" (noun)
+    * The object of verb "continue" contains the noun "process"
+
+
+
+========================
+Tasks with no good match
+========================
+Task  0 :
+"Test System Functionality"
+Task  2 :
+"Receive Repair Cost Calculation"
+Task  6 :
+"Prepare Repair Cost Calculation"
+

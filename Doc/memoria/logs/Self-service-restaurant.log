@@ -1,0 +1,411 @@
+=========
+Sentences
+=========
+Text.0) A guest enters the restaurant when feeling hungry .
+Text.1) He chooses a dish from the changing meal range and waits until it is his turn .
+Text.2) Following this he places his order with the employee .
+Text.3) The employee enters the order into the POS system and collects the money from the guest .
+Text.4) After the payment , the employee sets up a buzzer and passes it on to the guest with the following information : " When the buzzer rings , your dinner is ready " .
+Text.5) Afterwards the employee informs the chef of the new meal order .
+Text.6) The chef prepares the meal and places it in the service hatch .
+Text.7) He then informs the employee that he has placed the finished meal in the service hatch .
+Text.8) As soon as the employee is aware that the meal is ready he sets off the guest ? s buzzer .
+Text.9) This is how the guest finds out that his meal is ready for collection .
+Text.10) He can pick up his meal and eat it .
+Text.11) As soon as the guest appears at the service hatch , the employee hands over his meal .
+Text.12) Should a guest not react to the buzzer , the employee calls for him after 5 minutes , if necessary several times in a row .
+
+=====
+Tasks
+=====
+Task.0) Set up buzzer
+Task.1) Eat meal
+Task.2) Place order
+Task.3) Prepare meal
+Task.4) Get meal
+Task.5) Inform employee
+Task.6) Call guest
+Task.7) Hand over buzzer
+Task.8) Pay money
+Task.9) Set off buzzer
+Task.10) Hand over meal
+Task.11) Take buzzer
+Task.12) Enter restaurant
+Task.13) Collect money
+Task.14) Place meal in hatch
+Task.15) Choose dish
+Task.16) Inform chef
+Task.17) Enter order
+
+=================
+Similarity Matrix
+=================
+
+|    0 |    1 |    2 |    3 |    4 |    5 |    6 |    7 |    8 |    9 |   10 |   11 |   12 |   13 |   14 |   15 |   16 |   17 |
+|------+------+------+------+------+------+------+------+------+------+------+------+------+------+------+------+------+------|
+| 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.46 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.83 | 0.00 | 0.00 | 0.00 | 0.00 | 0.13 |
+| 0.00 | 0.06 | 0.00 | 0.06 | 0.06 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.07 | 0.03 | 0.00 | 0.00 | 0.33 | 0.59 | 0.00 | 0.00 |
+| 0.06 | 0.00 | 0.07 | 0.00 | 0.00 | 0.33 | 0.00 | 0.00 | 0.00 | 0.06 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.05 |
+| 0.00 | 0.00 | 0.07 | 0.00 | 0.00 | 0.33 | 0.46 | 0.00 | 0.50 | 0.00 | 0.00 | 0.00 | 0.17 | 0.83 | 0.00 | 0.00 | 0.00 | 0.66 |
+| 0.65 | 0.00 | 0.00 | 0.00 | 0.00 | 0.33 | 0.46 | 0.07 | 0.00 | 0.65 | 0.00 | 0.06 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 |
+| 0.00 | 0.06 | 0.07 | 0.06 | 0.06 | 0.42 | 0.00 | 0.00 | 0.00 | 0.00 | 0.07 | 0.00 | 0.00 | 0.00 | 0.33 | 0.01 | 0.83 | 0.05 |
+| 0.06 | 0.06 | 0.00 | 0.80 | 0.06 | 0.00 | 0.00 | 0.00 | 0.00 | 0.06 | 0.07 | 0.00 | 0.00 | 0.00 | 0.67 | 0.01 | 0.06 | 0.00 |
+| 0.06 | 0.06 | 0.00 | 0.06 | 0.06 | 0.71 | 0.00 | 0.00 | 0.00 | 0.06 | 0.07 | 0.00 | 0.00 | 0.00 | 0.67 | 0.01 | 0.17 | 0.00 |
+| 0.47 | 0.06 | 0.00 | 0.06 | 0.06 | 0.33 | 0.46 | 0.07 | 0.00 | 0.47 | 0.07 | 0.06 | 0.00 | 0.00 | 0.33 | 0.01 | 0.00 | 0.00 |
+| 0.00 | 0.06 | 0.00 | 0.06 | 0.06 | 0.00 | 0.46 | 0.00 | 0.00 | 0.00 | 0.07 | 0.00 | 0.00 | 0.00 | 0.33 | 0.01 | 0.00 | 0.00 |
+| 0.00 | 0.23 | 0.00 | 0.06 | 0.06 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.07 | 0.00 | 0.00 | 0.00 | 0.33 | 0.01 | 0.00 | 0.00 |
+| 0.00 | 0.06 | 0.00 | 0.06 | 0.06 | 0.33 | 0.46 | 0.07 | 0.00 | 0.00 | 0.14 | 0.00 | 0.00 | 0.00 | 0.67 | 0.01 | 0.00 | 0.00 |
+| 0.13 | 0.00 | 0.00 | 0.00 | 0.00 | 0.33 | 0.46 | 0.07 | 0.00 | 0.13 | 0.00 | 0.06 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 |
+
+=========
+threshold
+=========
+0.019518406733634697
+
+=========
+Matchings
+=========
+Sentence  4 :
+"After the payment , the employee sets up a buzzer and passes it on to the guest with the following information : \" When the buzzer rings , your dinner is ready \" ."
+Task  0 :
+"Set up buzzer"
+Matching score: 0.6483516483516484
+
+    Comon features: 
+
+    * Contains the synset "lay"
+    * Contains the synset "bell"
+    * Contains the synset "bell"
+    * Contains an hyponym of "displace"
+    * Contains an hyponym of "button"
+    * Contains an hyponym of "electrical_switch"
+    * Contains an hyponym of "button"
+    * Contains an hyponym of "electrical_switch"
+    * Contains the verb "set"
+    * Contains the noun "buzzer"
+    * Contains the noun "buzzer"
+    * Contains the action "set"
+    * The agent of verb "set" contains the noun "employee"
+
+
+Sentence  10 :
+"He can pick up his meal and eat it ."
+Task  1 :
+"Eat meal"
+Matching score: 0.22994652406417113
+
+    Comon features: 
+
+    * Contains the synset "meal"
+    * Contains the synset "eat"
+    * Contains an hyponym of "aliment"
+    * Contains an hyponym of "food"
+    * Contains an hyponym of "consume"
+    * Contains the noun "meal"
+    * Contains the verb "eat"
+    * Contains the action "eat"
+
+
+Sentence  3 :
+"The employee enters the order into the POS system and collects the money from the guest ."
+Task  2 :
+"Place order"
+Matching score: 0.07040572792362769
+
+    Comon features: 
+
+    * Contains the synset "club"
+    * Contains an hyponym of "association"
+    * Contains an hyponym of "organisation"
+    * Contains the noun "order"
+
+
+Sentence  6 :
+"The chef prepares the meal and places it in the service hatch ."
+Task  3 :
+"Prepare meal"
+Matching score: 0.8010695187165775
+
+    Comon features: 
+
+    * Contains the synset "meal"
+    * Contains an hyponym of "aliment"
+    * Contains an hyponym of "food"
+    * Contains the verb "prepare"
+    * Contains the noun "meal"
+    * Contains the action "prepare"
+    * The agent of verb "prepare" contains the noun "chef"
+    * The direct object of verb "prepare" is "meal" (noun)
+    * The object of verb "prepare" contains the noun "meal"
+
+
+Sentence  8 :
+"As soon as the employee is aware that the meal is ready he sets off the guest ? s buzzer ."
+Task  4 :
+"Get meal"
+Matching score: 0.06310160427807487
+
+    Comon features: 
+
+    * Contains the synset "meal"
+    * Contains an hyponym of "aliment"
+    * Contains an hyponym of "food"
+    * Contains the noun "meal"
+
+
+Sentence  7 :
+"He then informs the employee that he has placed the finished meal in the service hatch ."
+Task  5 :
+"Inform employee"
+Matching score: 0.7104945717732208
+
+    Comon features: 
+
+    * Contains the synset "inform"
+    * Contains the synset "employee"
+    * Contains an hyponym of "communicate"
+    * Contains an hyponym of "interact"
+    * Contains an hyponym of "worker"
+    * Contains an hyponym of "individual"
+    * Contains the verb "inform"
+    * Contains the noun "employee"
+    * Contains the action "inform"
+    * The direct object of verb "inform" is "employee" (noun)
+    * The direct object of verb "employee" is "employee" (noun)
+    * The object of verb "inform" contains the noun "employee"
+    * The object of verb "employee" contains the noun "employee"
+
+
+Sentence  12 :
+"Should a guest not react to the buzzer , the employee calls for him after 5 minutes , if necessary several times in a row ."
+Task  6 :
+"Call guest"
+Matching score: 0.4587155963302752
+
+    Comon features: 
+
+    * Contains the synset "guest"
+    * Contains the noun "guest"
+
+
+Sentence  4 :
+"After the payment , the employee sets up a buzzer and passes it on to the guest with the following information : \" When the buzzer rings , your dinner is ready \" ."
+Task  7 :
+"Hand over buzzer"
+Matching score: 0.07040572792362768
+
+    Comon features: 
+
+    * Contains the synset "bell"
+    * Contains the synset "bell"
+    * Contains an hyponym of "button"
+    * Contains an hyponym of "electrical_switch"
+    * Contains an hyponym of "button"
+    * Contains an hyponym of "electrical_switch"
+    * Contains the noun "buzzer"
+    * Contains the noun "buzzer"
+
+
+Sentence  3 :
+"The employee enters the order into the POS system and collects the money from the guest ."
+Task  8 :
+"Pay money"
+Matching score: 0.5
+
+    Comon features: 
+
+    * Contains the synset "money"
+    * Contains an hyponym of "medium_of_exchange"
+    * Contains an hyponym of "criterion"
+    * Contains the noun "money"
+
+
+Sentence  8 :
+"As soon as the employee is aware that the meal is ready he sets off the guest ? s buzzer ."
+Task  9 :
+"Set off buzzer"
+Matching score: 0.4725274725274725
+
+    Comon features: 
+
+    * Contains the synset "lay"
+    * Contains the synset "bell"
+    * Contains an hyponym of "displace"
+    * Contains an hyponym of "button"
+    * Contains an hyponym of "electrical_switch"
+    * Contains the verb "set"
+    * Contains the noun "buzzer"
+    * Contains the action "set"
+
+
+Sentence  11 :
+"As soon as the guest appears at the service hatch , the employee hands over his meal ."
+Task  10 :
+"Hand over meal"
+Matching score: 0.14081145584725535
+
+    Comon features: 
+
+    * Contains the synset "hand"
+    * Contains the synset "meal"
+    * Contains an hyponym of "extremity"
+    * Contains an hyponym of "external_body_part"
+    * Contains an hyponym of "aliment"
+    * Contains an hyponym of "food"
+    * Contains the noun "hand"
+    * Contains the noun "meal"
+
+
+Sentence  4 :
+"After the payment , the employee sets up a buzzer and passes it on to the guest with the following information : \" When the buzzer rings , your dinner is ready \" ."
+Task  11 :
+"Take buzzer"
+Matching score: 0.06310160427807487
+
+    Comon features: 
+
+    * Contains the synset "bell"
+    * Contains the synset "bell"
+    * Contains an hyponym of "button"
+    * Contains an hyponym of "electrical_switch"
+    * Contains an hyponym of "button"
+    * Contains an hyponym of "electrical_switch"
+    * Contains the noun "buzzer"
+    * Contains the noun "buzzer"
+
+
+Sentence  0 :
+"A guest enters the restaurant when feeling hungry ."
+Task  12 :
+"Enter restaurant"
+Matching score: 0.8294243070362474
+
+    Comon features: 
+
+    * Contains the synset "enter"
+    * Contains the synset "eatery"
+    * Contains an hyponym of "preserve"
+    * Contains an hyponym of "hold_on"
+    * Contains an hyponym of "building"
+    * Contains an hyponym of "construction"
+    * Contains the verb "enter"
+    * Contains the noun "restaurant"
+    * Contains the action "enter"
+    * The agent of verb "enter" contains the noun "guest"
+    * The direct object of verb "enter" is "restaurant" (noun)
+    * The object of verb "enter" contains the noun "restaurant"
+
+
+Sentence  3 :
+"The employee enters the order into the POS system and collects the money from the guest ."
+Task  13 :
+"Collect money"
+Matching score: 0.8294243070362473
+
+    Comon features: 
+
+    * Contains the synset "accumulate"
+    * Contains the synset "money"
+    * Contains an hyponym of "hold_on"
+    * Contains an hyponym of "hive_away"
+    * Contains an hyponym of "hold_on"
+    * Contains an hyponym of "medium_of_exchange"
+    * Contains an hyponym of "criterion"
+    * Contains the verb "collect"
+    * Contains the noun "money"
+    * Contains the action "collect"
+    * The agent of verb "collect" contains the noun "employee"
+    * The direct object of verb "collect" is "money" (noun)
+    * The object of verb "collect" contains the noun "money"
+
+
+Sentence  7 :
+"He then informs the employee that he has placed the finished meal in the service hatch ."
+Task  14 :
+"Place meal in hatch"
+Matching score: 0.6666666666666665
+
+    Comon features: 
+
+    * Contains the synset "meal"
+    * Contains the synset "hatch"
+    * Contains an hyponym of "aliment"
+    * Contains an hyponym of "food"
+    * Contains an hyponym of "movable_barrier"
+    * Contains an hyponym of "barrier"
+    * Contains the noun "meal"
+    * Contains the noun "hatch"
+
+
+Sentence  1 :
+"He chooses a dish from the changing meal range and waits until it is his turn ."
+Task  15 :
+"Choose dish"
+Matching score: 0.5914893617021276
+
+    Comon features: 
+
+    * Contains the synset "choose"
+    * Contains the synset "dish"
+    * Contains an hyponym of "decide"
+    * Contains an hyponym of "aliment"
+    * Contains an hyponym of "food"
+    * Contains an hyponym of "aliment"
+    * Contains an hyponym of "food"
+    * Contains the verb "choose"
+    * Contains the noun "dish"
+    * Contains the action "choose"
+    * The direct object of verb "choose" is "dish" (noun)
+    * The object of verb "choose" contains the noun "dish"
+
+
+Sentence  5 :
+"Afterwards the employee informs the chef of the new meal order ."
+Task  16 :
+"Inform chef"
+Matching score: 0.8294243070362475
+
+    Comon features: 
+
+    * Contains the synset "inform"
+    * Contains the synset "chef"
+    * Contains an hyponym of "communicate"
+    * Contains an hyponym of "interact"
+    * Contains an hyponym of "cook"
+    * Contains an hyponym of "skilled_worker"
+    * Contains the verb "inform"
+    * Contains the noun "chef"
+    * Contains the action "inform"
+    * The agent of verb "inform" contains the noun "employee"
+    * The direct object of verb "inform" is "chef" (noun)
+    * The object of verb "inform" contains the noun "chef"
+
+
+Sentence  3 :
+"The employee enters the order into the POS system and collects the money from the guest ."
+Task  17 :
+"Enter order"
+Matching score: 0.6604414261460101
+
+    Comon features: 
+
+    * Contains the synset "enter"
+    * Contains the synset "club"
+    * Contains an hyponym of "preserve"
+    * Contains an hyponym of "hold_on"
+    * Contains an hyponym of "association"
+    * Contains an hyponym of "organisation"
+    * Contains an hyponym of "hold_on"
+    * Contains the verb "enter"
+    * Contains the noun "order"
+    * Contains the action "enter"
+    * The agent of verb "enter" contains the noun "employee"
+    * The direct object of verb "enter" is "order" (noun)
+    * The object of verb "enter" contains the noun "order"
+
+
+
+========================
+Tasks with no good match
+========================
+

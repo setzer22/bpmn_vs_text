@@ -1,0 +1,164 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.5 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist{nty}{nty}
+    \entry{el_paper}{inbook}{}
+      \name{author}{3}{}{%
+        {{hash=cab1e3eccc2dd2846ffd25d6d3505473}{Aa}{A\bibinitperiod}{Han}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=685de5db04ba434fb83441a38177fe6c}{Leopold}{L\bibinitperiod}{Henrik}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=9dce6bdc26aeecc5a712e9fce888dca3}{Reijers}{R\bibinitperiod}{Hajo\bibnamedelima A.}{H\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{16d4e86d1bdc258e41a3a355b2b5a369}
+      \strng{fullhash}{16d4e86d1bdc258e41a3a355b2b5a369}
+      \field{sortinit}{A}
+      \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{chapter}{Detecting Inconsistencies Between Process Models and Textual Descriptions}
+      \field{isbn}{9783319230634}
+      \field{title}{Business Process Management: 13th International Conference, BPM 2015, Innsbruck, Austria, August 31 -- September 3, 2015, Proceedings}
+      \field{year}{2015}
+      \field{pages}{90\bibrangedash 105}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1007/978-3-319-23063-4_6
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1007/978-3-319-23063-4_6
+      \endverb
+    \endentry
+    \entry{text_with_bpmn}{article}{}
+      \name{author}{3}{}{%
+        {{hash=b3ff0c8377e387ea653131ba909f5e6d}{Leopold}{L\bibinitperiod}{H.}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=7c62ac3aee7c95c3ddc6c3bbbf9b32c7}{Mendling}{M\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=27d973c3bc190dcaba472985da286217}{Polyvyanny}{P\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE Transactions on Software Engineering}%
+      }
+      \strng{namehash}{41b200538f0491dd8558a8a7af23fb59}
+      \strng{fullhash}{41b200538f0491dd8558a8a7af23fb59}
+      \field{sortinit}{L}
+      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Supporting process model validation through natural language generation}
+      \field{year}{2014}
+    \endentry
+    \entry{agile_manifesto}{misc}{}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{http://www.agilemanifesto.org/}}
+      \field{note}{Accedit a: 28-02-2016}
+      \field{title}{Manifesto for Agile Software Developement}
+    \endentry
+    \entry{stanford_parser}{article}{}
+      \name{author}{3}{}{%
+        {{hash=bc51d27f77e9b089656c82448f56e301}{Manning}{M\bibinitperiod}{Cristopher\bibnamedelima D.}{C\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+        {{hash=5319afc8b165e56ab7090f64fe3f2142}{Surdeanu}{S\bibinitperiod}{Mihai}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=dec34f4fc50230f9335131a07e98d758}{Bauer}{B\bibinitperiod}{John}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{3908b3a465269c5882546dcd800668a1}
+      \strng{fullhash}{3908b3a465269c5882546dcd800668a1}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Stanford CoreNLP Natural Language Processing Toolkit}
+      \field{year}{2014}
+    \endentry
+    \entry{LAP}{article}{}
+      \name{author}{1}{}{%
+        {{hash=46835eb9f51aadc1bdaecd6504a07339}{Munkres}{M\bibinitperiod}{James}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{2}{%
+        {Society for Industrial}%
+        {Applied Mathematics}%
+      }
+      \strng{namehash}{46835eb9f51aadc1bdaecd6504a07339}
+      \strng{fullhash}{46835eb9f51aadc1bdaecd6504a07339}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{03684245}
+      \field{journaltitle}{Journal of the Society for Industrial and Applied Mathematics}
+      \field{number}{1}
+      \field{title}{Algorithms for the Assignment and Transportation Problems}
+      \field{volume}{5}
+      \field{year}{1957}
+      \field{pages}{32\bibrangedash 38}
+      \range{pages}{7}
+      \verb{url}
+      \verb http://www.jstor.org/stable/2098689
+      \endverb
+    \endentry
+    \entry{freeling}{article}{}
+      \name{author}{2}{}{%
+        {{hash=36d84b638675c862ff3fcd372d4a6dc5}{Padró}{P\bibinitperiod}{Lluís}{L\bibinitperiod}{}{}{}{}}%
+        {{hash=0827b5443501808da7ecdf00a27b7a59}{Stanilovsky}{S\bibinitperiod}{Evgeny}{E\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{f98bbe49aa4cf70d4cd080e16623404e}
+      \strng{fullhash}{f98bbe49aa4cf70d4cd080e16623404e}
+      \field{sortinit}{P}
+      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{FreeLing 3.0: Towards Wider Multilinguality. Proceedings of the Language Resources and Evaluation Conference (LREC 2012) ELRA.}
+      \field{year}{2012}
+    \endentry
+    \entry{textserver}{article}{}
+      \name{author}{2}{}{%
+        {{hash=36d84b638675c862ff3fcd372d4a6dc5}{Padró}{P\bibinitperiod}{Lluís}{L\bibinitperiod}{}{}{}{}}%
+        {{hash=6a68f5aaff2f451204668ae14c16515c}{Turmo}{T\bibinitperiod}{Jordi}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{489a1ebb10ab2a91d42bb5923b3bf73e}
+      \strng{fullhash}{489a1ebb10ab2a91d42bb5923b3bf73e}
+      \field{sortinit}{P}
+      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{TextServer: Cloud-based Multilingual Natural Language Processing. Proceedings of the 15th IEEE International Conference on Data Mining (ICDM'15) IEEE.}
+      \field{year}{2012}
+    \endentry
+    \entry{ai_completeness}{article}{}
+      \name{author}{1}{}{%
+        {{hash=59f2469f3f05e4d42414676b7ff72f77}{Yampolskiy}{Y\bibinitperiod}{Roman\bibnamedelima V.}{R\bibinitperiod\bibinitdelim V\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{59f2469f3f05e4d42414676b7ff72f77}
+      \strng{fullhash}{59f2469f3f05e4d42414676b7ff72f77}
+      \field{sortinit}{Y}
+      \field{sortinithash}{3cbc1e3d286284cedb5e5218a3248f94}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Turing Test as a Defining Feature of AI-Completeness}
+      \field{year}{2012}
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+

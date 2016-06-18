@@ -1,0 +1,153 @@
+=========
+Sentences
+=========
+Text.0) The sales clerks in a bank can use their software frontend to receive the credit-scoring for a certain customer .
+Text.1) This starts a process in the banking system which communicates with the agency in the background .
+Text.2) This process sends a scoring request to the agency right after the beginning .
+Text.3) Then , the Agency does a first quick scoring ( level 1 ) .
+Text.4) This will often lead to an immediate result which is then returned directly to the banking system within seconds .
+Text.5) The banking process presents the result to the clerk sitting at the frontend .
+Text.6) Sometimes the scoring can not be determined immediately and takes longer .
+Text.7) In this case the agency informs the banking process of the delay and then starts the level 2 scoring ( which can take up to a couple of minutes ) .
+Text.8) After the scoring result is determined , the information is sent back to the banking process .
+Text.9) The banking process displays a message to the clerk when he receives information about the delay to check again later .
+Text.10) As soon as the result arrives , it can be seen at the frontend .
+
+=====
+Tasks
+=====
+Task.0) send result
+Task.1) send credit score
+Task.2) report delay
+Task.3) request credit score
+Task.4) send credit score
+Task.5) compute credit score (level 2)
+Task.6) compute credit score (level 1)
+
+=================
+Similarity Matrix
+=================
+
+|    0 |    1 |    2 |    3 |    4 |    5 |    6 |
+|------+------+------+------+------+------+------|
+| 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 |
+| 0.00 | 0.00 | 0.00 | 0.01 | 0.00 | 0.00 | 0.00 |
+| 0.16 | 0.16 | 0.00 | 0.14 | 0.15 | 0.00 | 0.00 |
+| 0.00 | 0.00 | 0.00 | 0.01 | 0.00 | 0.06 | 0.09 |
+| 0.06 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 |
+| 0.06 | 0.00 | 0.00 | 0.01 | 0.00 | 0.00 | 0.00 |
+| 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 |
+| 0.00 | 0.00 | 0.05 | 0.01 | 0.00 | 0.06 | 0.05 |
+| 0.21 | 0.16 | 0.00 | 0.01 | 0.15 | 0.00 | 0.00 |
+| 0.00 | 0.00 | 0.05 | 0.01 | 0.00 | 0.00 | 0.00 |
+| 0.06 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 |
+
+=========
+threshold
+=========
+0.02270960961494147
+
+=========
+Matchings
+=========
+Sentence  8 :
+"After the scoring result is determined , the information is sent back to the banking process ."
+Task  0 :
+"send result"
+Matching score: 0.21414538310412576
+
+    Comon features: 
+
+    * Contains the synset "consequence"
+    * Contains the synset "mail"
+    * Contains an hyponym of "phenomenon"
+    * Contains an hyponym of "physical_process"
+    * Contains an hyponym of "transfer"
+    * Contains an hyponym of "displace"
+    * Contains the noun "result"
+    * Contains the verb "send"
+    * Contains the action "send"
+
+
+Sentence  8 :
+"After the scoring result is determined , the information is sent back to the banking process ."
+Task  1 :
+"send credit score"
+Matching score: 0.15947843530591777
+
+    Comon features: 
+
+    * Contains the synset "mail"
+    * Contains an hyponym of "transfer"
+    * Contains an hyponym of "displace"
+    * Contains the verb "send"
+    * Contains the action "send"
+
+
+Sentence  7 :
+"In this case the agency informs the banking process of the delay and then starts the level 2 scoring ( which can take up to a couple of minutes ) ."
+Task  2 :
+"report delay"
+Matching score: 0.04765751211631664
+
+    Comon features: 
+
+    * Contains the synset "delay"
+    * Contains an hyponym of "break"
+    * Contains an hyponym of "interval"
+    * Contains the noun "delay"
+
+
+Sentence  2 :
+"This process sends a scoring request to the agency right after the beginning ."
+Task  3 :
+"request credit score"
+Matching score: 0.14148681055155873
+
+    Comon features: 
+
+    * Contains the synset "asking"
+    * Contains an hyponym of "act"
+    * Contains an hyponym of "speech_act"
+    * Contains an hyponym of "act"
+    * Contains an hyponym of "act"
+    * Contains the noun "request"
+
+
+Sentence  8 :
+"After the scoring result is determined , the information is sent back to the banking process ."
+Task  4 :
+"send credit score"
+Matching score: 0.1476323119777159
+
+    Comon features: 
+
+    * Contains the synset "mail"
+    * Contains an hyponym of "transfer"
+    * Contains an hyponym of "displace"
+    * Contains the verb "send"
+    * Contains the action "send"
+
+
+Sentence  3 :
+"Then , the Agency does a first quick scoring ( level 1 ) ."
+Task  6 :
+"compute credit score (level 1)"
+Matching score: 0.09044715447154472
+
+    Comon features: 
+
+    * Contains the synset "degree"
+    * Contains an hyponym of "state"
+    * Contains an hyponym of "attribute"
+    * Contains the noun "level"
+    * Contains the number "1"
+
+
+
+========================
+Tasks with no good match
+========================
+Task  5 :
+"compute credit score (level 2)"
+

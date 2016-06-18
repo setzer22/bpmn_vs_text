@@ -1,0 +1,16 @@
+[0] Config.pm:327> INFO - This is Biber 2.2
+[1] Config.pm:330> INFO - Logfile is 'main.blg'
+[52] biber:286> INFO - === Fri Jun 17, 2016, 18:55:23
+[52] Biber.pm:334> INFO - Reading 'main.bcf'
+[169] Biber.pm:677> INFO - Found 22 citekeys in bib section 0
+[188] Biber.pm:3054> INFO - Processing section 0
+[203] Biber.pm:3193> INFO - Looking for bibtex format file './refs.bib' for section 0
+[205] bibtex.pm:1072> INFO - Decoding LaTeX character macros into UTF-8
+[207] bibtex.pm:935> INFO - Found BibTeX data source './refs.bib'
+[264] Utils.pm:147> WARN - I didn't find a database entry for crossref 'DBLP:conf/caise/2015' in entry 'hospital_ref' - ignoring (section 0)
+[553] UCollate.pm:66> INFO - Overriding locale 'ca-AD' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[554] UCollate.pm:66> INFO - Overriding locale 'ca-AD' defaults 'variable = shifted' with 'variable = non-ignorable'
+[554] Biber.pm:2931> INFO - Sorting list 'nty' of type 'entry' with scheme 'nty' and locale 'ca-AD'
+[622] bbl.pm:505> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[625] bbl.pm:596> INFO - Output to main.bbl
+[625] Biber.pm:107> INFO - WARNINGS: 1

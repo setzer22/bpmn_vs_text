@@ -1,0 +1,55 @@
+\clearpage
+\chapter{Traces d'execució}
+\label{sec:traces_execucio}
+
+En aquest annex es recullen algunes traces de l'execució de l'algoritme. Aquestes traces les genera l'algoritme internament durant l'execució en format de text pla i resulten molt útils per a entendre el perquè de la puntuació d'una instància del problema concret.
+
+El format és, a grans trets, el següent:
+
+\begin{itemize}
+\item Primer es fa un llistat de la separació de frases i tasques de l'algoritme. 
+\item A continuació es mostra la matriu de similaritat. Les files corresponen a les frases i les columnes a les tasques. 
+\item El següent punt és el threshold que l'algoritme ha calculat automàticament.
+\item A continuació, es llisten les diferents parelles de frase-tasca que ha trobat l'algoritme en el següent format:
+      \begin{itemize}
+        \item Text de la frase
+        \item Text de la tasca
+        \item Puntuació de similaritat entre les dues
+        \item Característiques comunes entre les dues features
+      \end{itemize}
+\item Finalment, s'inclouen aquelles tasques per les quals la puntuació de similaritat era menor al threhsold
+\end{itemize}
+
+El programa inclou l'opció de configuració \emph{verbose} perquè s'inclogui encara més informació a aquesta traça. No obstant, amb aquesta opció, les traces hagués estat massa detallades per incloure-les al document.
+
+\newgeometry{left=1.3cm, right=1.3cm}
+\section{Bicycle Manufacturer (BPMN vs Text)}
+\lstinputlisting[breaklines=true]{logs/Bicycle_Manufacturer.log}
+
+%\section{Credit Scoring (BPMN vs Text)}
+%\lstinputlisting[breaklines=true]{logs/Credit-scoring.log}
+
+%\section{Computer Repair Shop (BPMN vs Text)}
+%\lstinputlisting[breaklines=true]{logs/Computer_Repair.log}
+
+\section{Dispatch of Goods (BPMN vs Text)}
+\lstinputlisting[breaklines=true]{logs/Dispatch-of-goods.log}
+
+%\section{Hospital (BPMN vs Text)}
+%\lstinputlisting[breaklines=true]{logs/Hospital.log}
+
+\section{Hotel (BPMN vs Text)}
+\lstinputlisting[breaklines=true]{logs/Hotel.log}
+
+%\section{Recourse (BPMN vs Text)}
+%\lstinputlisting[breaklines=true]{logs/Recourse.log}
+
+%\section{Self Service Restaurant (BPMN vs Text)}
+%\lstinputlisting[breaklines=true]{logs/Self-service-restaurant.log}
+
+%\section{Underwriter (BPMN vs Text)}
+%\lstinputlisting[breaklines=true]{logs/Underwriter.log}
+
+\section{Zoo (BPMN vs Text)}
+\label{sec:logs-zoo}
+\lstinputlisting[breaklines=true]{logs/Zoo.log}

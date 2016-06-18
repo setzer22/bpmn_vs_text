@@ -1,0 +1,335 @@
+=========
+Sentences
+=========
+Text.0) The examination process can be summarised as follows .
+Text.1) The process starts when the female patient is examined by an outpatient physician , who decides whether she is healthy or needs to undertake an additional examination .
+Text.2) In the former case , the physician fills out the examination form and the patient can leave .
+Text.3) In the latter case , an examination and follow-up treatment order is placed by the physician who additionally fills out a request form .
+Text.4) Beyond information about the patient , the request form includes details about the examination requested and refers to a suitable lab .
+Text.5) Furthermore , the outpatient physician informs the patient about potential risks .
+Text.6) If the patient signs an informed consent and agrees to continue with the procedure , a delegate of the physician arranges an appointment of the patient with one of the wards .
+Text.7) The latter is then responsible for taking a sample to be analysed in the lab later .
+Text.8) Before the appointment , the required examination and sampling is prepared by a nurse of the ward based on the information provided by the outpatient section .
+Text.9) Then , a ward physician takes the sample requested .
+Text.10) He further sends it to the lab indicated in the request form and conducts the follow-up treatment of the patient .
+Text.11) After receiving the sample , a physician of the lab validates its state and decides whether the sample can be used for analysis or whether it is contaminated and a new sample is required .
+Text.12) After the analysis is performed by a medical technical assistant of the lab , a lab physician validates the results .
+Text.13) Finally , a physician from the outpatient department makes the diagnosis and prescribes the therapy for the patient .
+
+=====
+Tasks
+=====
+Task.0) Examine patient
+Task.1) Validate sample state
+Task.2) Analyse sample
+Task.3) Validate results
+Task.4) Make diagnosis
+Task.5) Describe therapy
+Task.6) Order examination & follow-up treatment
+Task.7) Inform about risks
+Task.8) Release patient
+Task.9) Make appointment
+Task.10) Prepare examination
+Task.11) Take sample
+Task.12) Perform follow-up treatment
+Task.13) Send sample
+
+=================
+Similarity Matrix
+=================
+
+|    0 |    1 |    2 |    3 |    4 |    5 |    6 |    7 |    8 |    9 |   10 |   11 |   12 |   13 |
+|------+------+------+------+------+------+------+------+------+------+------+------+------+------|
+| 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.11 | 0.00 | 0.00 | 0.00 | 0.07 | 0.00 | 0.00 | 0.00 |
+| 0.27 | 0.00 | 0.02 | 0.00 | 0.00 | 0.00 | 0.11 | 0.00 | 0.49 | 0.00 | 0.07 | 0.03 | 0.00 | 0.00 |
+| 0.07 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.11 | 0.00 | 0.49 | 0.00 | 0.07 | 0.00 | 0.00 | 0.00 |
+| 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.42 | 0.00 | 0.00 | 0.00 | 0.07 | 0.00 | 0.13 | 0.01 |
+| 0.07 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.11 | 0.00 | 0.49 | 0.00 | 0.07 | 0.00 | 0.00 | 0.00 |
+| 0.07 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.28 | 0.49 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 |
+| 0.07 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.01 | 0.20 | 0.49 | 0.06 | 0.00 | 0.00 | 0.00 | 0.00 |
+| 0.03 | 0.06 | 0.74 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.90 | 0.00 | 0.08 |
+| 0.00 | 0.03 | 0.03 | 0.00 | 0.00 | 0.00 | 0.11 | 0.00 | 0.00 | 0.06 | 0.81 | 0.06 | 0.00 | 0.04 |
+| 0.00 | 0.06 | 0.06 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.38 | 0.00 | 0.08 |
+| 0.07 | 0.00 | 0.00 | 0.00 | 0.00 | 0.01 | 0.22 | 0.00 | 0.49 | 0.00 | 0.00 | 0.00 | 0.13 | 0.20 |
+| 0.00 | 0.83 | 0.06 | 0.19 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.10 | 0.00 | 0.08 |
+| 0.00 | 0.17 | 0.00 | 0.81 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.17 | 0.00 |
+| 0.07 | 0.00 | 0.00 | 0.00 | 0.81 | 0.08 | 0.00 | 0.00 | 0.49 | 0.15 | 0.00 | 0.00 | 0.00 | 0.00 |
+
+=========
+threshold
+=========
+0.01890775629674027
+
+=========
+Matchings
+=========
+Sentence  1 :
+"The process starts when the female patient is examined by an outpatient physician , who decides whether she is healthy or needs to undertake an additional examination ."
+Task  0 :
+"Examine patient"
+Matching score: 0.2689295039164491
+
+    Comon features: 
+
+    * Contains the synset "patient"
+    * Contains the synset "analyse"
+    * Contains an hyponym of "09898892-n:10595647-n"
+    * Contains an hyponym of "09898892-n:10595647-n"
+    * Contains the noun "patient"
+    * Contains the verb "examine"
+    * Contains the action "examine"
+
+
+Sentence  11 :
+"After receiving the sample , a physician of the lab validates its state and decides whether the sample can be used for analysis or whether it is contaminated and a new sample is required ."
+Task  1 :
+"Validate sample state"
+Matching score: 0.8255179934569248
+
+    Comon features: 
+
+    * Contains the synset "sample"
+    * Contains the synset "corroborate"
+    * Contains the synset "state"
+    * Contains the synset "sample"
+    * Contains the synset "sample"
+    * Contains an hyponym of "distribution"
+    * Contains an hyponym of "arrangement"
+    * Contains an hyponym of "confirm"
+    * Contains an hyponym of "affirm"
+    * Contains an hyponym of "attribute"
+    * Contains an hyponym of "abstract_entity"
+    * Contains an hyponym of "distribution"
+    * Contains an hyponym of "arrangement"
+    * Contains an hyponym of "distribution"
+    * Contains an hyponym of "arrangement"
+    * Contains the noun "sample"
+    * Contains the verb "validate"
+    * Contains the noun "state"
+    * Contains the noun "sample"
+    * Contains the noun "sample"
+    * Contains the action "validate"
+    * The direct object of verb "validate" is "state" (noun)
+    * The object of verb "validate" contains the noun "state"
+
+
+Sentence  7 :
+"The latter is then responsible for taking a sample to be analysed in the lab later ."
+Task  2 :
+"Analyse sample"
+Matching score: 0.7416576964477933
+
+    Comon features: 
+
+    * Contains the synset "sample"
+    * Contains the synset "analyse"
+    * Contains an hyponym of "distribution"
+    * Contains an hyponym of "arrangement"
+    * Contains the noun "sample"
+    * Contains the verb "analyse"
+    * Contains the action "analyse"
+    * The direct object of verb "analyse" is "sample" (noun)
+    * The object of verb "analyse" contains the noun "sample"
+
+
+Sentence  12 :
+"After the analysis is performed by a medical technical assistant of the lab , a lab physician validates the results ."
+Task  3 :
+"Validate results"
+Matching score: 0.8135198135198135
+
+    Comon features: 
+
+    * Contains the synset "corroborate"
+    * Contains the synset "consequence"
+    * Contains an hyponym of "confirm"
+    * Contains an hyponym of "affirm"
+    * Contains an hyponym of "phenomenon"
+    * Contains an hyponym of "physical_process"
+    * Contains the verb "validate"
+    * Contains the noun "result"
+    * Contains the action "validate"
+    * The direct object of verb "validate" is "result" (noun)
+    * The object of verb "validate" contains the noun "result"
+
+
+Sentence  13 :
+"Finally , a physician from the outpatient department makes the diagnosis and prescribes the therapy for the patient ."
+Task  4 :
+"Make diagnosis"
+Matching score: 0.8128654970760234
+
+    Comon features: 
+
+    * Contains the synset "get"
+    * Contains the synset "diagnosing"
+    * Contains an hyponym of "alter"
+    * Contains an hyponym of "designation"
+    * Contains an hyponym of "determination"
+    * Contains the verb "make"
+    * Contains the noun "diagnosis"
+    * Contains the action "make"
+    * The direct object of verb "make" is "diagnosis" (noun)
+    * The object of verb "make" contains the noun "diagnosis"
+
+
+Sentence  13 :
+"Finally , a physician from the outpatient department makes the diagnosis and prescribes the therapy for the patient ."
+Task  5 :
+"Describe therapy"
+Matching score: 0.07969151670951156
+
+    Comon features: 
+
+    * Contains the synset "therapy"
+    * Contains an hyponym of "communicate"
+    * Contains an hyponym of "medical_aid"
+    * Contains an hyponym of "intervention"
+    * Contains the noun "therapy"
+
+
+Sentence  3 :
+"In the latter case , an examination and follow-up treatment order is placed by the physician who additionally fills out a request form ."
+Task  6 :
+"Order examination & follow-up treatment"
+Matching score: 0.42446043165467623
+
+    Comon features: 
+
+    * Contains the synset "exam"
+    * Contains the synset "follow-up"
+    * Contains the synset "intervention"
+    * Contains the synset "decree"
+    * Contains an hyponym of "communicating"
+    * Contains an hyponym of "act"
+    * Contains an hyponym of "examination"
+    * Contains an hyponym of "investigating"
+    * Contains an hyponym of "aid"
+    * Contains an hyponym of "work"
+    * Contains an hyponym of "act"
+    * Contains an hyponym of "instrument"
+    * Contains an hyponym of "act"
+    * Contains the noun "examination"
+    * Contains the noun "followup"
+    * Contains the noun "treatment"
+    * Contains the noun "order"
+
+
+Sentence  5 :
+"Furthermore , the outpatient physician informs the patient about potential risks ."
+Task  7 :
+"Inform about risks"
+Matching score: 0.2802056555269923
+
+    Comon features: 
+
+    * Contains the synset "inform"
+    * Contains the synset "endangerment"
+    * Contains an hyponym of "communicate"
+    * Contains an hyponym of "interact"
+    * Contains an hyponym of "danger"
+    * Contains an hyponym of "causal_agency"
+    * Contains the verb "inform"
+    * Contains the noun "risk"
+    * Contains the action "inform"
+
+
+Sentence  13 :
+"Finally , a physician from the outpatient department makes the diagnosis and prescribes the therapy for the patient ."
+Task  8 :
+"Release patient"
+Matching score: 0.4869565217391304
+
+    Comon features: 
+
+    * Contains the synset "patient"
+    * Contains an hyponym of "09898892-n:10595647-n"
+    * Contains an hyponym of "09898892-n:10595647-n"
+    * Contains the noun "patient"
+
+
+Sentence  6 :
+"If the patient signs an informed consent and agrees to continue with the procedure , a delegate of the physician arranges an appointment of the patient with one of the wards ."
+Task  9 :
+"Make appointment"
+Matching score: 0.058128078817733984
+
+    Comon features: 
+
+    * Contains the synset "appointment"
+    * Contains an hyponym of "conclusion"
+    * Contains an hyponym of "choice"
+    * Contains the noun "appointment"
+
+
+Sentence  8 :
+"Before the appointment , the required examination and sampling is prepared by a nurse of the ward based on the information provided by the outpatient section ."
+Task  10 :
+"Prepare examination"
+Matching score: 0.8128654970760234
+
+    Comon features: 
+
+    * Contains the synset "exam"
+    * Contains the synset "prepare"
+    * Contains an hyponym of "communicating"
+    * Contains an hyponym of "act"
+    * Contains an hyponym of "learn"
+    * Contains the noun "examination"
+    * Contains the verb "prepare"
+    * Contains the action "prepare"
+    * The direct object of verb "prepare" is "examination" (noun)
+    * The object of verb "prepare" contains the noun "examination"
+
+
+Sentence  7 :
+"The latter is then responsible for taking a sample to be analysed in the lab later ."
+Task  11 :
+"Take sample"
+Matching score: 0.8959687906371911
+
+    Comon features: 
+
+    * Contains the synset "ask"
+    * Contains the synset "sample"
+    * Contains an hyponym of "distribution"
+    * Contains an hyponym of "arrangement"
+    * Contains the verb "take"
+    * Contains the noun "sample"
+    * Contains the action "take"
+    * The direct object of verb "take" is "sample" (noun)
+    * The object of verb "take" contains the noun "sample"
+
+
+Sentence  12 :
+"After the analysis is performed by a medical technical assistant of the lab , a lab physician validates the results ."
+Task  12 :
+"Perform follow-up treatment"
+Matching score: 0.16519823788546256
+
+    Comon features: 
+
+    * Contains the synset "do"
+    * Contains the verb "perform"
+    * Contains the action "perform"
+
+
+Sentence  10 :
+"He further sends it to the lab indicated in the request form and conducts the follow-up treatment of the patient ."
+Task  13 :
+"Send sample"
+Matching score: 0.2012903225806452
+
+    Comon features: 
+
+    * Contains the synset "place"
+    * Contains an hyponym of "displace"
+    * Contains the verb "send"
+    * Contains the action "send"
+
+
+
+========================
+Tasks with no good match
+========================
+

@@ -1,0 +1,262 @@
+=========
+Sentences
+=========
+Text.0) The Evanstonian is an upscale independent hotel .
+Text.1) When a guest calls room service at The_Evanstonian , the room-service manager takes down the order .
+Text.2) She then submits an order ticket to the kitchen to begin preparing the food .
+Text.3) She also gives an order to the sommelier ( i.e. , the wine waiter ) to fetch wine from the cellar and to prepare any other alcoholic beverages .
+Text.4) Eighty percent of room-service orders include wine or some other alcoholic beverage .
+Text.5) Finally , she assigns the order to the waiter .
+Text.6) While the kitchen and the sommelier are doing their tasks , the waiter readies a cart ( i.e. , puts a tablecloth on the cart and gathers silverware ) .
+Text.7) The waiter is also responsible for nonalcoholic drinks .
+Text.8) Once the food , wine , and cart are ready , the waiter delivers it to the guest ? s room .
+Text.9) After returning to the room-service station , the waiter debits the guest ? s account .
+Text.10) The waiter may wait to do the billing if he has another order to prepare or deliver .
+
+=====
+Tasks
+=====
+Task.0) Prepare Non-Alcoholic Drinks
+Task.1) Fetch Wine from Cellar
+Task.2) Return to Room-Service Station
+Task.3) Prepare Meal
+Task.4) Debit Guest's Account
+Task.5) Ready Cart
+Task.6) Deliver to Guest's Room
+Task.7) Submit Order Ticket to Kitchen
+Task.8) Take down Order
+Task.9) Assign Order to Waiter
+Task.10) Prepare Alcoholic Beverages
+Task.11) Give Order to Sommelier
+
+=================
+Similarity Matrix
+=================
+
+|    0 |    1 |    2 |    3 |    4 |    5 |    6 |    7 |    8 |    9 |   10 |   11 |
+|------+------+------+------+------+------+------+------+------+------+------+------|
+| 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 |
+| 0.00 | 0.01 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.35 | 0.05 | 0.00 | 0.05 |
+| 0.16 | 0.00 | 0.22 | 0.28 | 0.00 | 0.00 | 0.08 | 0.26 | 0.16 | 0.07 | 0.19 | 0.07 |
+| 0.24 | 0.83 | 0.22 | 0.19 | 0.00 | 0.00 | 0.08 | 0.03 | 0.11 | 0.12 | 0.19 | 0.61 |
+| 0.00 | 0.06 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.11 | 0.05 | 0.00 | 0.05 |
+| 0.00 | 0.00 | 0.22 | 0.00 | 0.00 | 0.00 | 0.08 | 0.03 | 0.11 | 0.61 | 0.00 | 0.07 |
+| 0.03 | 0.00 | 0.00 | 0.03 | 0.00 | 0.08 | 0.01 | 0.06 | 0.00 | 0.05 | 0.03 | 0.05 |
+| 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.05 | 0.00 | 0.00 |
+| 0.00 | 0.07 | 0.22 | 0.00 | 0.00 | 0.15 | 0.67 | 0.03 | 0.00 | 0.07 | 0.00 | 0.02 |
+| 0.00 | 0.00 | 0.22 | 0.00 | 0.00 | 0.00 | 0.08 | 0.03 | 0.00 | 0.07 | 0.00 | 0.02 |
+| 0.16 | 0.00 | 0.24 | 0.19 | 0.00 | 0.00 | 0.47 | 0.03 | 0.11 | 0.12 | 0.19 | 0.07 |
+
+=========
+threshold
+=========
+0.02935206128863406
+
+=========
+Matchings
+=========
+Sentence  3 :
+"She also gives an order to the sommelier ( i.e. , the wine waiter ) to fetch wine from the cellar and to prepare any other alcoholic beverages ."
+Task  1 :
+"Fetch Wine from Cellar"
+Matching score: 0.8255179934569248
+
+    Comon features: 
+
+    * Contains the synset "vino"
+    * Contains the synset "bring"
+    * Contains the synset "vino"
+    * Contains the synset "basement"
+    * Contains an hyponym of "alcohol"
+    * Contains an hyponym of "03248958-n:07881800-n"
+    * Contains an hyponym of "channel"
+    * Contains an hyponym of "displace"
+    * Contains an hyponym of "alcohol"
+    * Contains an hyponym of "03248958-n:07881800-n"
+    * Contains an hyponym of "floor"
+    * Contains an hyponym of "construction"
+    * Contains the noun "wine"
+    * Contains the verb "fetch"
+    * Contains the noun "wine"
+    * Contains the noun "cellar"
+    * Contains the action "fetch"
+    * The direct object of verb "fetch" is "wine" (noun)
+    * The object of verb "fetch" contains the noun "wine"
+
+
+Sentence  10 :
+"The waiter may wait to do the billing if he has another order to prepare or deliver ."
+Task  2 :
+"Return to Room-Service Station"
+Matching score: 0.23741007194244604
+
+    Comon features: 
+
+    * Contains an hyponym of "speech_act"
+    * Contains the particle "to"
+    * Contains the particle "to"
+
+
+Sentence  2 :
+"She then submits an order ticket to the kitchen to begin preparing the food ."
+Task  3 :
+"Prepare Meal"
+Matching score: 0.2785547785547786
+
+    Comon features: 
+
+    * Contains the synset "cook"
+    * Contains an hyponym of "create_from_raw_material"
+    * Contains an hyponym of "create"
+    * Contains the verb "prepare"
+    * Contains the action "prepare"
+    * The agent of verb "prepare" contains the noun "kitchen"
+
+
+Sentence  8 :
+"Once the food , wine , and cart are ready , the waiter delivers it to the guest ? s room ."
+Task  5 :
+"Ready Cart"
+Matching score: 0.14552736982643524
+
+    Comon features: 
+
+    * Contains the synset "cart"
+    * Contains the synset "ready"
+    * Contains an hyponym of "waggon"
+    * Contains an hyponym of "wheeled_vehicle"
+    * Contains the noun "cart"
+    * Contains the adjective "ready"
+
+
+Sentence  8 :
+"Once the food , wine , and cart are ready , the waiter delivers it to the guest ? s room ."
+Task  6 :
+"Deliver to Guest's Room"
+Matching score: 0.674185463659148
+
+    Comon features: 
+
+    * Contains the synset "bear"
+    * Contains an hyponym of "bring_forth"
+    * Contains an hyponym of "create"
+    * Contains the verb "deliver"
+    * Contains the particle "to"
+    * Contains the action "deliver"
+    * The agent of verb "deliver" contains the noun "waiter"
+
+
+Sentence  2 :
+"She then submits an order ticket to the kitchen to begin preparing the food ."
+Task  7 :
+"Submit Order Ticket to Kitchen"
+Matching score: 0.26439232409381663
+
+    Comon features: 
+
+    * Contains the synset "submit"
+    * Contains the synset "kitchen"
+    * Contains an hyponym of "undergo"
+    * Contains an hyponym of "change"
+    * Contains an hyponym of "room"
+    * Contains an hyponym of "area"
+    * Contains the verb "submit"
+    * Contains the particle "to"
+    * Contains the noun "kitchen"
+    * Contains the particle "to"
+    * Contains the action "submit"
+
+
+Sentence  1 :
+"When a guest calls room service at The_Evanstonian , the room-service manager takes down the order ."
+Task  8 :
+"Take down Order"
+Matching score: 0.35130111524163565
+
+    Comon features: 
+
+    * Contains the synset "order"
+    * Contains an hyponym of "commercial_document"
+    * Contains an hyponym of "document"
+    * Contains the verb "take"
+    * Contains the noun "order"
+    * Contains the action "take"
+
+
+Sentence  5 :
+"Finally , she assigns the order to the waiter ."
+Task  9 :
+"Assign Order to Waiter"
+Matching score: 0.6105919003115264
+
+    Comon features: 
+
+    * Contains the synset "assign"
+    * Contains the synset "order"
+    * Contains the synset "server"
+    * Contains an hyponym of "apply"
+    * Contains an hyponym of "commercial_document"
+    * Contains an hyponym of "document"
+    * Contains an hyponym of "dining-room_attendant"
+    * Contains an hyponym of "employee"
+    * Contains the verb "assign"
+    * Contains the noun "order"
+    * Contains the particle "to"
+    * Contains the noun "waiter"
+    * Contains the action "assign"
+    * The direct object of verb "assign" is "order" (noun)
+    * The object of verb "assign" contains the noun "order"
+
+
+Sentence  3 :
+"She also gives an order to the sommelier ( i.e. , the wine waiter ) to fetch wine from the cellar and to prepare any other alcoholic beverages ."
+Task  10 :
+"Prepare Alcoholic Beverages"
+Matching score: 0.18727915194346292
+
+    Comon features: 
+
+    * Contains the synset "cook"
+    * Contains an hyponym of "create_from_raw_material"
+    * Contains an hyponym of "create"
+    * Contains the verb "prepare"
+    * Contains the action "prepare"
+
+
+Sentence  3 :
+"She also gives an order to the sommelier ( i.e. , the wine waiter ) to fetch wine from the cellar and to prepare any other alcoholic beverages ."
+Task  11 :
+"Give Order to Sommelier"
+Matching score: 0.6105919003115265
+
+    Comon features: 
+
+    * Contains the synset "generate"
+    * Contains the synset "order"
+    * Contains the synset "sommelier"
+    * Contains an hyponym of "create"
+    * Contains an hyponym of "commercial_document"
+    * Contains an hyponym of "document"
+    * Contains an hyponym of "server"
+    * Contains an hyponym of "dining-room_attendant"
+    * Contains an hyponym of "dining-room_attendant"
+    * Contains the verb "give"
+    * Contains the noun "order"
+    * Contains the particle "to"
+    * Contains the noun "sommelier"
+    * Contains the particle "to"
+    * Contains the particle "to"
+    * Contains the action "give"
+    * The direct object of verb "give" is "order" (noun)
+    * The object of verb "give" contains the noun "order"
+
+
+
+========================
+Tasks with no good match
+========================
+Task  0 :
+"Prepare Non-Alcoholic Drinks"
+Task  4 :
+"Debit Guest's Account"
+

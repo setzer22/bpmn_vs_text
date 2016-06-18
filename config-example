@@ -1,0 +1,6 @@
+{"hiperonimy-chain-length"    3
+ "hiperonimy-multiplier"      0.8
+ "feature-weight-overrides"   {"has-lemma" 1.2345, "has-synset" 0.0123}
+ "feature-explain-overrides"  {"has-lemma" "TEST", "has-synset" "TEST2"}
+ "threshold-strength"         1.0
+ "similarity-function"        "jaccard"}

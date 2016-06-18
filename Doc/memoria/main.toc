@@ -1,0 +1,227 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {catalan}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}}{6}{chapter.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}Contextualitzaci\IeC {\'o}}{6}{section.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1.1}Business Process Management}{6}{subsection.1.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1.2}Natural Language Processing}{6}{subsection.1.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1.3}Descripcions textuals i models de processos}{7}{subsection.1.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Representaci\IeC {\'o} dual}{7}{section*.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1.4}La notaci\IeC {\'o} BPMN}{9}{subsection.1.1.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Tasques}{9}{section*.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Sequence Flows}{10}{section*.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Events}{10}{section*.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Gateways}{10}{section*.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Pools i swimlanes}{11}{section*.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Message flows}{12}{section*.11}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}Estat de l'art}{12}{section.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2.1}Business Process Management}{12}{subsection.1.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2.2}Natural Language Processing}{14}{subsection.1.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2.3}Comparaci\IeC {\'o} de descripcions textuals i models formals de processos}{15}{subsection.1.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.3}El problema}{15}{section.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.4}Abast}{16}{section.1.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.4.1}Producte Esperat}{16}{subsection.1.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.4.2}Obstacles}{17}{subsection.1.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.5}El projecte NLP4BPM}{18}{section.1.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Enfoc}{20}{chapter.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Estructura general de l'algorisme}{20}{section.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Dades d'entrada}{21}{section.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Extracci\IeC {\'o} de caracter\IeC {\'\i }stiques}{21}{section.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.4}C\IeC {\`a}lcul de similaritat}{22}{section.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.5}C\IeC {\`a}lcul d'ordre}{23}{section.2.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.5.1}Al text}{23}{subsection.2.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.5.2}Al model}{24}{subsection.2.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.6}C\IeC {\`a}lcul de la correspond\IeC {\`e}ncia \IeC {\`o}ptima}{25}{section.2.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Implementaci\IeC {\'o}}{27}{chapter.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Estructura general de l'algorisme}{27}{section.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Preprocessat de les dades d'entrada}{27}{section.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.1}El text analitzat}{27}{subsection.3.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.2}El model BPMN}{29}{subsection.3.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Extracci\IeC {\'o} de caracter\IeC {\'\i }stiques}{29}{section.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.4}C\IeC {\`a}lcul de la similaritat}{31}{section.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.5}Ordenaci\IeC {\'o} de models i textos}{31}{section.3.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.5.1}Al model}{31}{subsection.3.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.6}C\IeC {\`a}lcul de la correspond\IeC {\`e}ncia \IeC {\`o}ptima}{32}{section.3.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.6.1}Reducci\IeC {\'o} a LAP}{33}{subsection.3.6.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.6.2}Constraint Programming}{33}{subsection.3.6.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.6.3}Integer Linear Programming}{34}{subsection.3.6.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.7}Mostra dels resultats}{35}{section.3.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.8}Llenguatge de programaci\IeC {\'o}}{35}{section.3.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Avaluaci\IeC {\'o} dels resultats}{37}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Avaluaci\IeC {\'o} autom\IeC {\`a}tica d'un conjunt de models per a un text}{37}{section.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.1}Plantejament}{37}{subsection.4.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.2}Metodologia}{37}{subsection.4.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.3}Resultats}{38}{subsection.4.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.4}Conclusions}{39}{subsection.4.1.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Aparellament de models i textos}{39}{section.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.1}Plantejament}{39}{subsection.4.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.2}Metodologia}{40}{subsection.4.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.3}Resultats}{40}{subsection.4.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.4}Conclusions}{42}{subsection.4.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}Efectes de la introducci\IeC {\'o} d'inconsist\IeC {\`e}ncies}{42}{section.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.1}Plantejament}{42}{subsection.4.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.2}Metodologia}{42}{subsection.4.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.3}Resultats}{43}{subsection.4.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.4}Conclusions}{47}{subsection.4.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Gesti\IeC {\'o} del projecte}{49}{chapter.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}Planificaci\IeC {\'o} temporal}{49}{section.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.1}Descripci\IeC {\'o} de les tasques}{49}{subsection.5.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Disseny de l'algorisme}{49}{section*.12}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Configuraci\IeC {\'o} del sistema i l'entorn de programaci\IeC {\'o}}{49}{section*.13}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Implementaci\IeC {\'o} de l'algorisme}{50}{section*.14}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Experimentaci\IeC {\'o}}{50}{section*.15}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Documentaci\IeC {\'o}}{51}{section*.16}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.2}Taula de temps}{51}{subsection.5.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Canvis en la planificaci\IeC {\'o} de tasques}{51}{section*.17}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.3}Recursos utilitzats}{52}{subsection.5.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Recursos de Hardware}{52}{section*.18}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Recursos de Software}{52}{section*.19}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.4}Diagrama de Gantt}{52}{subsection.5.1.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.5}Pla d'acci\IeC {\'o} inicial i desviacions}{55}{subsection.5.1.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.2}Pressupost}{55}{section.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.1}Recursos humans}{56}{subsection.5.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.2}Recursos de hardware}{56}{subsection.5.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.3}Recursos de software}{57}{subsection.5.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.4}Despeses indirectes}{57}{subsection.5.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.5}Pressupost total}{58}{subsection.5.2.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.6}Control de gesti\IeC {\'o}}{58}{subsection.5.2.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.3}Informe de sostenibilitat}{58}{section.5.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.1}Matriu de sostenibilitat}{58}{subsection.5.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Dimensi\IeC {\'o} ambiental}{59}{section*.20}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Dimensi\IeC {\'o} econ\IeC {\`o}mica}{59}{section*.21}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Dimensi\IeC {\'o} social}{60}{section*.22}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.4}Metodologia i rigor}{61}{section.5.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.4.1}Metodologia de treball}{61}{subsection.5.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.4.2}Eines de seguiment}{61}{subsection.5.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.4.3}M\IeC {\`e}tode de validaci\IeC {\'o}}{62}{subsection.5.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.5}Integraci\IeC {\'o} de coneixements}{62}{section.5.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.6}Lleis i regulacions}{63}{section.5.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Conclusions}{64}{chapter.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Parelles Model-Text utilitzades als experiments}{68}{appendix.A}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.1}Credit Scoring \texttt {[CRED]} }{69}{section.A.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.2}Self Service Restaurant \texttt {[REST]}}{70}{section.A.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.3}Dispatch of Goods \texttt {[DISP]}}{71}{section.A.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.4}Recourse \texttt {[RECO]}}{72}{section.A.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.5}Bicycle Manufacturer \texttt {[BICL]}}{73}{section.A.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.6}Computer Repair Shop \texttt {[COMP]}}{74}{section.A.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.7}Hotel \texttt {[HOTL]}}{75}{section.A.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.8}Underwriter \texttt {[UNWR]}}{76}{section.A.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.9}Hospital \texttt {[HOSP]}}{77}{section.A.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.10}Zoo \texttt {[ZOO]}}{78}{section.A.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {B}Traces d'execuci\IeC {\'o}}{89}{appendix.B}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.1}Bicycle Manufacturer (BPMN vs Text)}{90}{section.B.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.2}Dispatch of Goods (BPMN vs Text)}{94}{section.B.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.3}Hotel (BPMN vs Text)}{98}{section.B.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.4}Zoo (BPMN vs Text)}{104}{section.B.4}

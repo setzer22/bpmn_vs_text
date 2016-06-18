@@ -1,0 +1,884 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<definitions xmlns:omgdi='http://www.omg.org/spec/DD/20100524/DI' targetNamespace='http://www.signavio.com' exporterVersion='9.3.2' exporter='Signavio Process Editor, http://www.signavio.com' typeLanguage='http://www.w3.org/2001/XMLSchema' expressionLanguage='http://www.w3.org/TR/XPath' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns='http://www.omg.org/spec/BPMN/20100524/MODEL' xsi:schemaLocation='http://www.omg.org/spec/BPMN/20100524/MODEL http://www.omg.org/spec/BPMN/2.0/20100501/BPMN20.xsd' id='sid-a6d10c44-f721-408f-b767-eff310c7909c' xmlns:bpmndi='http://www.omg.org/spec/BPMN/20100524/DI' xmlns:omgdc='http://www.omg.org/spec/DD/20100524/DC' xmlns:signavio='http://www.signavio.com'>
+<collaboration id='sid-dc4ac6b2-e76b-438d-a8de-90122754e595'>
+<participant processRef='sid-90F690C9-4695-476E-BF63-DC9CCBF5F07F' name='Guest' id='sid-9875BC3D-DF47-402F-88BB-368C054C4600'>
+</participant>
+<participant processRef='sid-B04A1059-8618-4812-93FF-19A362572535' name='Employee' id='sid-767B5706-A020-48F0-BBA8-A1EEBEE78A81'>
+</participant>
+<participant processRef='sid-E7FA3FEB-5A8A-478C-8562-CE720F565595' name='CHEF' id='sid-AD5ED2A3-79E0-4D57-A58E-F63F5959ECF3'>
+</participant>
+<messageFlow targetRef='sid-07112A98-E9B7-4802-9E44-3AFEA22A4572' sourceRef='sid-33105BC1-593E-478D-B39F-879771B8F083' name='' id='sid-05858106-5553-44C1-A582-D01DFE61E876'>
+</messageFlow>
+<messageFlow targetRef='sid-C52A07AF-27C1-4D1D-AEF0-07DFBD6368C4' sourceRef='sid-44EFBFF6-BAA4-407D-BB78-1E68ED10B46A' name='' id='sid-0607BBB4-466A-4218-A5E8-AE66EEB15004'>
+</messageFlow>
+<messageFlow targetRef='sid-A1EAF847-2A42-4A94-874C-E8A4525B6339' sourceRef='sid-3161ABAC-359E-4A61-B56B-7DF4D9DB733D' name='' id='sid-FB9FD0EB-A457-48A2-9535-9B57C5D5D03A'>
+</messageFlow>
+<messageFlow targetRef='sid-A7C8E76E-522F-49F2-80C5-DBC18BD7ECFE' sourceRef='sid-FB7D69F6-779F-4755-B954-85979970AE7B' name='' id='sid-83001BB8-E2CC-46AE-BC5B-5F3BF29B6A89'>
+</messageFlow>
+<messageFlow targetRef='sid-0EE0367F-BC57-4551-897C-3A81411E6E9A' sourceRef='sid-793944ED-7A35-40BA-8B73-9D80C0DF458D' name='' id='sid-BE334BA9-A134-4B60-8422-9208A67ED5E1'>
+</messageFlow>
+<messageFlow targetRef='sid-DA163419-DB7E-4A95-87B4-9932EE34DCA4' sourceRef='sid-5CD986F6-0690-47B0-8D02-3084F6D03359' name='' id='sid-10D4ACFF-CDE6-4CCB-A004-D64C6E410D11'>
+</messageFlow>
+</collaboration>
+<process processType='None' name='Guest' isExecutable='false' isClosed='false' id='sid-90F690C9-4695-476E-BF63-DC9CCBF5F07F'>
+<laneSet id='sid-81a8a093-8f65-40ad-88a7-78768823844a'>
+<lane id='sid-641BC65B-DFE1-4E61-9B24-ECE30AE301D1'>
+<flowNodeRef>
+sid-894D8E57-84ED-4A0B-BE0A-AF53C5CB5173
+</flowNodeRef>
+<flowNodeRef>
+sid-356AB71A-D5E3-4A70-B1C2-5248D5DA301A
+</flowNodeRef>
+<flowNodeRef>
+sid-40E1C982-D329-41DD-860F-DF9DA0C52349
+</flowNodeRef>
+<flowNodeRef>
+sid-FB7D69F6-779F-4755-B954-85979970AE7B
+</flowNodeRef>
+<flowNodeRef>
+sid-DA163419-DB7E-4A95-87B4-9932EE34DCA4
+</flowNodeRef>
+<flowNodeRef>
+sid-F73B9BD3-C7BC-418D-804B-043B68254074
+</flowNodeRef>
+<flowNodeRef>
+sid-E1EB96CD-37FF-433E-B25C-CAB94DDDD3DD
+</flowNodeRef>
+<flowNodeRef>
+sid-07112A98-E9B7-4802-9E44-3AFEA22A4572
+</flowNodeRef>
+<flowNodeRef>
+sid-793944ED-7A35-40BA-8B73-9D80C0DF458D
+</flowNodeRef>
+</lane>
+</laneSet>
+<startEvent name='Hunger
+noticed' id='sid-894D8E57-84ED-4A0B-BE0A-AF53C5CB5173'>
+<outgoing>
+sid-D5E1497C-CE16-4388-9605-E39AD62E1D51
+</outgoing>
+</startEvent>
+<task startQuantity='1' name='choose a dish' isForCompensation='false' id='sid-356AB71A-D5E3-4A70-B1C2-5248D5DA301A' completionQuantity='1'>
+<incoming>
+sid-D5E1497C-CE16-4388-9605-E39AD62E1D51
+</incoming>
+<outgoing>
+sid-788D8760-8AE6-4E07-90F9-BFB74675D2B6
+</outgoing>
+</task>
+<task startQuantity='1' name='waiting for his turn' isForCompensation='false' id='sid-40E1C982-D329-41DD-860F-DF9DA0C52349' completionQuantity='1'>
+<incoming>
+sid-788D8760-8AE6-4E07-90F9-BFB74675D2B6
+</incoming>
+<outgoing>
+sid-2AFC5E83-5149-48EA-9512-BE05239D7F8A
+</outgoing>
+</task>
+<task startQuantity='1' name='payment for a dish' isForCompensation='false' id='sid-FB7D69F6-779F-4755-B954-85979970AE7B' completionQuantity='1'>
+<incoming>
+sid-DFA3E93F-290E-4B1F-9234-FE273A9CE2C6
+</incoming>
+<outgoing>
+sid-CFEE9FEB-5F3B-47B5-A059-2B9F414872CB
+</outgoing>
+</task>
+<task startQuantity='1' name='picking up a dish' isForCompensation='false' id='sid-DA163419-DB7E-4A95-87B4-9932EE34DCA4' completionQuantity='1'>
+<incoming>
+sid-B46BBF59-2DD9-4423-A9A0-063B9A0F1CA1
+</incoming>
+<outgoing>
+sid-0D5FF610-7605-44C9-9471-BFD3CBC8DB3C
+</outgoing>
+</task>
+<task startQuantity='1' name='eat a dish' isForCompensation='false' id='sid-F73B9BD3-C7BC-418D-804B-043B68254074' completionQuantity='1'>
+<incoming>
+sid-0D5FF610-7605-44C9-9471-BFD3CBC8DB3C
+</incoming>
+<outgoing>
+sid-E7C329C4-F38F-473E-9A9C-C9DC9E118D20
+</outgoing>
+</task>
+<endEvent name='Hunger satisfied' id='sid-E1EB96CD-37FF-433E-B25C-CAB94DDDD3DD'>
+<incoming>
+sid-E7C329C4-F38F-473E-9A9C-C9DC9E118D20
+</incoming>
+</endEvent>
+<intermediateCatchEvent name='information from
+a buzzer about ready dish' id='sid-07112A98-E9B7-4802-9E44-3AFEA22A4572'>
+<incoming>
+sid-CFEE9FEB-5F3B-47B5-A059-2B9F414872CB
+</incoming>
+<outgoing>
+sid-B46BBF59-2DD9-4423-A9A0-063B9A0F1CA1
+</outgoing>
+<messageEventDefinition id='sid-68f212e2-36c5-41d4-b18e-b5410ed30d00'>
+</messageEventDefinition>
+</intermediateCatchEvent>
+<task startQuantity='1' name='order' isForCompensation='false' id='sid-793944ED-7A35-40BA-8B73-9D80C0DF458D' completionQuantity='1'>
+<incoming>
+sid-2AFC5E83-5149-48EA-9512-BE05239D7F8A
+</incoming>
+<outgoing>
+sid-DFA3E93F-290E-4B1F-9234-FE273A9CE2C6
+</outgoing>
+</task>
+<sequenceFlow targetRef='sid-356AB71A-D5E3-4A70-B1C2-5248D5DA301A' sourceRef='sid-894D8E57-84ED-4A0B-BE0A-AF53C5CB5173' name='' id='sid-D5E1497C-CE16-4388-9605-E39AD62E1D51'>
+</sequenceFlow>
+<sequenceFlow targetRef='sid-40E1C982-D329-41DD-860F-DF9DA0C52349' sourceRef='sid-356AB71A-D5E3-4A70-B1C2-5248D5DA301A' name='' id='sid-788D8760-8AE6-4E07-90F9-BFB74675D2B6'>
+</sequenceFlow>
+<sequenceFlow targetRef='sid-793944ED-7A35-40BA-8B73-9D80C0DF458D' sourceRef='sid-40E1C982-D329-41DD-860F-DF9DA0C52349' name='' id='sid-2AFC5E83-5149-48EA-9512-BE05239D7F8A'>
+</sequenceFlow>
+<sequenceFlow targetRef='sid-F73B9BD3-C7BC-418D-804B-043B68254074' sourceRef='sid-DA163419-DB7E-4A95-87B4-9932EE34DCA4' name='' id='sid-0D5FF610-7605-44C9-9471-BFD3CBC8DB3C'>
+</sequenceFlow>
+<sequenceFlow targetRef='sid-E1EB96CD-37FF-433E-B25C-CAB94DDDD3DD' sourceRef='sid-F73B9BD3-C7BC-418D-804B-043B68254074' name='' id='sid-E7C329C4-F38F-473E-9A9C-C9DC9E118D20'>
+</sequenceFlow>
+<sequenceFlow targetRef='sid-DA163419-DB7E-4A95-87B4-9932EE34DCA4' sourceRef='sid-07112A98-E9B7-4802-9E44-3AFEA22A4572' name='' id='sid-B46BBF59-2DD9-4423-A9A0-063B9A0F1CA1'>
+</sequenceFlow>
+<sequenceFlow targetRef='sid-07112A98-E9B7-4802-9E44-3AFEA22A4572' sourceRef='sid-FB7D69F6-779F-4755-B954-85979970AE7B' name='' id='sid-CFEE9FEB-5F3B-47B5-A059-2B9F414872CB'>
+</sequenceFlow>
+<sequenceFlow targetRef='sid-FB7D69F6-779F-4755-B954-85979970AE7B' sourceRef='sid-793944ED-7A35-40BA-8B73-9D80C0DF458D' name='' id='sid-DFA3E93F-290E-4B1F-9234-FE273A9CE2C6'>
+</sequenceFlow>
+</process>
+<process processType='None' name='Employee' isExecutable='false' isClosed='false' id='sid-B04A1059-8618-4812-93FF-19A362572535'>
+<laneSet id='sid-4b671ee5-82e1-4387-b4da-6a9bad070f5e'>
+<lane id='sid-AE448AEB-5B39-4E0E-A803-0F7762EB7B14'>
+<flowNodeRef>
+sid-3161ABAC-359E-4A61-B56B-7DF4D9DB733D
+</flowNodeRef>
+<flowNodeRef>
+sid-A7C8E76E-522F-49F2-80C5-DBC18BD7ECFE
+</flowNodeRef>
+<flowNodeRef>
+sid-408C0C68-4CBC-4378-BBC7-4183C17B52C8
+</flowNodeRef>
+<flowNodeRef>
+sid-33105BC1-593E-478D-B39F-879771B8F083
+</flowNodeRef>
+<flowNodeRef>
+sid-522F7CD2-4AB0-4FBA-85FE-00795F11A3B5
+</flowNodeRef>
+<flowNodeRef>
+sid-444081DB-53FA-4CA2-80D5-D3C07019584A
+</flowNodeRef>
+<flowNodeRef>
+sid-D8C2DB27-5101-44F0-9BA5-D03BD1C29BCD
+</flowNodeRef>
+<flowNodeRef>
+sid-1C0359E8-140D-49A7-B4F4-FCBD82F8D6EC
+</flowNodeRef>
+<flowNodeRef>
+sid-0EE0367F-BC57-4551-897C-3A81411E6E9A
+</flowNodeRef>
+<flowNodeRef>
+sid-C52A07AF-27C1-4D1D-AEF0-07DFBD6368C4
+</flowNodeRef>
+<flowNodeRef>
+sid-5CD986F6-0690-47B0-8D02-3084F6D03359
+</flowNodeRef>
+</lane>
+</laneSet>
+<task startQuantity='1' name='entering information about order into POS' isForCompensation='false' id='sid-3161ABAC-359E-4A61-B56B-7DF4D9DB733D' completionQuantity='1'>
+<incoming>
+sid-08001465-1E89-4EFC-B508-EC2296C3D200
+</incoming>
+<outgoing>
+sid-3D592DCF-893B-4719-B283-E87C8979FABC
+</outgoing>
+</task>
+<task startQuantity='1' name='collecting money for a dish' isForCompensation='false' id='sid-A7C8E76E-522F-49F2-80C5-DBC18BD7ECFE' completionQuantity='1'>
+<incoming>
+sid-3D592DCF-893B-4719-B283-E87C8979FABC
+</incoming>
+<outgoing>
+sid-637CE260-F3C8-4DF0-9D90-911C1573F7F7
+</outgoing>
+</task>
+<task startQuantity='1' name='setting a buzzer' isForCompensation='false' id='sid-408C0C68-4CBC-4378-BBC7-4183C17B52C8' completionQuantity='1'>
+<incoming>
+sid-637CE260-F3C8-4DF0-9D90-911C1573F7F7
+</incoming>
+<outgoing>
+sid-9A885588-2DAB-4AAE-BFE3-8F60A0F80F2B
+</outgoing>
+</task>
+<task startQuantity='1' name='setting off guest buzzer' isForCompensation='false' id='sid-33105BC1-593E-478D-B39F-879771B8F083' completionQuantity='1'>
+<incoming>
+sid-8D322A64-8F64-46D6-BC12-B22904DD07EC
+</incoming>
+<outgoing>
+sid-11AA77E8-8770-4E6B-8473-97B94CC606DA
+</outgoing>
+</task>
+<intermediateCatchEvent name='5 minutes
+ waiting for a client' id='sid-522F7CD2-4AB0-4FBA-85FE-00795F11A3B5'>
+<incoming>
+sid-36963E6A-44AD-414C-A049-1ADBE50BD6D8
+</incoming>
+<outgoing>
+sid-C39EE858-67F4-440B-9297-99A739FEC917
+</outgoing>
+<timerEventDefinition id='sid-de9e01dc-07e0-4940-8a36-fa6dce72db07'>
+</timerEventDefinition>
+</intermediateCatchEvent>
+<task startQuantity='1' name='call for a client' isForCompensation='false' id='sid-444081DB-53FA-4CA2-80D5-D3C07019584A' completionQuantity='1'>
+<incoming>
+sid-C39EE858-67F4-440B-9297-99A739FEC917
+</incoming>
+<outgoing>
+sid-CE8977A0-49E4-4EC7-AFE9-3B620A953BEF
+</outgoing>
+</task>
+<exclusiveGateway name='client is there 
+to pick up
+ a dish?' id='sid-D8C2DB27-5101-44F0-9BA5-D03BD1C29BCD' gatewayDirection='Mixed'>
+<incoming>
+sid-11AA77E8-8770-4E6B-8473-97B94CC606DA
+</incoming>
+<incoming>
+sid-CE8977A0-49E4-4EC7-AFE9-3B620A953BEF
+</incoming>
+<outgoing>
+sid-24AD0D11-B50D-44AB-BB7F-7A2CF56092B9
+</outgoing>
+<outgoing>
+sid-36963E6A-44AD-414C-A049-1ADBE50BD6D8
+</outgoing>
+</exclusiveGateway>
+<endEvent name='dish served' id='sid-1C0359E8-140D-49A7-B4F4-FCBD82F8D6EC'>
+<incoming>
+sid-2FBBD798-8711-44F5-98C4-63C5A6B9B43E
+</incoming>
+</endEvent>
+<intermediateCatchEvent name='order received' id='sid-0EE0367F-BC57-4551-897C-3A81411E6E9A'>
+<outgoing>
+sid-08001465-1E89-4EFC-B508-EC2296C3D200
+</outgoing>
+<messageEventDefinition id='sid-89b081a6-800d-4208-b004-446b7d7fdebf'>
+</messageEventDefinition>
+</intermediateCatchEvent>
+<intermediateCatchEvent name='information about 
+readyness of dish' id='sid-C52A07AF-27C1-4D1D-AEF0-07DFBD6368C4'>
+<incoming>
+sid-9A885588-2DAB-4AAE-BFE3-8F60A0F80F2B
+</incoming>
+<outgoing>
+sid-8D322A64-8F64-46D6-BC12-B22904DD07EC
+</outgoing>
+<messageEventDefinition id='sid-9fb78231-c7e9-4970-ae53-a2b5f456643f'>
+</messageEventDefinition>
+</intermediateCatchEvent>
+<task startQuantity='1' name='give dish away' isForCompensation='false' id='sid-5CD986F6-0690-47B0-8D02-3084F6D03359' completionQuantity='1'>
+<incoming>
+sid-24AD0D11-B50D-44AB-BB7F-7A2CF56092B9
+</incoming>
+<outgoing>
+sid-2FBBD798-8711-44F5-98C4-63C5A6B9B43E
+</outgoing>
+</task>
+<sequenceFlow targetRef='sid-A7C8E76E-522F-49F2-80C5-DBC18BD7ECFE' sourceRef='sid-3161ABAC-359E-4A61-B56B-7DF4D9DB733D' name='' id='sid-3D592DCF-893B-4719-B283-E87C8979FABC'>
+</sequenceFlow>
+<sequenceFlow targetRef='sid-408C0C68-4CBC-4378-BBC7-4183C17B52C8' sourceRef='sid-A7C8E76E-522F-49F2-80C5-DBC18BD7ECFE' name='' id='sid-637CE260-F3C8-4DF0-9D90-911C1573F7F7'>
+</sequenceFlow>
+<sequenceFlow targetRef='sid-444081DB-53FA-4CA2-80D5-D3C07019584A' sourceRef='sid-522F7CD2-4AB0-4FBA-85FE-00795F11A3B5' name='' id='sid-C39EE858-67F4-440B-9297-99A739FEC917'>
+</sequenceFlow>
+<sequenceFlow targetRef='sid-D8C2DB27-5101-44F0-9BA5-D03BD1C29BCD' sourceRef='sid-33105BC1-593E-478D-B39F-879771B8F083' name='' id='sid-11AA77E8-8770-4E6B-8473-97B94CC606DA'>
+</sequenceFlow>
+<sequenceFlow targetRef='sid-D8C2DB27-5101-44F0-9BA5-D03BD1C29BCD' sourceRef='sid-444081DB-53FA-4CA2-80D5-D3C07019584A' name='' id='sid-CE8977A0-49E4-4EC7-AFE9-3B620A953BEF'>
+</sequenceFlow>
+<sequenceFlow targetRef='sid-3161ABAC-359E-4A61-B56B-7DF4D9DB733D' sourceRef='sid-0EE0367F-BC57-4551-897C-3A81411E6E9A' name='' id='sid-08001465-1E89-4EFC-B508-EC2296C3D200'>
+</sequenceFlow>
+<sequenceFlow targetRef='sid-33105BC1-593E-478D-B39F-879771B8F083' sourceRef='sid-C52A07AF-27C1-4D1D-AEF0-07DFBD6368C4' name='' id='sid-8D322A64-8F64-46D6-BC12-B22904DD07EC'>
+</sequenceFlow>
+<sequenceFlow targetRef='sid-C52A07AF-27C1-4D1D-AEF0-07DFBD6368C4' sourceRef='sid-408C0C68-4CBC-4378-BBC7-4183C17B52C8' name='' id='sid-9A885588-2DAB-4AAE-BFE3-8F60A0F80F2B'>
+</sequenceFlow>
+<sequenceFlow targetRef='sid-5CD986F6-0690-47B0-8D02-3084F6D03359' sourceRef='sid-D8C2DB27-5101-44F0-9BA5-D03BD1C29BCD' name='' id='sid-24AD0D11-B50D-44AB-BB7F-7A2CF56092B9'>
+</sequenceFlow>
+<sequenceFlow targetRef='sid-1C0359E8-140D-49A7-B4F4-FCBD82F8D6EC' sourceRef='sid-5CD986F6-0690-47B0-8D02-3084F6D03359' name='' id='sid-2FBBD798-8711-44F5-98C4-63C5A6B9B43E'>
+</sequenceFlow>
+<sequenceFlow targetRef='sid-522F7CD2-4AB0-4FBA-85FE-00795F11A3B5' sourceRef='sid-D8C2DB27-5101-44F0-9BA5-D03BD1C29BCD' name='NO' id='sid-36963E6A-44AD-414C-A049-1ADBE50BD6D8'>
+</sequenceFlow>
+</process>
+<process processType='None' name='CHEF' isExecutable='false' isClosed='false' id='sid-E7FA3FEB-5A8A-478C-8562-CE720F565595'>
+<laneSet id='sid-2efc8685-4f3d-41aa-8927-9172681326ea'>
+<lane id='sid-062296E3-E705-4BDC-BB21-A2675EE9D977'>
+<flowNodeRef>
+sid-5CE2D382-4C45-4A33-ADE2-743106406E18
+</flowNodeRef>
+<flowNodeRef>
+sid-9E5E5E95-2522-41D1-9645-155637C5BB83
+</flowNodeRef>
+<flowNodeRef>
+sid-44EFBFF6-BAA4-407D-BB78-1E68ED10B46A
+</flowNodeRef>
+<flowNodeRef>
+sid-3FF56543-6154-4215-A031-C1C2CA7C2A66
+</flowNodeRef>
+<flowNodeRef>
+sid-002547A2-CF7C-496D-A4FB-A704FB9591E7
+</flowNodeRef>
+<flowNodeRef>
+sid-68637D4D-010A-4104-AD17-A05F922EB06C
+</flowNodeRef>
+<flowNodeRef>
+sid-A1EAF847-2A42-4A94-874C-E8A4525B6339
+</flowNodeRef>
+</lane>
+</laneSet>
+<task startQuantity='1' name='preparing a dish' isForCompensation='false' id='sid-5CE2D382-4C45-4A33-ADE2-743106406E18' completionQuantity='1'>
+<incoming>
+sid-209D7654-A09B-478D-A753-E35E8A59BAA6
+</incoming>
+<outgoing>
+sid-42D232DF-10E3-4E7B-AB89-AFB06F483493
+</outgoing>
+</task>
+<parallelGateway name='' id='sid-9E5E5E95-2522-41D1-9645-155637C5BB83' gatewayDirection='Diverging'>
+<incoming>
+sid-42D232DF-10E3-4E7B-AB89-AFB06F483493
+</incoming>
+<outgoing>
+sid-22C10CDD-266E-42BF-B001-EEB5CF87B86B
+</outgoing>
+<outgoing>
+sid-20EE3B86-745D-47F1-A6B2-D3116DF7D7C7
+</outgoing>
+</parallelGateway>
+<task startQuantity='1' name='information about finished meal in a hatch' isForCompensation='false' id='sid-44EFBFF6-BAA4-407D-BB78-1E68ED10B46A' completionQuantity='1'>
+<incoming>
+sid-22C10CDD-266E-42BF-B001-EEB5CF87B86B
+</incoming>
+<outgoing>
+sid-EAE6D39C-24CE-4519-8A1B-52C90DDF6F88
+</outgoing>
+</task>
+<task startQuantity='1' name='placing a dish in the service hatch' isForCompensation='false' id='sid-3FF56543-6154-4215-A031-C1C2CA7C2A66' completionQuantity='1'>
+<incoming>
+sid-20EE3B86-745D-47F1-A6B2-D3116DF7D7C7
+</incoming>
+<outgoing>
+sid-2A9FFBF1-0E68-4B03-9CB3-7B6FFB749A52
+</outgoing>
+</task>
+<endEvent name='meal is done and served' id='sid-002547A2-CF7C-496D-A4FB-A704FB9591E7'>
+<incoming>
+sid-1D89F887-C38C-43A1-8341-847CCA299BC9
+</incoming>
+</endEvent>
+<parallelGateway name='' id='sid-68637D4D-010A-4104-AD17-A05F922EB06C' gatewayDirection='Converging'>
+<incoming>
+sid-EAE6D39C-24CE-4519-8A1B-52C90DDF6F88
+</incoming>
+<incoming>
+sid-2A9FFBF1-0E68-4B03-9CB3-7B6FFB749A52
+</incoming>
+<outgoing>
+sid-1D89F887-C38C-43A1-8341-847CCA299BC9
+</outgoing>
+</parallelGateway>
+<intermediateCatchEvent name='information what 
+dish must be 
+prepared' id='sid-A1EAF847-2A42-4A94-874C-E8A4525B6339'>
+<outgoing>
+sid-209D7654-A09B-478D-A753-E35E8A59BAA6
+</outgoing>
+<messageEventDefinition id='sid-48f50ede-f6ce-401e-ba66-a7ef700935fa'>
+</messageEventDefinition>
+</intermediateCatchEvent>
+<sequenceFlow targetRef='sid-9E5E5E95-2522-41D1-9645-155637C5BB83' sourceRef='sid-5CE2D382-4C45-4A33-ADE2-743106406E18' name='' id='sid-42D232DF-10E3-4E7B-AB89-AFB06F483493'>
+</sequenceFlow>
+<sequenceFlow targetRef='sid-44EFBFF6-BAA4-407D-BB78-1E68ED10B46A' sourceRef='sid-9E5E5E95-2522-41D1-9645-155637C5BB83' name='' id='sid-22C10CDD-266E-42BF-B001-EEB5CF87B86B'>
+</sequenceFlow>
+<sequenceFlow targetRef='sid-3FF56543-6154-4215-A031-C1C2CA7C2A66' sourceRef='sid-9E5E5E95-2522-41D1-9645-155637C5BB83' name='' id='sid-20EE3B86-745D-47F1-A6B2-D3116DF7D7C7'>
+</sequenceFlow>
+<sequenceFlow targetRef='sid-002547A2-CF7C-496D-A4FB-A704FB9591E7' sourceRef='sid-68637D4D-010A-4104-AD17-A05F922EB06C' name='' id='sid-1D89F887-C38C-43A1-8341-847CCA299BC9'>
+</sequenceFlow>
+<sequenceFlow targetRef='sid-68637D4D-010A-4104-AD17-A05F922EB06C' sourceRef='sid-44EFBFF6-BAA4-407D-BB78-1E68ED10B46A' name='' id='sid-EAE6D39C-24CE-4519-8A1B-52C90DDF6F88'>
+</sequenceFlow>
+<sequenceFlow targetRef='sid-68637D4D-010A-4104-AD17-A05F922EB06C' sourceRef='sid-3FF56543-6154-4215-A031-C1C2CA7C2A66' name='' id='sid-2A9FFBF1-0E68-4B03-9CB3-7B6FFB749A52'>
+</sequenceFlow>
+<sequenceFlow targetRef='sid-5CE2D382-4C45-4A33-ADE2-743106406E18' sourceRef='sid-A1EAF847-2A42-4A94-874C-E8A4525B6339' name='' id='sid-209D7654-A09B-478D-A753-E35E8A59BAA6'>
+</sequenceFlow>
+</process>
+<bpmndi:BPMNDiagram id='sid-bfeb7dd6-179f-4b8f-8702-5973b7d6e065'>
+<bpmndi:BPMNPlane id='sid-f551b6e8-c475-4044-b06d-d88307811d91' bpmnElement='sid-dc4ac6b2-e76b-438d-a8de-90122754e595'>
+<bpmndi:BPMNShape isHorizontal='true' id='sid-9875BC3D-DF47-402F-88BB-368C054C4600_gui' bpmnElement='sid-9875BC3D-DF47-402F-88BB-368C054C4600'>
+<omgdc:Bounds y='39.93000221341265' x='39.93000221341265' width='1352.0150416859383' height='250.0'>
+</omgdc:Bounds>
+<bpmndi:BPMNLabel labelStyle='sid-8d1d937e-db46-49dc-a56c-d6ae21270242'>
+<omgdc:Bounds y='148.7300014504732' x='44.93000221341265' width='12.0' height='32.400001525878906'>
+</omgdc:Bounds>
+</bpmndi:BPMNLabel>
+</bpmndi:BPMNShape>
+<bpmndi:BPMNShape isHorizontal='true' id='sid-767B5706-A020-48F0-BBA8-A1EEBEE78A81_gui' bpmnElement='sid-767B5706-A020-48F0-BBA8-A1EEBEE78A81'>
+<omgdc:Bounds y='334.93000221341265' x='39.93000221341265' width='1352.0150416859383' height='250.0'>
+</omgdc:Bounds>
+<bpmndi:BPMNLabel labelStyle='sid-8d1d937e-db46-49dc-a56c-d6ae21270242'>
+<omgdc:Bounds y='434.0871448525728' x='44.93000221341264' width='12.000000000000007' height='51.68571472167969'>
+</omgdc:Bounds>
+</bpmndi:BPMNLabel>
+</bpmndi:BPMNShape>
+<bpmndi:BPMNShape isHorizontal='true' id='sid-AD5ED2A3-79E0-4D57-A58E-F63F5959ECF3_gui' bpmnElement='sid-AD5ED2A3-79E0-4D57-A58E-F63F5959ECF3'>
+<omgdc:Bounds y='629.9300022134126' x='39.93000221341264' width='1352.0150416859385' height='250.0'>
+</omgdc:Bounds>
+<bpmndi:BPMNLabel labelStyle='sid-8d1d937e-db46-49dc-a56c-d6ae21270242'>
+<omgdc:Bounds y='740.6585750588716' x='44.93000221341264' width='12.000000000000007' height='28.54285430908203'>
+</omgdc:Bounds>
+</bpmndi:BPMNLabel>
+</bpmndi:BPMNShape>
+<bpmndi:BPMNShape isHorizontal='true' id='sid-641BC65B-DFE1-4E61-9B24-ECE30AE301D1_gui' bpmnElement='sid-641BC65B-DFE1-4E61-9B24-ECE30AE301D1'>
+<omgdc:Bounds y='39.93000221341265' x='69.93000221341265' width='1322.0150416859383' height='250.0'>
+</omgdc:Bounds>
+</bpmndi:BPMNShape>
+<bpmndi:BPMNShape id='sid-894D8E57-84ED-4A0B-BE0A-AF53C5CB5173_gui' bpmnElement='sid-894D8E57-84ED-4A0B-BE0A-AF53C5CB5173'>
+<omgdc:Bounds y='149.93000221341265' x='79.8600044268253' width='30.0' height='30.0'>
+</omgdc:Bounds>
+<bpmndi:BPMNLabel labelStyle='sid-18254299-c4f5-4569-a398-df7836e52975'>
+<omgdc:Bounds y='181.93000221341265' x='76.82786178766514' width='36.06428527832031' height='22.0'>
+</omgdc:Bounds>
+</bpmndi:BPMNLabel>
+</bpmndi:BPMNShape>
+<bpmndi:BPMNShape id='sid-356AB71A-D5E3-4A70-B1C2-5248D5DA301A_gui' bpmnElement='sid-356AB71A-D5E3-4A70-B1C2-5248D5DA301A'>
+<omgdc:Bounds y='124.93000221341265' x='154.8600044268253' width='100.0' height='80.0'>
+</omgdc:Bounds>
+<bpmndi:BPMNLabel labelStyle='sid-8d1d937e-db46-49dc-a56c-d6ae21270242'>
+<omgdc:Bounds y='156.93000221341265' x='167.44571685968663' width='74.82857513427734' height='12.0'>
+</omgdc:Bounds>
+</bpmndi:BPMNLabel>
+</bpmndi:BPMNShape>
+<bpmndi:BPMNShape id='sid-40E1C982-D329-41DD-860F-DF9DA0C52349_gui' bpmnElement='sid-40E1C982-D329-41DD-860F-DF9DA0C52349'>
+<omgdc:Bounds y='124.93000221341265' x='299.8600044268253' width='100.0' height='80.0'>
+</omgdc:Bounds>
+<bpmndi:BPMNLabel labelStyle='sid-8d1d937e-db46-49dc-a56c-d6ae21270242'>
+<omgdc:Bounds y='150.93000221341265' x='311.6742897051456' width='76.37142944335938' height='24.0'>
+</omgdc:Bounds>
+</bpmndi:BPMNLabel>
+</bpmndi:BPMNShape>
+<bpmndi:BPMNShape id='sid-FB7D69F6-779F-4755-B954-85979970AE7B_gui' bpmnElement='sid-FB7D69F6-779F-4755-B954-85979970AE7B'>
+<omgdc:Bounds y='124.93000221341265' x='624.8600044268253' width='100.0' height='80.0'>
+</omgdc:Bounds>
+<bpmndi:BPMNLabel labelStyle='sid-8d1d937e-db46-49dc-a56c-d6ae21270242'>
+<omgdc:Bounds y='150.93000221341265' x='636.6742897051456' width='76.37142944335938' height='24.0'>
+</omgdc:Bounds>
+</bpmndi:BPMNLabel>
+</bpmndi:BPMNShape>
+<bpmndi:BPMNShape id='sid-DA163419-DB7E-4A95-87B4-9932EE34DCA4_gui' bpmnElement='sid-DA163419-DB7E-4A95-87B4-9932EE34DCA4'>
+<omgdc:Bounds y='124.93000221341265' x='949.8600044268253' width='100.0' height='80.0'>
+</omgdc:Bounds>
+<bpmndi:BPMNLabel labelStyle='sid-8d1d937e-db46-49dc-a56c-d6ae21270242'>
+<omgdc:Bounds y='156.93000221341265' x='954.3457222002628' width='91.028564453125' height='12.0'>
+</omgdc:Bounds>
+</bpmndi:BPMNLabel>
+</bpmndi:BPMNShape>
+<bpmndi:BPMNShape id='sid-F73B9BD3-C7BC-418D-804B-043B68254074_gui' bpmnElement='sid-F73B9BD3-C7BC-418D-804B-043B68254074'>
+<omgdc:Bounds y='124.93000221341265' x='1094.860004426825' width='100.0' height='80.0'>
+</omgdc:Bounds>
+<bpmndi:BPMNLabel labelStyle='sid-8d1d937e-db46-49dc-a56c-d6ae21270242'>
+<omgdc:Bounds y='156.93000221341265' x='1118.245716096747' width='53.22857666015625' height='12.0'>
+</omgdc:Bounds>
+</bpmndi:BPMNLabel>
+</bpmndi:BPMNShape>
+<bpmndi:BPMNShape id='sid-E1EB96CD-37FF-433E-B25C-CAB94DDDD3DD_gui' bpmnElement='sid-E1EB96CD-37FF-433E-B25C-CAB94DDDD3DD'>
+<omgdc:Bounds y='150.93000221341265' x='1239.860004426825' width='28.0' height='28.0'>
+</omgdc:Bounds>
+<bpmndi:BPMNLabel labelStyle='sid-18254299-c4f5-4569-a398-df7836e52975'>
+<omgdc:Bounds y='180.93000221341265' x='1213.552860261786' width='80.61428833007812' height='11.0'>
+</omgdc:Bounds>
+</bpmndi:BPMNLabel>
+</bpmndi:BPMNShape>
+<bpmndi:BPMNShape id='sid-07112A98-E9B7-4802-9E44-3AFEA22A4572_gui' bpmnElement='sid-07112A98-E9B7-4802-9E44-3AFEA22A4572'>
+<omgdc:Bounds y='149.93000221341265' x='839.8600044268253' width='30.0' height='30.0'>
+</omgdc:Bounds>
+<bpmndi:BPMNLabel labelStyle='sid-18254299-c4f5-4569-a398-df7836e52975'>
+<omgdc:Bounds y='118.93000221341265' x='789.4492912310245' width='130.82142639160156' height='22.0'>
+</omgdc:Bounds>
+</bpmndi:BPMNLabel>
+</bpmndi:BPMNShape>
+<bpmndi:BPMNShape id='sid-793944ED-7A35-40BA-8B73-9D80C0DF458D_gui' bpmnElement='sid-793944ED-7A35-40BA-8B73-9D80C0DF458D'>
+<omgdc:Bounds y='124.93000221341265' x='444.8600044268253' width='100.0' height='80.0'>
+</omgdc:Bounds>
+<bpmndi:BPMNLabel labelStyle='sid-8d1d937e-db46-49dc-a56c-d6ae21270242'>
+<omgdc:Bounds y='156.93000221341265' x='480.20286178766514' width='29.314285278320312' height='12.0'>
+</omgdc:Bounds>
+</bpmndi:BPMNLabel>
+</bpmndi:BPMNShape>
+<bpmndi:BPMNShape isHorizontal='true' id='sid-AE448AEB-5B39-4E0E-A803-0F7762EB7B14_gui' bpmnElement='sid-AE448AEB-5B39-4E0E-A803-0F7762EB7B14'>
+<omgdc:Bounds y='334.93000221341265' x='69.93000221341265' width='1322.0150416859383' height='250.0'>
+</omgdc:Bounds>
+</bpmndi:BPMNShape>
+<bpmndi:BPMNShape id='sid-3161ABAC-359E-4A61-B56B-7DF4D9DB733D_gui' bpmnElement='sid-3161ABAC-359E-4A61-B56B-7DF4D9DB733D'>
+<omgdc:Bounds y='377.43000221341265' x='264.8600044268253' width='100.0' height='80.0'>
+</omgdc:Bounds>
+<bpmndi:BPMNLabel labelStyle='sid-8d1d937e-db46-49dc-a56c-d6ae21270242'>
+<omgdc:Bounds y='391.43000221341265' x='270.11714554010655' width='89.4857177734375' height='48.0'>
+</omgdc:Bounds>
+</bpmndi:BPMNLabel>
+</bpmndi:BPMNShape>
+<bpmndi:BPMNShape id='sid-A7C8E76E-522F-49F2-80C5-DBC18BD7ECFE_gui' bpmnElement='sid-A7C8E76E-522F-49F2-80C5-DBC18BD7ECFE'>
+<omgdc:Bounds y='377.43000221341265' x='444.8600044268253' width='100.0' height='80.0'>
+</omgdc:Bounds>
+<bpmndi:BPMNLabel labelStyle='sid-8d1d937e-db46-49dc-a56c-d6ae21270242'>
+<omgdc:Bounds y='403.43000221341265' x='450.11714554010655' width='89.4857177734375' height='24.0'>
+</omgdc:Bounds>
+</bpmndi:BPMNLabel>
+</bpmndi:BPMNShape>
+<bpmndi:BPMNShape id='sid-408C0C68-4CBC-4378-BBC7-4183C17B52C8_gui' bpmnElement='sid-408C0C68-4CBC-4378-BBC7-4183C17B52C8'>
+<omgdc:Bounds y='377.43000221341265' x='589.8600044268253' width='100.0' height='80.0'>
+</omgdc:Bounds>
+<bpmndi:BPMNLabel labelStyle='sid-8d1d937e-db46-49dc-a56c-d6ae21270242'>
+<omgdc:Bounds y='409.43000221341265' x='595.5028572100284' width='88.71429443359375' height='12.0'>
+</omgdc:Bounds>
+</bpmndi:BPMNLabel>
+</bpmndi:BPMNShape>
+<bpmndi:BPMNShape id='sid-33105BC1-593E-478D-B39F-879771B8F083_gui' bpmnElement='sid-33105BC1-593E-478D-B39F-879771B8F083'>
+<omgdc:Bounds y='377.43000221341265' x='804.8600044268253' width='100.0' height='80.0'>
+</omgdc:Bounds>
+<bpmndi:BPMNLabel labelStyle='sid-8d1d937e-db46-49dc-a56c-d6ae21270242'>
+<omgdc:Bounds y='403.43000221341265' x='809.3457222002628' width='91.028564453125' height='24.0'>
+</omgdc:Bounds>
+</bpmndi:BPMNLabel>
+</bpmndi:BPMNShape>
+<bpmndi:BPMNShape id='sid-522F7CD2-4AB0-4FBA-85FE-00795F11A3B5_gui' bpmnElement='sid-522F7CD2-4AB0-4FBA-85FE-00795F11A3B5'>
+<omgdc:Bounds y='462.43000221341265' x='1096.014967905517' width='30.0' height='30.0'>
+</omgdc:Bounds>
+<bpmndi:BPMNLabel labelStyle='sid-18254299-c4f5-4569-a398-df7836e52975'>
+<omgdc:Bounds y='494.43000221341265' x='1065.7578267922358' width='90.5142822265625' height='22.0'>
+</omgdc:Bounds>
+</bpmndi:BPMNLabel>
+</bpmndi:BPMNShape>
+<bpmndi:BPMNShape id='sid-444081DB-53FA-4CA2-80D5-D3C07019584A_gui' bpmnElement='sid-444081DB-53FA-4CA2-80D5-D3C07019584A'>
+<omgdc:Bounds y='437.43000221341265' x='1171.014967905517' width='100.0' height='80.0'>
+</omgdc:Bounds>
+<bpmndi:BPMNLabel labelStyle='sid-8d1d937e-db46-49dc-a56c-d6ae21270242'>
+<omgdc:Bounds y='469.43000221341265' x='1182.4435376992183' width='77.14286041259766' height='12.0'>
+</omgdc:Bounds>
+</bpmndi:BPMNLabel>
+</bpmndi:BPMNShape>
+<bpmndi:BPMNShape isMarkerVisible='true' id='sid-D8C2DB27-5101-44F0-9BA5-D03BD1C29BCD_gui' bpmnElement='sid-D8C2DB27-5101-44F0-9BA5-D03BD1C29BCD'>
+<omgdc:Bounds y='457.43000221341265' x='949.8600044268254' width='40.0' height='40.0'>
+</omgdc:Bounds>
+<bpmndi:BPMNLabel labelStyle='sid-18254299-c4f5-4569-a398-df7836e52975'>
+<omgdc:Bounds y='487.93000221341265' x='980.3600044268254' width='72.51428222656261' height='36.0'>
+</omgdc:Bounds>
+</bpmndi:BPMNLabel>
+</bpmndi:BPMNShape>
+<bpmndi:BPMNShape id='sid-1C0359E8-140D-49A7-B4F4-FCBD82F8D6EC_gui' bpmnElement='sid-1C0359E8-140D-49A7-B4F4-FCBD82F8D6EC'>
+<omgdc:Bounds y='360.93000221341265' x='1166.860004426825' width='28.0' height='28.0'>
+</omgdc:Bounds>
+<bpmndi:BPMNLabel labelStyle='sid-18254299-c4f5-4569-a398-df7836e52975'>
+<omgdc:Bounds y='390.93000221341265' x='1152.2207183855653' width='57.27857208251953' height='11.0'>
+</omgdc:Bounds>
+</bpmndi:BPMNLabel>
+</bpmndi:BPMNShape>
+<bpmndi:BPMNShape id='sid-0EE0367F-BC57-4551-897C-3A81411E6E9A_gui' bpmnElement='sid-0EE0367F-BC57-4551-897C-3A81411E6E9A'>
+<omgdc:Bounds y='402.43000221341265' x='189.8600044268253' width='30.0' height='30.0'>
+</omgdc:Bounds>
+<bpmndi:BPMNLabel labelStyle='sid-18254299-c4f5-4569-a398-df7836e52975'>
+<omgdc:Bounds y='434.43000221341265' x='169.5028610247257' width='70.71428680419922' height='11.0'>
+</omgdc:Bounds>
+</bpmndi:BPMNLabel>
+</bpmndi:BPMNShape>
+<bpmndi:BPMNShape id='sid-C52A07AF-27C1-4D1D-AEF0-07DFBD6368C4_gui' bpmnElement='sid-C52A07AF-27C1-4D1D-AEF0-07DFBD6368C4'>
+<omgdc:Bounds y='402.43000221341265' x='729.8600044268253' width='30.0' height='30.0'>
+</omgdc:Bounds>
+<bpmndi:BPMNLabel labelStyle='sid-18254299-c4f5-4569-a398-df7836e52975'>
+<omgdc:Bounds y='371.43000221341265' x='700.3100051897648' width='89.0999984741211' height='22.0'>
+</omgdc:Bounds>
+</bpmndi:BPMNLabel>
+</bpmndi:BPMNShape>
+<bpmndi:BPMNShape id='sid-5CD986F6-0690-47B0-8D02-3084F6D03359_gui' bpmnElement='sid-5CD986F6-0690-47B0-8D02-3084F6D03359'>
+<omgdc:Bounds y='334.93000221341265' x='949.8600044268253' width='100.00000000000011' height='80.0'>
+</omgdc:Bounds>
+<bpmndi:BPMNLabel labelStyle='sid-8d1d937e-db46-49dc-a56c-d6ae21270242'>
+<omgdc:Bounds y='366.93000221341265' x='960.5171470659855' width='78.68571472167969' height='12.0'>
+</omgdc:Bounds>
+</bpmndi:BPMNLabel>
+</bpmndi:BPMNShape>
+<bpmndi:BPMNShape isHorizontal='true' id='sid-062296E3-E705-4BDC-BB21-A2675EE9D977_gui' bpmnElement='sid-062296E3-E705-4BDC-BB21-A2675EE9D977'>
+<omgdc:Bounds y='629.9300022134126' x='69.93000221341265' width='1322.0150416859385' height='250.0'>
+</omgdc:Bounds>
+</bpmndi:BPMNShape>
+<bpmndi:BPMNShape id='sid-5CE2D382-4C45-4A33-ADE2-743106406E18_gui' bpmnElement='sid-5CE2D382-4C45-4A33-ADE2-743106406E18'>
+<omgdc:Bounds y='689.9300022134126' x='374.8600044268253' width='100.0' height='80.0'>
+</omgdc:Bounds>
+<bpmndi:BPMNLabel labelStyle='sid-8d1d937e-db46-49dc-a56c-d6ae21270242'>
+<omgdc:Bounds y='721.9300022134126' x='380.88857650934483' width='87.94285583496094' height='12.0'>
+</omgdc:Bounds>
+</bpmndi:BPMNLabel>
+</bpmndi:BPMNShape>
+<bpmndi:BPMNShape id='sid-9E5E5E95-2522-41D1-9645-155637C5BB83_gui' bpmnElement='sid-9E5E5E95-2522-41D1-9645-155637C5BB83'>
+<omgdc:Bounds y='709.9300022134126' x='520.3250055335316' width='40.0' height='40.0'>
+</omgdc:Bounds>
+</bpmndi:BPMNShape>
+<bpmndi:BPMNShape id='sid-44EFBFF6-BAA4-407D-BB78-1E68ED10B46A_gui' bpmnElement='sid-44EFBFF6-BAA4-407D-BB78-1E68ED10B46A'>
+<omgdc:Bounds y='638.8800354146024' x='589.8600044268253' width='100.0' height='80.0'>
+</omgdc:Bounds>
+<bpmndi:BPMNLabel labelStyle='sid-8d1d937e-db46-49dc-a56c-d6ae21270242'>
+<omgdc:Bounds y='658.8800354146024' x='598.9742927569034' width='81.77142333984375' height='36.0'>
+</omgdc:Bounds>
+</bpmndi:BPMNLabel>
+</bpmndi:BPMNShape>
+<bpmndi:BPMNShape id='sid-3FF56543-6154-4215-A031-C1C2CA7C2A66_gui' bpmnElement='sid-3FF56543-6154-4215-A031-C1C2CA7C2A66'>
+<omgdc:Bounds y='763.8800354146024' x='589.8600044268253' width='100.0' height='80.0'>
+</omgdc:Bounds>
+<bpmndi:BPMNLabel labelStyle='sid-8d1d937e-db46-49dc-a56c-d6ae21270242'>
+<omgdc:Bounds y='783.8800354146024' x='596.6600074785831' width='86.39999389648438' height='36.0'>
+</omgdc:Bounds>
+</bpmndi:BPMNLabel>
+</bpmndi:BPMNShape>
+<bpmndi:BPMNShape id='sid-002547A2-CF7C-496D-A4FB-A704FB9591E7_gui' bpmnElement='sid-002547A2-CF7C-496D-A4FB-A704FB9591E7'>
+<omgdc:Bounds y='715.9300022134126' x='804.8600044268253' width='28.0' height='28.0'>
+</omgdc:Bounds>
+<bpmndi:BPMNLabel labelStyle='sid-18254299-c4f5-4569-a398-df7836e52975'>
+<omgdc:Bounds y='745.9300022134126' x='758.3992958086612' width='120.92141723632812' height='11.0'>
+</omgdc:Bounds>
+</bpmndi:BPMNLabel>
+</bpmndi:BPMNShape>
+<bpmndi:BPMNShape id='sid-68637D4D-010A-4104-AD17-A05F922EB06C_gui' bpmnElement='sid-68637D4D-010A-4104-AD17-A05F922EB06C'>
+<omgdc:Bounds y='709.9300022134126' x='710.9300022134126' width='40.0' height='40.0'>
+</omgdc:Bounds>
+</bpmndi:BPMNShape>
+<bpmndi:BPMNShape id='sid-A1EAF847-2A42-4A94-874C-E8A4525B6339_gui' bpmnElement='sid-A1EAF847-2A42-4A94-874C-E8A4525B6339'>
+<omgdc:Bounds y='714.9300022134126' x='299.8600044268253' width='30.0' height='30.0'>
+</omgdc:Bounds>
+<bpmndi:BPMNLabel labelStyle='sid-18254299-c4f5-4569-a398-df7836e52975'>
+<omgdc:Bounds y='746.9300022134126' x='272.78500366388585' width='84.1500015258789' height='33.0'>
+</omgdc:Bounds>
+</bpmndi:BPMNLabel>
+</bpmndi:BPMNShape>
+<bpmndi:BPMNEdge id='sid-D5E1497C-CE16-4388-9605-E39AD62E1D51_gui' bpmnElement='sid-D5E1497C-CE16-4388-9605-E39AD62E1D51'>
+<omgdi:waypoint y='164.93000221341265' x='109.8600044268253'>
+</omgdi:waypoint>
+<omgdi:waypoint y='164.93000221341265' x='154.8600044268253'>
+</omgdi:waypoint>
+</bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id='sid-788D8760-8AE6-4E07-90F9-BFB74675D2B6_gui' bpmnElement='sid-788D8760-8AE6-4E07-90F9-BFB74675D2B6'>
+<omgdi:waypoint y='164.93000221341265' x='254.8600044268253'>
+</omgdi:waypoint>
+<omgdi:waypoint y='164.93000221341265' x='299.8600044268253'>
+</omgdi:waypoint>
+</bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id='sid-2AFC5E83-5149-48EA-9512-BE05239D7F8A_gui' bpmnElement='sid-2AFC5E83-5149-48EA-9512-BE05239D7F8A'>
+<omgdi:waypoint y='164.93000221341265' x='399.8600044268253'>
+</omgdi:waypoint>
+<omgdi:waypoint y='164.93000221341265' x='444.8600044268253'>
+</omgdi:waypoint>
+</bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id='sid-3D592DCF-893B-4719-B283-E87C8979FABC_gui' bpmnElement='sid-3D592DCF-893B-4719-B283-E87C8979FABC'>
+<omgdi:waypoint y='417.43000221341265' x='364.8600044268253'>
+</omgdi:waypoint>
+<omgdi:waypoint y='417.43000221341265' x='444.8600044268253'>
+</omgdi:waypoint>
+</bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id='sid-637CE260-F3C8-4DF0-9D90-911C1573F7F7_gui' bpmnElement='sid-637CE260-F3C8-4DF0-9D90-911C1573F7F7'>
+<omgdi:waypoint y='417.43000221341265' x='544.8600044268253'>
+</omgdi:waypoint>
+<omgdi:waypoint y='417.43000221341265' x='589.8600044268253'>
+</omgdi:waypoint>
+</bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id='sid-42D232DF-10E3-4E7B-AB89-AFB06F483493_gui' bpmnElement='sid-42D232DF-10E3-4E7B-AB89-AFB06F483493'>
+<omgdi:waypoint y='730.1446811472404' x='474.8600044268253'>
+</omgdi:waypoint>
+<omgdi:waypoint y='730.3398887065216' x='520.3250055335316'>
+</omgdi:waypoint>
+</bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id='sid-22C10CDD-266E-42BF-B001-EEB5CF87B86B_gui' bpmnElement='sid-22C10CDD-266E-42BF-B001-EEB5CF87B86B'>
+<omgdi:waypoint y='709.9300022134126' x='540.8250055335316'>
+</omgdi:waypoint>
+<omgdi:waypoint y='678.8800354146024' x='540.8250055335316'>
+</omgdi:waypoint>
+<omgdi:waypoint y='678.8800354146024' x='589.8600044268253'>
+</omgdi:waypoint>
+</bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id='sid-20EE3B86-745D-47F1-A6B2-D3116DF7D7C7_gui' bpmnElement='sid-20EE3B86-745D-47F1-A6B2-D3116DF7D7C7'>
+<omgdi:waypoint y='749.9300022134126' x='540.8250055335316'>
+</omgdi:waypoint>
+<omgdi:waypoint y='803.8800354146024' x='540.8250055335316'>
+</omgdi:waypoint>
+<omgdi:waypoint y='803.8800354146024' x='589.8600044268253'>
+</omgdi:waypoint>
+</bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id='sid-C39EE858-67F4-440B-9297-99A739FEC917_gui' bpmnElement='sid-C39EE858-67F4-440B-9297-99A739FEC917'>
+<omgdi:waypoint y='477.43000221341265' x='1126.014967905517'>
+</omgdi:waypoint>
+<omgdi:waypoint y='477.43000221341265' x='1171.014967905517'>
+</omgdi:waypoint>
+</bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id='sid-0D5FF610-7605-44C9-9471-BFD3CBC8DB3C_gui' bpmnElement='sid-0D5FF610-7605-44C9-9471-BFD3CBC8DB3C'>
+<omgdi:waypoint y='164.93000221341265' x='1049.8600044268253'>
+</omgdi:waypoint>
+<omgdi:waypoint y='164.93000221341265' x='1094.860004426825'>
+</omgdi:waypoint>
+</bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id='sid-E7C329C4-F38F-473E-9A9C-C9DC9E118D20_gui' bpmnElement='sid-E7C329C4-F38F-473E-9A9C-C9DC9E118D20'>
+<omgdi:waypoint y='164.93000221341265' x='1194.860004426825'>
+</omgdi:waypoint>
+<omgdi:waypoint y='164.93000221341265' x='1239.860004426825'>
+</omgdi:waypoint>
+</bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id='sid-11AA77E8-8770-4E6B-8473-97B94CC606DA_gui' bpmnElement='sid-11AA77E8-8770-4E6B-8473-97B94CC606DA'>
+<omgdi:waypoint y='417.43000221341265' x='904.8600044268253'>
+</omgdi:waypoint>
+<omgdi:waypoint y='417.43000221341265' x='927.3600044268253'>
+</omgdi:waypoint>
+<omgdi:waypoint y='477.93000221341265' x='927.3600044268253'>
+</omgdi:waypoint>
+<omgdi:waypoint y='477.93000221341265' x='949.8600044268254'>
+</omgdi:waypoint>
+</bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id='sid-CE8977A0-49E4-4EC7-AFE9-3B620A953BEF_gui' bpmnElement='sid-CE8977A0-49E4-4EC7-AFE9-3B620A953BEF'>
+<omgdi:waypoint y='517.4300022134126' x='1221.014967905517'>
+</omgdi:waypoint>
+<omgdi:waypoint y='578.0' x='1221.014967905517'>
+</omgdi:waypoint>
+<omgdi:waypoint y='578.0' x='970.3600044268254'>
+</omgdi:waypoint>
+<omgdi:waypoint y='497.43000221341265' x='970.3600044268254'>
+</omgdi:waypoint>
+</bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id='sid-1D89F887-C38C-43A1-8341-847CCA299BC9_gui' bpmnElement='sid-1D89F887-C38C-43A1-8341-847CCA299BC9'>
+<omgdi:waypoint y='730.3184844305788' x='750.9300022134126'>
+</omgdi:waypoint>
+<omgdi:waypoint y='730.0100662626268' x='804.8600044268253'>
+</omgdi:waypoint>
+</bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id='sid-EAE6D39C-24CE-4519-8A1B-52C90DDF6F88_gui' bpmnElement='sid-EAE6D39C-24CE-4519-8A1B-52C90DDF6F88'>
+<omgdi:waypoint y='678.8800354146024' x='689.8600044268253'>
+</omgdi:waypoint>
+<omgdi:waypoint y='678.8800354146024' x='731.4300022134126'>
+</omgdi:waypoint>
+<omgdi:waypoint y='709.9300022134126' x='731.4300022134126'>
+</omgdi:waypoint>
+</bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id='sid-2A9FFBF1-0E68-4B03-9CB3-7B6FFB749A52_gui' bpmnElement='sid-2A9FFBF1-0E68-4B03-9CB3-7B6FFB749A52'>
+<omgdi:waypoint y='803.8800354146024' x='689.8600044268253'>
+</omgdi:waypoint>
+<omgdi:waypoint y='803.8800354146024' x='731.4300022134126'>
+</omgdi:waypoint>
+<omgdi:waypoint y='749.9300022134126' x='731.4300022134126'>
+</omgdi:waypoint>
+</bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id='sid-B46BBF59-2DD9-4423-A9A0-063B9A0F1CA1_gui' bpmnElement='sid-B46BBF59-2DD9-4423-A9A0-063B9A0F1CA1'>
+<omgdi:waypoint y='164.93000221341265' x='869.8600044268253'>
+</omgdi:waypoint>
+<omgdi:waypoint y='164.93000221341265' x='949.8600044268253'>
+</omgdi:waypoint>
+</bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id='sid-05858106-5553-44C1-A582-D01DFE61E876_gui' bpmnElement='sid-05858106-5553-44C1-A582-D01DFE61E876'>
+<omgdi:waypoint y='377.43000221341265' x='854.8600044268253'>
+</omgdi:waypoint>
+<omgdi:waypoint y='179.93000221341265' x='854.8600044268253'>
+</omgdi:waypoint>
+</bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id='sid-08001465-1E89-4EFC-B508-EC2296C3D200_gui' bpmnElement='sid-08001465-1E89-4EFC-B508-EC2296C3D200'>
+<omgdi:waypoint y='417.43000221341265' x='219.8600044268253'>
+</omgdi:waypoint>
+<omgdi:waypoint y='417.43000221341265' x='264.8600044268253'>
+</omgdi:waypoint>
+</bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id='sid-CFEE9FEB-5F3B-47B5-A059-2B9F414872CB_gui' bpmnElement='sid-CFEE9FEB-5F3B-47B5-A059-2B9F414872CB'>
+<omgdi:waypoint y='164.93000221341265' x='724.8600044268253'>
+</omgdi:waypoint>
+<omgdi:waypoint y='164.93000221341265' x='839.8600044268253'>
+</omgdi:waypoint>
+</bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id='sid-8D322A64-8F64-46D6-BC12-B22904DD07EC_gui' bpmnElement='sid-8D322A64-8F64-46D6-BC12-B22904DD07EC'>
+<omgdi:waypoint y='417.43000221341265' x='759.8600044268253'>
+</omgdi:waypoint>
+<omgdi:waypoint y='417.43000221341265' x='804.8600044268253'>
+</omgdi:waypoint>
+</bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id='sid-9A885588-2DAB-4AAE-BFE3-8F60A0F80F2B_gui' bpmnElement='sid-9A885588-2DAB-4AAE-BFE3-8F60A0F80F2B'>
+<omgdi:waypoint y='417.43000221341265' x='689.8600044268253'>
+</omgdi:waypoint>
+<omgdi:waypoint y='417.43000221341265' x='729.8600044268253'>
+</omgdi:waypoint>
+</bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id='sid-0607BBB4-466A-4218-A5E8-AE66EEB15004_gui' bpmnElement='sid-0607BBB4-466A-4218-A5E8-AE66EEB15004'>
+<omgdi:waypoint y='678.8800354146024' x='689.8600044268253'>
+</omgdi:waypoint>
+<omgdi:waypoint y='678.8800354146024' x='744.8600044268253'>
+</omgdi:waypoint>
+<omgdi:waypoint y='432.43000221341265' x='744.8600044268253'>
+</omgdi:waypoint>
+</bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id='sid-FB9FD0EB-A457-48A2-9535-9B57C5D5D03A_gui' bpmnElement='sid-FB9FD0EB-A457-48A2-9535-9B57C5D5D03A'>
+<omgdi:waypoint y='457.43000221341265' x='314.8600044268253'>
+</omgdi:waypoint>
+<omgdi:waypoint y='714.9300022134126' x='314.8600044268253'>
+</omgdi:waypoint>
+</bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id='sid-209D7654-A09B-478D-A753-E35E8A59BAA6_gui' bpmnElement='sid-209D7654-A09B-478D-A753-E35E8A59BAA6'>
+<omgdi:waypoint y='729.9300022134126' x='329.8600044268253'>
+</omgdi:waypoint>
+<omgdi:waypoint y='729.9300022134126' x='374.8600044268253'>
+</omgdi:waypoint>
+</bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id='sid-83001BB8-E2CC-46AE-BC5B-5F3BF29B6A89_gui' bpmnElement='sid-83001BB8-E2CC-46AE-BC5B-5F3BF29B6A89'>
+<omgdi:waypoint y='204.93000221341265' x='674.8600044268253'>
+</omgdi:waypoint>
+<omgdi:waypoint y='304.0' x='674.8600044268253'>
+</omgdi:waypoint>
+<omgdi:waypoint y='304.0' x='494.8600044268253'>
+</omgdi:waypoint>
+<omgdi:waypoint y='377.43000221341265' x='494.8600044268253'>
+</omgdi:waypoint>
+</bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id='sid-DFA3E93F-290E-4B1F-9234-FE273A9CE2C6_gui' bpmnElement='sid-DFA3E93F-290E-4B1F-9234-FE273A9CE2C6'>
+<omgdi:waypoint y='164.93000221341265' x='544.8600044268253'>
+</omgdi:waypoint>
+<omgdi:waypoint y='164.93000221341265' x='624.8600044268253'>
+</omgdi:waypoint>
+</bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id='sid-BE334BA9-A134-4B60-8422-9208A67ED5E1_gui' bpmnElement='sid-BE334BA9-A134-4B60-8422-9208A67ED5E1'>
+<omgdi:waypoint y='204.93000221341265' x='469.8600044268253'>
+</omgdi:waypoint>
+<omgdi:waypoint y='303.68000221341265' x='469.8600044268253'>
+</omgdi:waypoint>
+<omgdi:waypoint y='303.68000221341265' x='204.8600044268253'>
+</omgdi:waypoint>
+<omgdi:waypoint y='402.43000221341265' x='204.8600044268253'>
+</omgdi:waypoint>
+</bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id='sid-24AD0D11-B50D-44AB-BB7F-7A2CF56092B9_gui' bpmnElement='sid-24AD0D11-B50D-44AB-BB7F-7A2CF56092B9'>
+<omgdi:waypoint y='457.43000221341265' x='970.3600044268254'>
+</omgdi:waypoint>
+<omgdi:waypoint y='436.18000221341265' x='970.3600044268254'>
+</omgdi:waypoint>
+<omgdi:waypoint y='436.18000221341265' x='999.8600044268253'>
+</omgdi:waypoint>
+<omgdi:waypoint y='414.93000221341265' x='999.8600044268253'>
+</omgdi:waypoint>
+</bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id='sid-2FBBD798-8711-44F5-98C4-63C5A6B9B43E_gui' bpmnElement='sid-2FBBD798-8711-44F5-98C4-63C5A6B9B43E'>
+<omgdi:waypoint y='374.93000221341265' x='1049.8600044268255'>
+</omgdi:waypoint>
+<omgdi:waypoint y='374.93000221341265' x='1166.860004426825'>
+</omgdi:waypoint>
+</bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id='sid-10D4ACFF-CDE6-4CCB-A004-D64C6E410D11_gui' bpmnElement='sid-10D4ACFF-CDE6-4CCB-A004-D64C6E410D11'>
+<omgdi:waypoint y='334.93000221341265' x='999.8600044268253'>
+</omgdi:waypoint>
+<omgdi:waypoint y='204.93000221341265' x='999.8600044268253'>
+</omgdi:waypoint>
+</bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id='sid-36963E6A-44AD-414C-A049-1ADBE50BD6D8_gui' bpmnElement='sid-36963E6A-44AD-414C-A049-1ADBE50BD6D8'>
+<omgdi:waypoint y='477.860683650037' x='989.8600044268254'>
+</omgdi:waypoint>
+<omgdi:waypoint y='477.48332418524006' x='1096.014967905517'>
+</omgdi:waypoint>
+<bpmndi:BPMNLabel labelStyle='sid-18254299-c4f5-4569-a398-df7836e52975'>
+<omgdc:Bounds y='457.77509408473526' x='997.7228604719586' width='16.2425672105378' height='12.057511659360387'>
+</omgdc:Bounds>
+</bpmndi:BPMNLabel>
+</bpmndi:BPMNEdge>
+</bpmndi:BPMNPlane>
+<bpmndi:BPMNLabelStyle id='sid-18254299-c4f5-4569-a398-df7836e52975'>
+<omgdc:Font size='11.0' name='Arial' isUnderline='false' isStrikeThrough='false' isItalic='false' isBold='false'>
+</omgdc:Font>
+</bpmndi:BPMNLabelStyle>
+<bpmndi:BPMNLabelStyle id='sid-8d1d937e-db46-49dc-a56c-d6ae21270242'>
+<omgdc:Font size='12.0' name='Arial' isUnderline='false' isStrikeThrough='false' isItalic='false' isBold='false'>
+</omgdc:Font>
+</bpmndi:BPMNLabelStyle>
+</bpmndi:BPMNDiagram>
+</definitions>

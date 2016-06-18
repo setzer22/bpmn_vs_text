@@ -1,0 +1,201 @@
+=========
+Sentences
+=========
+Text.0) If goods shall be shipped , the secretary clarifies who will do the shipping .
+Text.1) If you have large amounts , special shipping will be necessary .
+Text.2) In these cases the secretary invites three logistic companies to make offers and she selects one of them .
+Text.3) In_case of small amounts , normal post shipment is used .
+Text.4) Therefore a package label is written by the secretary and a parcel insurance taken by the logistics department head if necessary .
+Text.5) In_the_meantime the goods can be already packaged by the warehousemen .
+Text.6) If everything is ready , the packaged goods are prepared for being picked up by the logistic company .
+
+=====
+Tasks
+=====
+Task.0) Package goods
+Task.1) Get 3 offers
+from logistic
+companies
+Task.2) Write package
+label
+Task.3) Select logistic
+company and
+place order
+Task.4) Prepare for
+picking up
+goods
+Task.5) Clarify shipment method
+Task.6) Insure parcel
+
+=================
+Similarity Matrix
+=================
+
+|    0 |    1 |    2 |    3 |    4 |    5 |    6 |
+|------+------+------+------+------+------+------|
+| 0.50 | 0.00 | 0.00 | 0.00 | 0.03 | 0.16 | 0.00 |
+| 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 |
+| 0.00 | 0.14 | 0.00 | 0.10 | 0.00 | 0.00 | 0.00 |
+| 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.02 | 0.00 |
+| 0.50 | 0.00 | 0.79 | 0.00 | 0.00 | 0.00 | 0.06 |
+| 0.50 | 0.00 | 0.00 | 0.00 | 0.04 | 0.00 | 0.00 |
+| 0.50 | 0.07 | 0.00 | 0.10 | 0.45 | 0.00 | 0.00 |
+
+=========
+threshold
+=========
+0.043222326538446015
+
+=========
+Matchings
+=========
+Sentence  0 :
+"If goods shall be shipped , the secretary clarifies who will do the shipping ."
+Task  0 :
+"Package goods"
+Matching score: 0.5
+
+    Comon features: 
+
+    * Contains the synset "commodity"
+    * Contains an hyponym of "artefact"
+    * Contains an hyponym of "unit"
+    * Contains the noun "good"
+
+
+Sentence  2 :
+"In these cases the secretary invites three logistic companies to make offers and she selects one of them ."
+Task  1 :
+"Get 3 offers\nfrom logistic\ncompanies"
+Matching score: 0.1423125794155019
+
+    Comon features: 
+
+    * Contains the synset "logistic"
+    * Contains the synset "company"
+    * Contains the synset "get"
+    * Contains the synset "offer"
+    * Contains an hyponym of "establishment"
+    * Contains an hyponym of "organisation"
+    * Contains an hyponym of "alter"
+    * Contains an hyponym of "content"
+    * Contains an hyponym of "communication"
+    * Contains the number "3"
+    * Contains the adjective "logistic"
+    * Contains the noun "company"
+    * Contains the noun "offer"
+
+
+Sentence  4 :
+"Therefore a package label is written by the secretary and a parcel insurance taken by the logistics department head if necessary ."
+Task  2 :
+"Write package\nlabel"
+Matching score: 0.7925669835782195
+
+    Comon features: 
+
+    * Contains the synset "package"
+    * Contains the synset "label"
+    * Contains the synset "write"
+    * Contains the synset "package"
+    * Contains an hyponym of "container"
+    * Contains an hyponym of "instrumentality"
+    * Contains an hyponym of "mark"
+    * Contains an hyponym of "symbol"
+    * Contains an hyponym of "communicate"
+    * Contains an hyponym of "interact"
+    * Contains an hyponym of "container"
+    * Contains an hyponym of "instrumentality"
+    * Contains the noun "package"
+    * Contains the noun "label"
+    * Contains the verb "write"
+    * Contains the action "write"
+    * The agent of verb "write" contains the noun "secretary"
+    * The direct object of verb "write" is "label" (noun)
+    * The object of verb "write" contains the noun "package"
+    * The object of verb "write" contains the noun "label"
+
+
+Sentence  6 :
+"If everything is ready , the packaged goods are prepared for being picked up by the logistic company ."
+Task  3 :
+"Select logistic\ncompany and\nplace order"
+Matching score: 0.10148975791433891
+
+    Comon features: 
+
+    * Contains the synset "logistic"
+    * Contains the synset "company"
+    * Contains an hyponym of "establishment"
+    * Contains an hyponym of "organisation"
+    * Contains an hyponym of "organisation"
+    * Contains the adjective "logistic"
+    * Contains the noun "company"
+
+
+Sentence  6 :
+"If everything is ready , the packaged goods are prepared for being picked up by the logistic company ."
+Task  4 :
+"Prepare for\npicking up\ngoods"
+Matching score: 0.4505494505494506
+
+    Comon features: 
+
+    * Contains the synset "commodity"
+    * Contains the synset "prepare"
+    * Contains the synset "pick"
+    * Contains the synset "up"
+    * Contains an hyponym of "artefact"
+    * Contains an hyponym of "unit"
+    * Contains an hyponym of "learn"
+    * Contains an hyponym of "choose"
+    * Contains an hyponym of "decide"
+    * Contains the noun "good"
+    * Contains the verb "prepare"
+    * Contains the verb "pick"
+    * Contains the particle "up"
+    * Contains the action "prepare"
+    * Contains the action "pick"
+    * The direct object of verb "pick" is "good" (noun)
+    * The object of verb "prepare" contains the noun "good"
+    * The object of verb "pick" contains the noun "good"
+
+
+Sentence  0 :
+"If goods shall be shipped , the secretary clarifies who will do the shipping ."
+Task  5 :
+"Clarify shipment method"
+Matching score: 0.16181448882870683
+
+    Comon features: 
+
+    * Contains the synset "clarify"
+    * Contains an hyponym of "explain"
+    * Contains an hyponym of "inform"
+    * Contains the verb "clarify"
+    * Contains the action "clarify"
+    * The agent of verb "clarify" contains the noun "secretary"
+
+
+Sentence  4 :
+"Therefore a package label is written by the secretary and a parcel insurance taken by the logistics department head if necessary ."
+Task  6 :
+"Insure parcel"
+Matching score: 0.05795677799607073
+
+    Comon features: 
+
+    * Contains the synset "package"
+    * Contains the synset "package"
+    * Contains an hyponym of "container"
+    * Contains an hyponym of "instrumentality"
+    * Contains an hyponym of "container"
+    * Contains an hyponym of "instrumentality"
+    * Contains the noun "parcel"
+
+
+
+========================
+Tasks with no good match
+========================
+

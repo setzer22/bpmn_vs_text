@@ -1,0 +1,412 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.5 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist{nty}{nty}
+    \entry{el_paper}{inbook}{}
+      \name{author}{3}{}{%
+        {{hash=cab1e3eccc2dd2846ffd25d6d3505473}{Aa}{A\bibinitperiod}{Han}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=685de5db04ba434fb83441a38177fe6c}{Leopold}{L\bibinitperiod}{Henrik}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=9dce6bdc26aeecc5a712e9fce888dca3}{Reijers}{R\bibinitperiod}{Hajo\bibnamedelima A.}{H\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{16d4e86d1bdc258e41a3a355b2b5a369}
+      \strng{fullhash}{16d4e86d1bdc258e41a3a355b2b5a369}
+      \field{sortinit}{A}
+      \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{chapter}{Detecting Inconsistencies Between Process Models and Textual Descriptions}
+      \field{isbn}{9783319230634}
+      \field{title}{Business Process Management: 13th International Conference, BPM 2015, Innsbruck, Austria, August 31 - September 3, 2015, Proceedings}
+      \field{year}{2015}
+      \field{pages}{90\bibrangedash 105}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1007/978-3-319-23063-4_6
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1007/978-3-319-23063-4_6
+      \endverb
+    \endentry
+    \entry{nou_paper}{article}{}
+      \name{author}{3}{}{%
+        {{hash=5b056848138f4e79d75ec5e93379a246}{Aalst}{A\bibinitperiod}{Han}{H\bibinitperiod}{van\bibnamedelima der}{v\bibinitperiod\bibinitdelim d\bibinitperiod}{}{}}%
+        {{hash=685de5db04ba434fb83441a38177fe6c}{Leopold}{L\bibinitperiod}{Henrik}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=9dce6bdc26aeecc5a712e9fce888dca3}{Reijers}{R\bibinitperiod}{Hajo\bibnamedelima A.}{H\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{5f908fe199e68c68a8c80c5f7b1feff3}
+      \strng{fullhash}{5f908fe199e68c68a8c80c5f7b1feff3}
+      \field{sortinit}{A}
+      \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Dealing with Behavioral Ambiguity in Textual Process Descriptions}
+    \endentry
+    \entry{soundness}{article}{}
+      \name{author}{7}{}{%
+        {{hash=0728c5293ae4e5044c17e0876126791f}{Aalst}{A\bibinitperiod}{Wil\bibnamedelima MP}{W\bibinitperiod\bibinitdelim M\bibinitperiod}{van\bibnamedelima der}{v\bibinitperiod\bibinitdelim d\bibinitperiod}{}{}}%
+        {{hash=ae5370057dd7318be06e7d396f35298d}{Hee}{H\bibinitperiod}{Kees\bibnamedelima M}{K\bibinitperiod\bibinitdelim M\bibinitperiod}{van}{v\bibinitperiod}{}{}}%
+        {{hash=63cab400530bd51e6a226f0f80a54729}{Hofstede}{H\bibinitperiod}{Arthur\bibnamedelima HM}{A\bibinitperiod\bibinitdelim H\bibinitperiod}{ter}{t\bibinitperiod}{}{}}%
+        {{hash=732a93808c282f4a3142da02bd5ad071}{Sidorova}{S\bibinitperiod}{Natalia}{N\bibinitperiod}{}{}{}{}}%
+        {{hash=d6c66f8e3207de935f6d33182b09a2e2}{Verbeek}{V\bibinitperiod}{HMW}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=e34b41acfeefe809e3cb65876359f4d9}{Voorhoeve}{V\bibinitperiod}{Marc}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=f0c64727970e234fae1f1973325949f2}{Wynn}{W\bibinitperiod}{Moe\bibnamedelima Thandar}{M\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{ad1d94b732841be33d2fb3d48fc2dd69}
+      \strng{fullhash}{a06d5b9f6a431cc08744777c5186a544}
+      \field{sortinit}{A}
+      \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Formal Aspects of Computing}
+      \field{number}{3}
+      \field{title}{Soundness of workflow nets: classification, decidability, and analysis}
+      \field{volume}{23}
+      \field{year}{2011}
+      \field{pages}{333\bibrangedash 363}
+      \range{pages}{31}
+    \endentry
+    \entry{dragon_book}{book}{}
+      \name{author}{3}{}{%
+        {{hash=1296ce98404ad2664e198c8a45378c42}{Aho}{A\bibinitperiod}{A.V.}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=3503c6003939d3d5a3f8d5f96f25dfa0}{Sethi}{S\bibinitperiod}{R.}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=be6f176a7603cda68c7452d7bc6a0811}{Ullman}{U\bibinitperiod}{J.D}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {The address}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley}%
+      }
+      \strng{namehash}{f9a7db55268efccdf30798a59cfc3368}
+      \strng{fullhash}{f9a7db55268efccdf30798a59cfc3368}
+      \field{sortinit}{A}
+      \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2}
+      \field{isbn}{9780321491695}
+      \field{title}{Compilers: Principles, techniques and tools}
+      \field{year}{2007}
+    \endentry
+    \entry{camunda_models}{online}{}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labeltitlesource}{title}
+      \field{title}{BPMN for research}
+      \field{year}{2016}
+      \verb{url}
+      \verb https://github.com/camunda/bpmn-for-research
+      \endverb
+    \endentry
+    \entry{hospital_ref}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=00f21c790fa47a8acb78eb0ee877946c}{Cabanillas}{C\bibinitperiod}{Cristina}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=dfe6b8c43f01ca374fe36a7f10142f11}{Knuplesch}{K\bibinitperiod}{David}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=5cf6201405317082861febd8d9b97a5e}{Resinas}{R\bibinitperiod}{Manuel}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=8eaa44e89e43f01f5d0fd74865b3bb51}{Reichert}{R\bibinitperiod}{Manfred}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=77c03f6db0b7101e4efabda4bd436ce4}{Mendling}{M\bibinitperiod}{Jan}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=77c31395d58ce56f193e212fefbca1d4}{Cortés}{C\bibinitperiod}{Antonio\bibnamedelima Ruiz}{A\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{ad3d12eb126937db5c198014254a02ce}
+      \strng{fullhash}{d3a78b4624d1d830b89b8a4ee67cee12}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Advanced Information Systems Engineering - 27th International Conference, CAiSE 2015, Stockholm, Sweden, June 8-12, 2015, Proceedings}
+      \field{title}{RALph: {A} Graphical Notation for Resource Assignments in Business Processes}
+      \field{year}{2015}
+      \field{pages}{53\bibrangedash 68}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1007/978-3-319-19069-3_4
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1007/978-3-319-19069-3_4
+      \endverb
+    \endentry
+    \entry{nlp_dl}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=b8bbd832353d6b8ffa73123369d39d55}{Collins}{C\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b8bbd832353d6b8ffa73123369d39d55}
+      \strng{fullhash}{b8bbd832353d6b8ffa73123369d39d55}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Machine Learning Methods in Natural Language Processing}
+    \endentry
+    \entry{CP}{article}{}
+      \name{author}{1}{}{%
+        {{hash=a22b5ee27d361308609e73b56e9718ae}{Dechter}{D\bibinitperiod}{R.}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Morgan Kaufmann}%
+      }
+      \strng{namehash}{a22b5ee27d361308609e73b56e9718ae}
+      \strng{fullhash}{a22b5ee27d361308609e73b56e9718ae}
+      \field{sortinit}{D}
+      \field{sortinithash}{78f7c4753a2004675f316a80bdb31742}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{05}
+      \field{title}{Constraint Processing (The Morgan Kaufmann Series in Artificial Intelligence)}
+      \field{year}{2003}
+    \endentry
+    \entry{text2process_models}{online}{}
+      \name{author}{1}{}{%
+        {{hash=9321ab94c67b3eb5165fc8026987e57e}{Fredrich}{F\bibinitperiod}{Fabian}{F\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{9321ab94c67b3eb5165fc8026987e57e}
+      \strng{fullhash}{9321ab94c67b3eb5165fc8026987e57e}
+      \field{sortinit}{F}
+      \field{sortinithash}{c6a7d9913bbd7b20ea954441c0460b78}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Text2Process Test Data Models}
+      \verb{url}
+      \verb https://github.com/FabianFriedrich/Text2Process/
+      \endverb
+    \endentry
+    \entry{text2bpm}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=d1f481ac5e7e8ab0519dac8c8bf94250}{Friedrich}{F\bibinitperiod}{Fabian}{F\bibinitperiod}{}{}{}{}}%
+        {{hash=77c03f6db0b7101e4efabda4bd436ce4}{Mendling}{M\bibinitperiod}{Jan}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=7d063724d1bb5ef1c238e0f429890f3b}{Puhlmann}{P\bibinitperiod}{Frank}{F\bibinitperiod}{}{}{}{}}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{f64836857e0630439faf7fe7394ad783}
+      \strng{fullhash}{f64836857e0630439faf7fe7394ad783}
+      \field{sortinit}{F}
+      \field{sortinithash}{c6a7d9913bbd7b20ea954441c0460b78}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Advanced Information Systems Engineering}
+      \field{title}{Process model generation from natural language text}
+      \field{year}{2011}
+      \field{pages}{482\bibrangedash 496}
+      \range{pages}{15}
+    \endentry
+    \entry{bpmn_spec}{book}{}
+      \name{author}{9}{}{%
+        {{hash=6c7ec8030211679e29b361c0a46b0750}{Kossak}{K\bibinitperiod}{Felix}{F\bibinitperiod}{}{}{}{}}%
+        {{hash=615d841bfc0a67e36cef628d37707105}{Illibauer}{I\bibinitperiod}{Christa}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=a10191c55103f49ecf2368e2eed6a355}{Geist}{G\bibinitperiod}{Verena}{V\bibinitperiod}{}{}{}{}}%
+        {{hash=b03c916ae1c9767f65ce99f71ab50bb4}{Kubovy}{K\bibinitperiod}{Jan}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=bdae43b9cb97b559d7ed4c8948bfe35b}{Natschläger}{N\bibinitperiod}{Christine}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=36d143e06b4d61cb0a364b14f735368e}{Ziebermayr}{Z\bibinitperiod}{Thomas}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=317e01673fd6a94d3865c1bcaffcab30}{Kopetzky}{K\bibinitperiod}{Theodorich}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=4b393fa593e7f604ae0b11cba335b75d}{Freudenthaler}{F\bibinitperiod}{Bernhard}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=0df1b0b690374a75cb103231aeaab41f}{Schewe}{S\bibinitperiod}{Klaus-Dieter}{K\bibinithyphendelim D\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{9296fef6f1a28f9a3298c209568064b4}
+      \strng{fullhash}{139cb64c11f9dadb438d6bfc286c8acc}
+      \field{sortinit}{K}
+      \field{sortinithash}{a7d5b3aec5a0890aae7baf85a209abfc}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9783319099309}
+      \field{title}{A Rigorous Semantics for BPMN 2.0 Process Diagrams.}
+      \field{year}{2014}
+    \endentry
+    \entry{text_with_bpmn}{article}{}
+      \name{author}{3}{}{%
+        {{hash=b3ff0c8377e387ea653131ba909f5e6d}{Leopold}{L\bibinitperiod}{H.}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=7c62ac3aee7c95c3ddc6c3bbbf9b32c7}{Mendling}{M\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=27d973c3bc190dcaba472985da286217}{Polyvyanny}{P\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE Transactions on Software Engineering}%
+      }
+      \strng{namehash}{41b200538f0491dd8558a8a7af23fb59}
+      \strng{fullhash}{41b200538f0491dd8558a8a7af23fb59}
+      \field{sortinit}{L}
+      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Supporting process model validation through natural language generation}
+      \field{year}{2014}
+    \endentry
+    \entry{agile_manifesto}{misc}{}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{http://www.agilemanifesto.org/}}
+      \field{note}{Accedit a: 28-02-2016}
+      \field{title}{Manifesto for Agile Software Developement}
+    \endentry
+    \entry{stanford_parser}{article}{}
+      \name{author}{3}{}{%
+        {{hash=bc51d27f77e9b089656c82448f56e301}{Manning}{M\bibinitperiod}{Cristopher\bibnamedelima D.}{C\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+        {{hash=5319afc8b165e56ab7090f64fe3f2142}{Surdeanu}{S\bibinitperiod}{Mihai}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=dec34f4fc50230f9335131a07e98d758}{Bauer}{B\bibinitperiod}{John}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{3908b3a465269c5882546dcd800668a1}
+      \strng{fullhash}{3908b3a465269c5882546dcd800668a1}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Stanford CoreNLP Natural Language Processing Toolkit}
+      \field{year}{2014}
+    \endentry
+    \entry{similarity}{online}{}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labeltitlesource}{title}
+      \field{title}{Mining similarity using euclidean distance, pearson correlation and filtering.}
+      \field{year}{2010}
+      \verb{url}
+      \verb http://mines.humanoriented.com/classes/2010/fall/csci568/portfolio_exports/mvoget/similarity/similarity.html
+      \endverb
+    \endentry
+    \entry{LAP}{article}{}
+      \name{author}{1}{}{%
+        {{hash=46835eb9f51aadc1bdaecd6504a07339}{Munkres}{M\bibinitperiod}{James}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{2}{%
+        {Society for Industrial}%
+        {Applied Mathematics}%
+      }
+      \strng{namehash}{46835eb9f51aadc1bdaecd6504a07339}
+      \strng{fullhash}{46835eb9f51aadc1bdaecd6504a07339}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{03684245}
+      \field{journaltitle}{Journal of the Society for Industrial and Applied Mathematics}
+      \field{number}{1}
+      \field{title}{Algorithms for the Assignment and Transportation Problems}
+      \field{volume}{5}
+      \field{year}{1957}
+      \field{pages}{32\bibrangedash 38}
+      \range{pages}{7}
+      \verb{url}
+      \verb http://www.jstor.org/stable/2098689
+      \endverb
+    \endentry
+    \entry{freeling}{article}{}
+      \name{author}{2}{}{%
+        {{hash=36d84b638675c862ff3fcd372d4a6dc5}{Padró}{P\bibinitperiod}{Lluís}{L\bibinitperiod}{}{}{}{}}%
+        {{hash=0827b5443501808da7ecdf00a27b7a59}{Stanilovsky}{S\bibinitperiod}{Evgeny}{E\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{f98bbe49aa4cf70d4cd080e16623404e}
+      \strng{fullhash}{f98bbe49aa4cf70d4cd080e16623404e}
+      \field{sortinit}{P}
+      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{FreeLing 3.0: Towards Wider Multilinguality. Proceedings of the Language Resources and Evaluation Conference (LREC 2012) ELRA.}
+      \field{year}{2012}
+    \endentry
+    \entry{textserver}{article}{}
+      \name{author}{2}{}{%
+        {{hash=36d84b638675c862ff3fcd372d4a6dc5}{Padró}{P\bibinitperiod}{Lluís}{L\bibinitperiod}{}{}{}{}}%
+        {{hash=6a68f5aaff2f451204668ae14c16515c}{Turmo}{T\bibinitperiod}{Jordi}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{489a1ebb10ab2a91d42bb5923b3bf73e}
+      \strng{fullhash}{489a1ebb10ab2a91d42bb5923b3bf73e}
+      \field{sortinit}{P}
+      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{TextServer: Cloud-based Multilingual Natural Language Processing. Proceedings of the 15th IEEE International Conference on Data Mining (ICDM'15) IEEE.}
+      \field{year}{2012}
+    \endentry
+    \entry{ILP}{book}{}
+      \name{author}{1}{}{%
+        {{hash=25d5b8c6eeb2588f4cd646cfe8d0827b}{Schrijver}{S\bibinitperiod}{Alexander}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons}%
+      }
+      \strng{namehash}{25d5b8c6eeb2588f4cd646cfe8d0827b}
+      \strng{fullhash}{25d5b8c6eeb2588f4cd646cfe8d0827b}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Theory of linear and integer programming}
+      \field{year}{1998}
+    \endentry
+    \entry{behavioral_profiles}{incollection}{}
+      \name{author}{3}{}{%
+        {{hash=f66aa1524a765328f11a715ff4d6a7c3}{Smirnov}{S\bibinitperiod}{Sergey}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=1cec7755ad13856b52f164e9d9b6f840}{Weidlich}{W\bibinitperiod}{Matthias}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=77c03f6db0b7101e4efabda4bd436ce4}{Mendling}{M\bibinitperiod}{Jan}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{0f1d3646aa1a84ab27a552a453bceb07}
+      \strng{fullhash}{0f1d3646aa1a84ab27a552a453bceb07}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Service-Oriented Computing}
+      \field{title}{Business process model abstraction based on behavioral profiles}
+      \field{year}{2010}
+      \field{pages}{1\bibrangedash 16}
+      \range{pages}{16}
+    \endentry
+    \entry{nlp_ml}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=d5670b2600fea169724521e252d9d09d}{Socher}{S\bibinitperiod}{Richard}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{d5670b2600fea169724521e252d9d09d}
+      \strng{fullhash}{d5670b2600fea169724521e252d9d09d}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Deep Learning for NLP without magic}
+      \field{year}{2014}
+    \endentry
+    \entry{ai_completeness}{article}{}
+      \name{author}{1}{}{%
+        {{hash=59f2469f3f05e4d42414676b7ff72f77}{Yampolskiy}{Y\bibinitperiod}{Roman\bibnamedelima V.}{R\bibinitperiod\bibinitdelim V\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{59f2469f3f05e4d42414676b7ff72f77}
+      \strng{fullhash}{59f2469f3f05e4d42414676b7ff72f77}
+      \field{sortinit}{Y}
+      \field{sortinithash}{3cbc1e3d286284cedb5e5218a3248f94}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Turing Test as a Defining Feature of AI-Completeness}
+      \field{year}{2012}
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+

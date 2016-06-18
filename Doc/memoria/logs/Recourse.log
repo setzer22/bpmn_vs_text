@@ -1,0 +1,160 @@
+=========
+Sentences
+=========
+Text.0) If an insurant could be possibly subrogated against , I get information about that .
+Text.1) I check that case and if the possibility is really there , I send a request for payment to the insurant and make me a reminder .
+Text.2) If recourse is not possible , I close the case .
+Text.3) When we receive the money , I make a booking and close the case .
+Text.4) If the insurant disagrees with the recourse , I ? ll have to check the reasoning of that .
+Text.5) If he is right , I simply close the case .
+Text.6) If he is wrong , I forward the case to a collection agency .
+Text.7) It the deadline for disagreement is reached and we haven ? t received any money , I forward the case to the collection agency as_well .
+
+=====
+Tasks
+=====
+Task.0) send request for payment
+Task.1) close case
+Task.2) check reasoning
+Task.3) check case
+Task.4) close case
+Task.5) send reminder
+Task.6) make booking
+Task.7) close case
+Task.8) hand over to collection agency
+
+=================
+Similarity Matrix
+=================
+
+|    0 |    1 |    2 |    3 |    4 |    5 |    6 |    7 |    8 |
+|------+------+------+------+------+------+------+------+------|
+| 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 |
+| 0.67 | 0.22 | 0.00 | 0.50 | 0.54 | 0.25 | 0.14 | 0.31 | 0.03 |
+| 0.00 | 0.22 | 0.00 | 0.50 | 0.54 | 0.00 | 0.00 | 0.31 | 0.00 |
+| 0.00 | 0.22 | 0.00 | 0.50 | 0.54 | 0.00 | 0.14 | 0.31 | 0.00 |
+| 0.00 | 0.00 | 0.18 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.03 |
+| 0.00 | 0.22 | 0.00 | 0.50 | 0.54 | 0.00 | 0.00 | 0.31 | 0.00 |
+| 0.00 | 0.22 | 0.00 | 0.50 | 0.54 | 0.00 | 0.00 | 0.31 | 0.13 |
+| 0.00 | 0.22 | 0.00 | 0.50 | 0.54 | 0.00 | 0.00 | 0.31 | 0.13 |
+
+=========
+threshold
+=========
+0.1843840558204176
+
+=========
+Matchings
+=========
+Sentence  1 :
+"I check that case and if the possibility is really there , I send a request for payment to the insurant and make me a reminder ."
+Task  0 :
+"send request for payment"
+Matching score: 0.6724667349027635
+
+    Comon features: 
+
+    * Contains the synset "direct"
+    * Contains the synset "petition"
+    * Contains the synset "payment"
+    * Contains an hyponym of "displace"
+    * Contains an hyponym of "content"
+    * Contains an hyponym of "communication"
+    * Contains an hyponym of "cost"
+    * Contains an hyponym of "expenditure"
+    * Contains the verb "send"
+    * Contains the noun "request"
+    * Contains the noun "payment"
+    * Contains the action "send"
+    * The direct object of verb "send" is "request" (noun)
+    * The direct object of verb "request" is "for" (preposition)
+    * The object of verb "send" contains the noun "request"
+    * The object of verb "send" contains the noun "payment"
+    * The object of verb "request" contains the noun "payment"
+
+
+Sentence  7 :
+"It the deadline for disagreement is reached and we haven ? t received any money , I forward the case to the collection agency as_well ."
+Task  1 :
+"close case"
+Matching score: 0.21933085501858737
+
+    Comon features: 
+
+    * Contains the synset "case"
+    * Contains an hyponym of "legal_proceeding"
+    * Contains an hyponym of "due_process"
+    * Contains the noun "case"
+
+
+Sentence  1 :
+"I check that case and if the possibility is really there , I send a request for payment to the insurant and make me a reminder ."
+Task  3 :
+"check case"
+Matching score: 0.5
+
+    Comon features: 
+
+    * Contains the synset "case"
+    * Contains an hyponym of "legal_proceeding"
+    * Contains an hyponym of "due_process"
+    * Contains the noun "case"
+
+
+Sentence  7 :
+"It the deadline for disagreement is reached and we haven ? t received any money , I forward the case to the collection agency as_well ."
+Task  4 :
+"close case"
+Matching score: 0.5412844036697249
+
+    Comon features: 
+
+    * Contains the synset "case"
+    * Contains an hyponym of "legal_proceeding"
+    * Contains an hyponym of "due_process"
+    * Contains the noun "case"
+
+
+Sentence  1 :
+"I check that case and if the possibility is really there , I send a request for payment to the insurant and make me a reminder ."
+Task  5 :
+"send reminder"
+Matching score: 0.25146198830409366
+
+    Comon features: 
+
+    * Contains the synset "direct"
+    * Contains the synset "reminder"
+    * Contains an hyponym of "displace"
+    * Contains an hyponym of "experience"
+    * Contains an hyponym of "cognitive_content"
+    * Contains the verb "send"
+    * Contains the noun "reminder"
+    * Contains the action "send"
+
+
+Sentence  7 :
+"It the deadline for disagreement is reached and we haven ? t received any money , I forward the case to the collection agency as_well ."
+Task  7 :
+"close case"
+Matching score: 0.3121693121693122
+
+    Comon features: 
+
+    * Contains the synset "case"
+    * Contains an hyponym of "legal_proceeding"
+    * Contains an hyponym of "due_process"
+    * Contains the noun "case"
+
+
+
+========================
+Tasks with no good match
+========================
+Task  2 :
+"check reasoning"
+Task  6 :
+"make booking"
+Task  8 :
+"hand over to collection agency"
+

@@ -1,0 +1,310 @@
+\chapter{Avaluació dels resultats}
+\label{cha:experiments}
+
+Aquest capítol conté diferents experiments que preténen avaluar la qualitat de l'algorisme de forma empírica. Cadascun dels experiments està dissenyat per avaluar una característica concreta de l'algorisme.
+
+Per cadascun dels experiments s'inclouen quatre apartats. A l'apartat de plantejament s'explica la motivació de l'experiment i es descriu breument el resultat esperat. A l'apartat de metodologia es descriu exactament com s'ha realitzat l'experiment. A l'apartat de resultats es mostren els resultats obtinguts. Finalment, a l'apartat de conclusions es fa l'avaluació dels resultats obtinguts.
+
+Durant els experiments, es farà referència a les parelles model-text de l'annex \ref{sec:parelles_model_text} utilitzant el codi de quatre caràcters indicat en cadascuna. Així, per exemple, la parella ``Computer Repair Shop'' s'abreviarà utilitzant \texttt{[COMP]}. A més, es referirà a traces detallades de l'execució de l'algorisme de l'annex \ref{sec:logs} quan resulti necessari.
+
+\section{Avaluació automàtica d'un conjunt de models per a un text}
+\label{sec:experiments-avaluacio}
+\subsection{Plantejament}
+
+Aquest experiment pretén avaluar com de bona és la puntuació que l'algorisme troba a l'hora de comparar un model BPMN i una representació textual. Per a l'experiment s'utilitzaràn diversos textos i, per cada text, múltiples BPMN que descriguin el mateix procés que aquest però ho facin amb diferents nivells de qualitat. S'espera que l'algorisme puntui millor aquelles parelles model-text on el model sigui de bona qualitat. 
+
+\subsection{Metodologia}
+
+Per a fer l'experiment s'utilitzarà el benchmark de parelles de model BPMN i descripció textual ``BPMN for Research'' de Camunda\cite{camunda_models}. Aquest benchmark prové d'un curs de \emph{Business Process Management} on l'activitat final consistia en, donada una descripció textual en llenguatge natural, generar un model BPMN equivalent. El benchmark consta de 4 exercicis i, per cadascun d'aquests, un text model i entre 35 i 60 models BPMN. Els models del benchmark corresponen a totes les solucions que van lliurar els alumnes durant l'activitat. 
+
+Els textos utilitzats corresponen als casos \texttt{[DISP]}, \texttt{[CRED]}, \texttt{[REST]} i \texttt{[RECO]} de l'annex . Els models no s'han pogut incloure al treball degut al gran nombre d'aquests, però es poden consultar a \cite{camunda_models}, sota l'apartat \emph{Results} de cadascun dels exercicis.
+
+Les solucions dels alumnes tenen la propietat de que, al no provenir d'experts, varien en qualitat. Malauradament, no es disposa de les qualificacions que els alumnes van obtenir durant el curs. Aquest fet es compensarà amb una validació manual.
+
+Per cada exercici del benchmark amb un text $t$ i un conjunt de models $M$, s'executarà l'experiment seguint els següents passos.
+
+\begin{itemize}
+    \item Calcular la puntuació de similaritat entre el text $t$ i el model $m$ per cada $m \in M$.
+    \item Ordenar les parelles $(t, m)$ de més a menys puntuació i obtenir les tres millors i les tres pitjors.
+    \item Realitzar un anàlisi manual de la qualitat dels tres millors models i comparar-la amb la qualitat dels tres pitjors models.
+\end{itemize}
+
+El resultat esperat és que els tres millors models de cada exercici siguin de millor qualitat que els tres pitjors models. Per determinar la qualitat dels resultats de l'experiment, es recorrerà a un expert\footnote{Josep Carmona, director d'aquest Treball de Fi de Grau.} que en faci una avaluació manualment.
+
+\subsection{Resultats}
+
+Per motius d'espai, no es poden incloure tots els models dels alumnes ni les traces d'execució pertinents. En aquest apartat es fa un resum dels resultats a nivell general comentant els diversos problemes trobats en aquests.
+
+Degut a diverses malformacions en alguns dels models, ha estat impossible fer-ne un anàlisi. Aquells models que formaven grafs inconsistents, aproximadament un 10\%, s'han descartat de l'experiment.
+
+Després d'una avaluació manual dels tres millors i els tres pitjors resultats segons l'algorisme per cadascun dels exercicis del curs de Camunda, s'han fet les següents observacions.
+
+\begin{itemize}
+    \item En els exercicis \texttt{[CRED]} i \texttt{[RECO]}, els tres millors models de cada classe no són substancialment millors que els tres suposadament pitjors. Alguns models han obtingut una puntuació inusualment alta tot i estar clarament mal modelats.
+    \item En els exercicis \texttt{[REST]} i \texttt{[DISP]}, els tres millors models de cada classe són una millor representació del text que els tres pitjors models de la classe.
+    \item Els models amb menys tasques solen puntuar-se generalment millor que els models amb moltes tasques.
+    \item En els casos on millor ha realitzat la puntuació l'algorisme, la majoria de models eren estructuralment més similars\footnote{Tot indica que els alumnes van ser guiats d'alguna manera durant els exercicis fent que tots féssin models estructuralment similars}.
+    \item Les puntuacions són, en general, independents del nombre de swimlanes i pools en la resposta dels alumnes.
+\end{itemize}
+
+\subsection{Conclusions}
+
+Es pot dir que l'algorisme ha puntuat correctament els exercicis on el nivell de qualitat era, en general, major. Tot i això, el fet d'haver utilitzar models de menor qualitat ha posat en manifest algunes mancances amb l'enfoc de a l'algorisme que no s'havien previst inicialment. Aquesta falta de previsió prové del fet que s'havia assumit una certa estructura del model que no tots els models cumpleixen. Tot i que els models que no cumpleixen aquesta estructura són, en general, de pitjor qualitat, l'algorisme sol assignar-los puntuacions més altes.
+
+Fixant-nos amb més detall amb els casos \texttt{[CRED]} i \texttt{[RECO]}, on l'algorisme ha fet una pitjor avaluació, s'ha pogut observar que bona part del problema recau en el nombre de tasques. Amb l'algorisme actual, la puntuació és funció de l'assignació òptima de tasques a frases. Un model amb menys tasques, tindrà, en general, una puntuació major. Això es va veure clarament reflexat en el cas concret on l'algorisme assignava la màxima puntuació d'$1$ a un alumne que, segurament per confusió, només va incloure una única tasca al seu model. Com que la única tasca que va incloure contenia literalment les paraules d'una de les frases del model, les úniques característiques generades eren un subconjunt total de les característiques d'una de les frases del text, donant similaritat màxima.
+
+Un altre punt que es pot considerar problemàtic amb l'enfoc actual és que l'algorisme no té en compte directament l'estructura de swimlanes i pools en la puntuació. Un model BPMN ha de contenir una swimlane (o pool) per cadascun dels agents involucrats. No obstant això, l'algorisme puntua de forma similar si el model conté swimlanes i pools o si no en té.
+
+Tot això indica una falta de visió global per part de l'algorisme. L'enfoc actual consisteix a aparellar tasques i frases. Les característiques globals només es tenen en compte indirectament a l'hora de generar el conjunt de característiques d'una tasca o frase concreta.  Cal un nou enfoc ampliat que tingués en compte tant l'assignació òptima de tasques a frases com informació a nivell general del text i el model. Un exemple seria considerar la similaritat entre el conjunt d'agents en el graf semàntic del text i els agents indicats en les swimlanes i les pools. També es podrien penalitzar solucions on el nombre de tasques i el nombre d'accions esmentades en el text difereixi significativament. 
+
+Els resultats d'aquest experiment han resultat molt útils a l'hora de veure quins són els següents passos a l'hora de millorar l'algorisme.
+
+
+\section{Aparellament de models i textos}
+\label{sec:experiments-aparellament}
+\subsection{Plantejament}
+
+L'objectiu d'aquest experiment és utilitzar l'algorisme per aparellar models i descripcions textuals. Es pretén observar tant tant la qualitat com l'eficiència\footnote{Existeix la possibilitat que les instàncies del problema siguin més difícils si els textos i els models que s'intenten comparar no parlen del mateix. Aquest experiment pretén mesurar això a més de l'objectiu esmentat.} de l'algorisme a l'hora de comparar textos i models que no parlin del mateix procés. L'experiment anterior provava l'algorisme per diferents models fets a partir d'un mateix text. La motivació d'aquest experiment és observar com es comporta l'algorisme davant d'exemples de model i text que clarament no parlen del mateix, per veure si l'algorisme seria capaç de descartar-los. S'espera que, donats un conjunt de textos en llenguatge natural i un conjunt de models BPMN, l'algorisme sigui capaç de determinar quin text correspon a cada model.
+
+\subsection{Metodologia}
+
+Es disposa d'un benchmark amb un conjunt $T$ de textos en llenguatge natural i un conjunt $M$ de models BPMN. En total hi ha 9 models i textos aparellats, és a dir, per cadascun dels textos de $T$, hi ha un model de $M$ que parla del mateix que aquest. Tenint aquest fet en compte, considerem que existeix una assignació òptima d'elements de $T$ a $M$ de manera que cada text correspon al model que parla del mateix.
+
+Les 9 parelles model-text utilitzades son les que hi ha disponibles a l'annex \ref{sec:parelles_model_text}, tret del cas de \texttt{[ZOO]} que es reserva per l'experiment de l'apartat \ref{experiments-inconsistencies}. 
+
+Donat aquest escenari, l'experiment es durà a terme de la següent manera:
+
+\begin{enumerate}
+    \item Calcular, per cada parella $(t, m)$ amb $t \in T$ i $m \in M$, la puntuació de similaritat utilitzant l'algorisme.
+    \item Mesurar els temps de cadascuna de les execucions de l'algorisme.
+    \item Determinar l'assignació $A: T \rightarrow M$ de manera que cada element de $T$ s'assigna a l'element de $M$ pel qual $sim(t, m)$ és màxima.
+\end{enumerate}
+
+L'objectiu és determinar si l'assignació òptima i $A$ són la mateixa assignació. A més, l'experiment també pretén veure si existeix una correlació entre la similaritat dels models i el temps d'execució, per això s'utilitzaràn els temps mesurats.
+
+\subsection{Resultats}
+
+La taula \ref{tab:experiment2-result1} mostra per cada parella de text (files) i model (columnes) quina és la similaritat global entre els dos models. S'usa la mètrica de similaritat per defecte: Weighted Overlapping Index. La taula \ref{tab:experiment2-result2} mostra els temps d'execució de calcular l'assignació òptima per cadascuna de les parelles.
+
+\begin{table}[htbp]
+\begin{tabular}{l||r|r|r|r|r|r|r|r|r||}
+    \multicolumn{1}{c|}{T \textbackslash M} & \multicolumn{1}{l|}{\texttt{[BICL]}} & \multicolumn{1}{l|}{\texttt{[COMP]}} & \multicolumn{1}{l|}{\texttt{[CRED]}} & \multicolumn{1}{l|}{\texttt{[DISP]}} & \multicolumn{1}{l|}{\texttt{[HOSP]}} & \multicolumn{1}{l|}{\texttt{[HOTL]}} & \multicolumn{1}{l|}{\texttt{[RECO]}} & \multicolumn{1}{l|}{\texttt{[REST]}} & \multicolumn{1}{l||}{\texttt{[UNWR]}} \\ \hline\hline
+\texttt{[BICL]} & \textbf{0.346} & 0.197 & 0.002 & 0.025 & 0.038 & 0.088 & 0.178 & 0.025 & 0.229 \\ \hline
+\texttt{[COMP]} & 0.042 & \textbf{0.285} & 0.005 & 0.069 & 0.037 & 0.071 & 0.038 & 0.035 & 0.236 \\ \hline
+\texttt{[CRED]} & 0.035 & 0.050 & 0.114 & 0.042 & 0.050 & 0.060 & \textbf{0.184} & 0.024 & 0.165 \\ \hline
+\texttt{[DISP]} & 0.033 & 0.046 & 0.011 & \textbf{0.315} & 0.054 & 0.066 & 0.194 & 0.021 & 0.194 \\ \hline
+\texttt{[HOSP]} & 0.040 & 0.087 & 0.089 & 0.042 & \textbf{0.491} & 0.101 & 0.183 & 0.064 & 0.168 \\ \hline
+\texttt{[HOTL]} & 0.030 & 0.048 & 0.003 & 0.018 & 0.039 & \textbf{0.351} & 0.007 & 0.039 & 0.180 \\ \hline
+\texttt{[RECO]} & 0.016 & 0.028 & 0.085 & 0.012 & 0.039 & 0.032 & \textbf{0.328} & 0.033 & 0.146 \\ \hline
+\texttt{[REST]} & 0.040 & 0.027 & 0.006 & 0.021 & 0.035 & 0.146 & 0.010 & \textbf{0.480} & 0.164 \\ \hline
+\texttt{[UNWR]} & 0.026 & 0.049 & 0.004 & 0.024 & 0.042 & 0.084 & 0.029 & 0.017 & \textbf{0.339} \\ \hline\hline
+\end{tabular}
+\caption{Similaritat per les diferents parelles de text (fila) i model (columna)}
+\label{tab:experiment2-result1}
+\end{table}
+
+\begin{table}[htbp]
+\begin{tabular}{l||r|r|r|r|r|r|r|r|r||}
+    \multicolumn{1}{c||}{T \textbackslash M} & \multicolumn{1}{l|}{\texttt{[BICL]}} & \multicolumn{1}{l|}{\texttt{[COMP]}} & \multicolumn{1}{l|}{\texttt{[CRED]}} & \multicolumn{1}{l|}{\texttt{[DISP]}} & \multicolumn{1}{l|}{\texttt{[HOSP]}} & \multicolumn{1}{l|}{\texttt{[HOTL]}} & \multicolumn{1}{l|}{\texttt{[RECO]}} & \multicolumn{1}{l|}{\texttt{[REST]}} & \multicolumn{1}{l||}{\texttt{[UNWR]}} \\ \hline\hline
+\texttt{[BICL]} & 290 & 232 & 278 & 242 & 388 & 468 & 312 & 942 & 261 \\ \hline
+\texttt{[COMP]} & 210 & 167 & 188 & 216 & 285 & 298 & 236 & 441 & 212 \\ \hline
+\texttt{[CRED]} & 274 & 229 & 287 & 288 & 405 & 487 & 302 & 766 & 239 \\ \hline
+\texttt{[DISP]} & 199 & 141 & 169 & 211 & 247 & 275 & 183 & 483 & 182 \\ \hline
+\texttt{[HOSP]} & 385 & 355 & 425 & 402 & 579 & 671 & 507 & 1398 & 383 \\ \hline
+\texttt{[HOTL]} & 261 & 220 & 267 & 237 & 362 & 473 & 299 & 800 & 283 \\ \hline
+\texttt{[RECO]} & 195 & 170 & 206 & 161 & 316 & 343 & 229 & 582 & 219 \\ \hline
+\texttt{[REST]} & 283 & 268 & 333 & 277 & 388 & 542 & 343 & 1102 & 300 \\ \hline
+\texttt{[UNWR]} & 326 & 278 & 337 & 332 & 452 & 535 & 368 & 1034 & 438 \\ \hline\hline
+\end{tabular}
+\caption{Temps d'execució per computar la similaritat per cada parella de text (fila) i model (columna) en milisegons.}
+\label{tab:experiment2-result2}
+\end{table}
+
+A més, per cadascuna de les files de la taula de similaritats, s'ha calculat el ratio entre l'element màxim i la mitjana dels de més l'objectiu de quantificar el nivell de confiança amb que l'algorisme ha aparellat el model i el text. Aquests resultats es recullen a la taula \ref{tab:experiment2-result3}.
+
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{|c||c|} \hline
+        Text & \multicolumn{1}{c|}{$max / avg(row - max)$}\\ \hline\hline
+        \texttt{[BICL]} & 3.980 \\ \hline
+        \texttt{[COMP]} & 4.808 \\ \hline
+        \texttt{[CRED]} & 3.052 \\ \hline
+        \texttt{[DISP]} & 4.581 \\ \hline
+        \texttt{[HOSP]} & 5.697 \\ \hline
+        \texttt{[HOTL]} & 8.708 \\ \hline
+        \texttt{[RECO]} & 7.548 \\ \hline
+        \texttt{[REST]} & 9.630 \\ \hline
+        \texttt{[UNWR]} & 11.065\\ \hline
+    \end{tabular}
+    \caption{Nivell de confiança de l'assignació de les diferents parelles model-text}
+    \label{tab:experiment2-result3}
+\end{table}
+
+% TODO: Poso traces?
+A l'annex \ref{sec:traces_execucio} es poden consultar algunes les traces d'execució generades per l'algorisme\footnote{Aquest text es genera internament i s'exposa a la API pública, però no es mostra a l'usuari en la interfície gràfica, ja que és massa detallat.} per algunes de les parelles de la taula de similaritat. No s'inclouen totes per motius d'espai pero aquestes es poden consultar en el codi font del projecte sota el directori \texttt{logs}.
+
+\subsection{Conclusions}
+
+Com es pot veure, analitzant la taula de similaritats per files, veiem que l'algorisme assigna correctament totes, tret d'una, de les parelles model-text, i que el cas en el que s'equivoca, el nivell de confiança era el més baix de tots els casos. 
+
+%TODO: Dir que es pot veure amb mes detall a ...
+Els dos exemples amb una major puntuació de similaritat són \texttt{[REST]} i \texttt{[HOSP]}. Després d'una inspecció manual a càrrec del director del projecte, aquest ha corroborat que els dos models esmentats són els que més s'assemblen als respectius textos. 
+
+En general, es pot veure com la similaritat de la parella òptima està almenys un ordre de magnitud per sobre de la majoria de les altres parelles de cada fila. Aquest resultat es pot veure quantificat a la taula \ref{tab:experiment2-result3}, on es pot observar que l'algorisme assigna una puntuació entre 3 i 11 vegades superiors a la parella òptima respecte la mitjana de les altres.
+
+
+
+\section{Efectes de la introducció d'inconsistències}
+\label{sec:experiments-inconsistencies}
+
+\subsection{Plantejament}
+
+L'objectiu d'aquest experiment és veure com es va modificant el resultat de l'algorisme a mesura que s'introdueixen diferents inconsistències a una parella, inicialment bona, de model BPMN i descripció textual. S'espera que l'algorisme reaccioni adequadament a cadascuna de les inconsistències afegides. 
+
+\subsection{Metodologia}
+
+Per a l'experiment s'utilitzarà la parella model-text \texttt{[ZOO]} (annex \ref{sec:benchmark-zoo}. Es realitzarà la següent sequència de modificacions al model o al text, i després de cada modificació s'observarà la traca d'execució de la nova assignació calculada per l'algorisme\footnote{Degut a la mida de les traces d'execució, per motius d'espai, no es poden incloure totes en aquesta memòria. No obstant això, els resultats són totalment replicables, ja que el comportament de l'algorisme és determinista.}:
+
+\begin{enumerate}
+    \item Primer de tot, s'invertirà l'ordre de les tasques: ``Enter information into the system'' i ``Send request to billing department'' al model BPMN. L'objectiu és comprovar que l'algorisme reaccioni a una incoherència amb l'ordre de les tasques i les frases.
+    \item Mantenint el model modificat, s'eliminarà la frase del text ``Once the visitor receives the card, he can co home''. Amb aquesta modificació es busca veure què passarà amb les dues tasques que s'assignen inicialment a aquesta frase.
+    \item Seguint amb el mateix model i text modificats, s'afegirà al model una nova tasca del banc entremig de ``Process payment information'' i ``Charge account'' amb el text: ``Validate credit card data''. Aquesta modificació pretén veure què passaria si aparegués una nova informació al procés de negoci però només s'actualitzés al model BPMN.
+    \item A continuació, es canviaràn de lloc els textos de les swimlanes i les pools. ``Visitor'' passarà a ser ``Marketing department'', ``ZooClub department'' passarà a ser ``Bank'', ``Billing department'' passarà a ser ``Visitor'' i ``Bank'' passarà a ser ``Billing department''. Aquest canvi pretén observar com podria l'algorisme detectar una barreja de les swimlanes i les pools causada per un error a l'editor de models o una confusió per part de l'usuari.
+\end{enumerate}
+
+\subsection{Resultats}
+
+En aquesta secció es descriu el resultat d'aplicar cadascuna de les modificacions de l'apartat anterior sobre l'assignació final. Aquesta és l'assignació inicial que realitza l'algorisme, amb una puntuació de similaritat de \textbf{0.363}:
+
+\begin{center}
+\begin{tabular}{|p{0.48\textwidth}|p{0.48\textwidth}|}
+    \hline
+    \multicolumn{1}{|c}{\textbf{Frase}} & \multicolumn{1}{|c|}{\textbf{Tasca}} \\ \hline\hline
+    ``When a visitor wants to become a member of Barcelona's ZooClub, the following steps must be taken.'' & \\\hline
+    ``First of all, the customer must decide whether he wants an individual or family membership.'' & ``Decide individual or family ticket''\\\hline
+    ``If he wants an individual membership, he must prepare his personal information.'' & ``Prepare personal information'' \\\hline
+    ``If he wants a family membership instead, he should prepare the information for its spouse and spawn as well.'' & ``Prepare family's information'' \\\hline
+    ``The customer must then give this information to the ZooClub department.'' & ``Send information to the ZooClub department'' \\\hline
+    ``The ZooClub department introduces the visitor's personal data into the system and takes the payment request to the Billing department.'' & ``Enter information into the system'' \\\hline
+    ``The ZooClub department also forwards the visitor's information to the marketing department.'' & ``Forward information to Marketind department'' \\\hline
+    ``The billing department sends the payment request to the bank.'' &``Send request to billing department'' i ``Send payment request'' \\\hline
+    ``The bank processes the payment information and, if everything is correct, charges the payment into user's account.'' & ``Process payment information'' i  ``Charge account'' \\\hline
+    ``Once the payment is confirmed, the ZooClub department can print the card and deliver it to the visitor.'' & ``Deliver ZooClub Card'' i ``Wait for payment''\\\hline
+    ``In the meantime, the Marketing department makes a request to mail the Zoo Club's magazine to the visitor's home.'' & ``Mail ZooClub Magazine'' \\\hline
+    ``Once the visitor receives the card, he can go home.'' & ``Wait for card'' i ``Go home'' \\\hline
+\end{tabular}
+\end{center}
+
+Aquesta assignació no és perfecta. En concret, l'algorisme es confón a l'assignar incorrectament la tasca ``Send request to billing department'' a la frasee ``The billing department sends the payment request to the bank''. Aquesta confusió prové de la quantitat de paraules similars entre la frase i la tasca en questió. A més, l'algorisme detecta que tant a la tasca com a la frase el subjecte és un departament, tot i que no el correcte\footnote{Això es pot observar amb més detall a la traça d'execució \ref{sec:logs-zoo}}. Les demés assignacions són correctes.
+
+Després de la primera modificació, aquesta és la nova assignació òptima de l'algorisme, amb una similaritat de \textbf{0.354}:
+
+\begin{center}
+\begin{tabular}{|p{0.48\textwidth}|p{0.48\textwidth}|}
+    \hline
+    \multicolumn{1}{|c}{\textbf{Frase}} & \multicolumn{1}{|c|}{\textbf{Tasca}} \\ \hline\hline
+    ``When a visitor wants to become a member of Barcelona's ZooClub, the following steps must be taken.'' & \\\hline
+    ``First of all, the customer must decide whether he wants an individual or family membership.'' & ``Decide individual or family ticket''\\\hline
+    ``If he wants an individual membership, he must prepare his personal information.'' & ``Prepare personal information'' \\\hline
+    ``If he wants a family membership instead, he should prepare the information for its spouse and spawn as well.'' & ``Prepare family's information'' \\\hline
+    ``The customer must then give this information to the ZooClub department.'' & ``Send information to the ZooClub department'' \\\hline
+    ``The ZooClub department introduces the visitor's personal data into the system and takes the payment request to the Billing department.'' & \\\hline
+    ``The ZooClub department also forwards the visitor's information to the marketing department.'' & ``Forward information to Marketind department'' \\\hline
+    ``The billing department sends the payment request to the bank.'' &``Send request to billing department'' i ``Send payment request'' \\\hline
+    ``The bank processes the payment information and, if everything is correct, charges the payment into user's account.'' & ``Process payment information'' i  ``Charge account'' \\\hline
+    ``Once the payment is confirmed, the ZooClub department can print the card and deliver it to the visitor.'' & ``Deliver ZooClub Card'' i ``Wait for payment''\\\hline
+    ``In the meantime, the Marketing department makes a request to mail the Zoo Club's magazine to the visitor's home.'' & ``Mail ZooClub Magazine'' \\\hline
+    ``Once the visitor receives the card, he can go home.'' & ``Wait for card'' i ``Go home'' \\\hline
+    \textbf{No assignada} & ``Enter information into the system'' \\\hline
+\end{tabular}
+\end{center}
+
+Com es pot veure, l'algorisme ha determinat que no hi havia cap assignació vàlida per la tasca ``Enter information into the system'', perque assignar-la a la frase que abans era correcta hagués creat un conflicte d'ordre: Dues tasques $t_1$ i $t_2$ tals que $t_1 \rightsquigarrow t_2$ no poden anar assignades a dues frases $s_1$ i $s_2$ tals que $s_1 \leftsquigarrow s_2$. El sistema identifica correctament aquesta inconsistència i descarta una de les dues frases alertant a l'usuari de que hi ha tasques no assignades.
+
+D'esprés d'eliminar la frase ``Once the visitor receives the card, he can go home'', aquesta és la nova assignació, amb una puntuació de \textbf{0.324}:
+
+\begin{center}
+\begin{tabular}{|p{0.48\textwidth}|p{0.48\textwidth}|}
+    \hline
+    \multicolumn{1}{|c}{\textbf{Frase}} & \multicolumn{1}{|c|}{\textbf{Tasca}} \\ \hline\hline
+    ``When a visitor wants to become a member of Barcelona's ZooClub, the following steps must be taken.'' & \\\hline
+    ``First of all, the customer must decide whether he wants an individual or family membership.'' & ``Decide individual or family ticket''\\\hline
+    ``If he wants an individual membership, he must prepare his personal information.'' & ``Prepare personal information'' \\\hline
+    ``If he wants a family membership instead, he should prepare the information for its spouse and spawn as well.'' & ``Prepare family's information'' \\\hline
+    ``The customer must then give this information to the ZooClub department.'' & ``Send information to the ZooClub department'' \\\hline
+    ``The ZooClub department introduces the visitor's personal data into the system and takes the payment request to the Billing department.'' & \\\hline
+    ``The ZooClub department also forwards the visitor's information to the marketing department.'' & ``Forward information to Marketind department'' \\\hline
+    ``The billing department sends the payment request to the bank.'' &``Send request to billing department'' i ``Send payment request'' \\\hline
+    ``The bank processes the payment information and, if everything is correct, charges the payment into user's account.'' & ``Process payment information'' i  ``Charge account'' \\\hline
+    ``Once the payment is confirmed, the ZooClub department can print the card and deliver it to the visitor.'' & ``Deliver ZooClub Card'', ``Wait for payment'' i ``Wait for card''\\\hline
+    ``In the meantime, the Marketing department makes a request to mail the Zoo Club's magazine to the visitor's home.'' & ``Mail ZooClub Magazine'' i ``Go home'' \\\hline
+    \textbf{No assignada} & ``Enter information into the system'' \\\hline
+\end{tabular}
+\end{center}
+
+Com es pot veure, la tasca ``Wait for card'' ha passat a estar assignada a una altra frase, així com ``Go home''. La puntuació per la tasca ``Go Home'' s'ha reduït de $0.65$ a $0.20$ mentre que la de de ``Wait for card'', en comparació, s'ha mantingut aproximadament amb el mateix valor.
+
+En afegir la nova tasca ``Validate credit card data'', aquesta és la nova assignació, amb una puntuació de \textbf{0.306}:
+
+\begin{center}
+\begin{tabular}{|p{0.48\textwidth}|p{0.48\textwidth}|}
+    \hline
+    \multicolumn{1}{|c}{\textbf{Frase}} & \multicolumn{1}{|c|}{\textbf{Tasca}} \\ \hline\hline
+    ``When a visitor wants to become a member of Barcelona's ZooClub, the following steps must be taken.'' & \\\hline
+    ``First of all, the customer must decide whether he wants an individual or family membership.'' & ``Decide individual or family ticket''\\\hline
+    ``If he wants an individual membership, he must prepare his personal information.'' & ``Prepare personal information'' \\\hline
+    ``If he wants a family membership instead, he should prepare the information for its spouse and spawn as well.'' & ``Prepare family's information'' \\\hline
+    ``The customer must then give this information to the ZooClub department.'' & ``Send information to the ZooClub department'' \\\hline
+    ``The ZooClub department introduces the visitor's personal data into the system and takes the payment request to the Billing department.'' & \\\hline
+    ``The ZooClub department also forwards the visitor's information to the marketing department.'' & ``Forward information to Marketind department'' \\\hline
+    ``The billing department sends the payment request to the bank.'' &``Send request to billing department'' i ``Send payment request'' \\\hline
+    ``The bank processes the payment information and, if everything is correct, charges the payment into user's account.'' & ``Process payment information'' i  ``Charge account'' \\\hline
+    ``Once the payment is confirmed, the ZooClub department can print the card and deliver it to the visitor.'' & ``Deliver ZooClub Card'', ``Wait for payment'' i ``Wait for card''\\\hline
+    ``In the meantime, the Marketing department makes a request to mail the Zoo Club's magazine to the visitor's home.'' & ``Mail ZooClub Magazine'' i ``Go home'' \\\hline
+    \textbf{No assignada} & ``Enter information into the system'' i ``Validate credit card data'' \\\hline
+\end{tabular}
+\end{center}
+
+Es pot observar com l'algorisme no pot assignar la  nova tasca a cap frase amb una puntuació de similaritat prou alta.
+
+Finalment, després de barrejar els textos de les swimlanes i les pools, l'assignació s'ha mantingut igual. No obstant això, la puntuació de similaritat global ha disminuit fins a \textbf{0.276}.
+
+\subsection{Conclusions}
+
+En aquest experiment s'han realitzat diverses modificacions, cadascuna empitjorant cada vegada més una parella model-text inicialment bona. En quant a la puntuació, es pot observar que aquesta ha anat disminuint consistentment després de cadascuna de les modificacions. La similaritat s'ha reduït en total un $24\%$ entre l'assignació inicial i la quarta modificació. Podem dir, doncs, que la puntuació de similaritat es pot utilitzar com a indicador d'inconsistències. Després d'introduir una modificació al model i al text, si es detecta una baixada en la similaritat, és molt probable que la causa sigui una inconsistència entre els dos.
+
+A la primera modificació, es pot veure com l'algorisme aplica correctament les restriccions d'ordre. A més, el canvi d'ordre entre dues tasques té un impacte molt negatiu a la similaritat. 
+
+Pel que fa a la segona modificació, s'ha pogut observar com l'algorisme reacciona a l'eliminació d'una frase assignant les tasques a noves frases que no tenen sentit, disminuint considerablement la similaritat de cadascuna d'aquestes dues tasques. En un cas ideal, la similaritat hauria de disminuir tant que quedaria sota del llindar d'assignació. No obstant això, el llindar òptim depèn de cada cas i és molt difícil determinar automàticament un llindar perfecte sense moltes més dades d'exemple de les que es disposa. Davant una modificació d'aquest tipus, després d'inspeccionar l'assignació òptima, l'usuari pot detectar sense problemes que hi ha tasques que s'estàn assignant on no toca perquè no existeix la frase on haurien d'anar realment assignades. 
+
+La tercera modificació, afegir una nova tasca al model però no fer-ho al text, genera un comportament molt predictible. La nova tasca s'assigna a una frase sense cap mena de sentit, simplement pel fet que algunes de les paraules s'assemblen, i amb una disminució dràstica de la similaritat. Davant aquest fet, seria senzill arreglar el problema reflectint l'acció ``Go home'' explícitament al text. Si no existís cap frase amb paraules similars a les de la frase eliminada, el comportament seria encara més intuitiu, ja que les tasques quedarien sense assignar.
+
+Després de barrejar les pools i les swimlanes, l'algorisme manté l'assignació, però baixa la similaritat global. Això és així, perquè els subjectes no són la única cosa que l'algorisme utilitza per guiar la seva execució. En concret, amb el conjunt de pesos de característiques actuals, val exactament el mateix que una frase i una tasca comparteixin agent o que comparteixin objecte directe\footnote{El conjunt de pesos de l'algorisme és totalment configurable. Si un usuari prefereix donar més pes als agents, simplement ha de modificar-ne el pes.}. En aquest model, totes les tasques i les frases indiquen clarament tant l'agent com el pacient, o objecte, de l'acció. En barrejar els textos de les pools i les swimlanes, els agents deixen de coincidir entre les frases i les tasques, però l'algorisme és capaç d'inferir la mateixa assignació a partir de tota l'altra informació. En un escenari com aquest, és difícil sense una inspecció en detall, veure on està el problema, però la baixada de puntuació és un indicador clar de que alguna cosa ha empitjorat.
+
+Resumint, d'aquest experiment se'n poden extreure dues conclusions fonamentals. En primer lloc, l'importància del llindar. Determinar un llindar òptim pel cas concret ajudarà a que les reaccions de l'algorisme siguin més intuitives, marcant les tasques que no apareguin al text com a tal, i no assignant-les a una frase sense massa sentit. Per altra banda, cal destacar la robustesa general de l'algorisme. Després d'aplicar modificacions molt precises i concretes a l'algoritme, les reaccions han afectat només a la part rellevant de l'assignació, mantenint exactament igual la resta de les altres assignacions.
+
+%\section{Evolució de l'assignació en funció del llindar}
+%\subsection{Plantejament}
+
+%%TODO: Parlar del llindar a enfoc i implementació, no sé si ho he fet
+
+%L'algorisme d'aquest treball determina que no hi ha una correspondència entre una frase i una tasca si la puntuació de similaritat entre aquestes dues és menor que un cert valor llindar. En aquest cas es considera que l'acció que descriu la tasca no apareix al text, o ho fa de manera ambigua. L'objectiu d'aquest experiment és comprovar, utilitzant parelles etiquetades de model i text, quin comportament segueix el llindar amb el qual es descarta una parella tasca-frase. L'objectiu de l'experiment és observar la qualitat de l'assignació en funció del llindar. S'espera que, per cada cas, existeixi un llindar pel qual la qualitat de l'assignació és suficientment similar a una assignació òptima definida a priori.
+%
+%\subsection{Metodologia}
+%
+%L'experiment es realitzarà amb la parelles model-text \texttt{[]}. Els models han de ser tals que continguin tasques que no apareguin al text corresponent. Si cal, per assolir aquest efecte, es modificaràn els models introduint tasques noves. A més, per limitar l'abast de l'experiment, s'utilitzarà la mètrica de similaritat per defecte \emph{Weighted Overlapping Index} (veure secció \ref{sec:enfoc-similaritat}).
+%
+%Per a dur a terme l'experiment se seguiran els següents passos per a la parella model-text:
+%
+%\begin{enumerate}
+    %\item Calcular l'assignació òptima de tasques a frases utilitzant un llindar $t = 0$. Totes les tasques tindràn un valor assignat.
+    %\item Repetir el thresholding amb valors $0 < t < 1$, amb un step de $0.01$ i veure com evoluciona l'assignació de frases i tasques.
+%\end{enumerate}
+%
+%Un cop fets els càlculs, per una assignació amb un llindar $t$, es considerarà un fals positiu aquelles tasques que, tot i no apareixer al text, tenen assignada una frase al text amb una score major que $t$. D'altra banda, es considerarà un fals negatiu, aquelles tasques que, tot i apareixer al text, tenen assignada una frase amb una score menor que $t$.
+%
+%\subsection{Resultats}
+%
+%\subsection{Conclusions}
+
+

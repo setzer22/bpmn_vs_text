@@ -1,0 +1,377 @@
+=========
+Sentences
+=========
+Text.0) When a visitor wants to become a member of Barcelona_\s_ZooClub , the following steps must be taken .
+Text.1) First of all , the customer must decide whether he wants an individual or family membership .
+Text.2) If he wants an individual membership , he must prepare his personal information .
+Text.3) If he wants a family membership instead , he should prepare the information for its spouse and spawn as_well .
+Text.4) The customer must then give this information to the ZooClub department .
+Text.5) The ZooClub department introduces the visitor \s personal data into the system and takes the payment request to the Billing department .
+Text.6) The ZooClub department also forwards the visitor \s information to the marketing department .
+Text.7) The billing department sends the payment request to the bank .
+Text.8) The bank processes the payment information and , if everything is correct , charges the payment into user \s account .
+Text.9) Once the payment is confirmed , the ZooClub department can print the card and deliver it to the visitor .
+Text.10) In_the_meantime , the Marketing department makes a request to mail the Zoo_Club \s magazine to the visitor \s home .
+Text.11) Once the visitor receives the card , he can go home .
+
+=====
+Tasks
+=====
+Task.0) Deliver ZooClub card
+Task.1) Process payment information
+Task.2) Prepare personal information
+Task.3) Mail ZooClub magazine
+Task.4) Send payment request
+Task.5) Charge account
+Task.6) Enter information into the system
+Task.7) Go home
+Task.8) Wait for card
+Task.9) Send information to the ZooClub department
+Task.10) Send request to billing department
+Task.11) Prepare family's information
+Task.12) Decide individual or family ticket
+Task.13) Forward information to Marketing department
+Task.14) Wait for payment
+
+=================
+Similarity Matrix
+=================
+
+|    0 |    1 |    2 |    3 |    4 |    5 |    6 |    7 |    8 |    9 |   10 |   11 |   12 |   13 |   14 |
+|------+------+------+------+------+------+------+------+------+------+------+------+------+------+------|
+| 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.03 | 0.01 | 0.00 | 0.00 | 0.06 | 0.00 |
+| 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.10 | 0.00 | 0.00 | 0.00 | 0.05 | 0.40 | 0.00 | 0.00 |
+| 0.00 | 0.23 | 0.75 | 0.00 | 0.00 | 0.00 | 0.06 | 0.00 | 0.00 | 0.06 | 0.00 | 0.56 | 0.05 | 0.11 | 0.00 |
+| 0.00 | 0.23 | 0.63 | 0.00 | 0.00 | 0.00 | 0.06 | 0.10 | 0.00 | 0.06 | 0.00 | 0.60 | 0.06 | 0.11 | 0.00 |
+| 0.03 | 0.23 | 0.06 | 0.07 | 0.00 | 0.00 | 0.06 | 0.00 | 0.00 | 0.19 | 0.06 | 0.05 | 0.00 | 0.29 | 0.00 |
+| 0.03 | 0.35 | 0.07 | 0.07 | 0.24 | 0.04 | 0.09 | 0.00 | 0.00 | 0.16 | 0.08 | 0.05 | 0.00 | 0.23 | 0.05 |
+| 0.03 | 0.23 | 0.06 | 0.07 | 0.00 | 0.00 | 0.06 | 0.00 | 0.00 | 0.20 | 0.04 | 0.07 | 0.00 | 0.40 | 0.00 |
+| 0.00 | 0.24 | 0.00 | 0.00 | 0.59 | 0.04 | 0.00 | 0.00 | 0.00 | 0.27 | 0.44 | 0.00 | 0.00 | 0.17 | 0.05 |
+| 0.00 | 0.46 | 0.06 | 0.00 | 0.21 | 0.18 | 0.06 | 0.00 | 0.00 | 0.06 | 0.00 | 0.07 | 0.00 | 0.11 | 0.05 |
+| 0.38 | 0.23 | 0.00 | 0.07 | 0.02 | 0.00 | 0.00 | 0.00 | 0.08 | 0.13 | 0.04 | 0.00 | 0.00 | 0.17 | 0.05 |
+| 0.00 | 0.01 | 0.00 | 0.14 | 0.07 | 0.00 | 0.00 | 0.20 | 0.00 | 0.13 | 0.30 | 0.05 | 0.03 | 0.29 | 0.00 |
+| 0.06 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.65 | 0.08 | 0.00 | 0.00 | 0.02 | 0.03 | 0.00 | 0.00 |
+
+=========
+threshold
+=========
+0.032056243453235655
+
+=========
+Matchings
+=========
+Sentence  9 :
+"Once the payment is confirmed , the ZooClub department can print the card and deliver it to the visitor ."
+Task  0 :
+"Deliver ZooClub card"
+Matching score: 0.3820224719101124
+
+    Comon features: 
+
+    * Contains the synset "card"
+    * Contains the synset "deliver"
+    * Contains an hyponym of "positive_identification"
+    * Contains an hyponym of "identification"
+    * Contains an hyponym of "bring"
+    * Contains an hyponym of "channel"
+    * Contains the noun "zooclub"
+    * Contains the noun "card"
+    * Contains the verb "deliver"
+    * Contains the action "deliver"
+    * The agent of verb "deliver" contains the noun "zooclub"
+    * The agent of verb "deliver" contains the noun "department"
+
+
+Sentence  8 :
+"The bank processes the payment information and , if everything is correct , charges the payment into user \\s account ."
+Task  1 :
+"Process payment information"
+Matching score: 0.4591439688715953
+
+    Comon features: 
+
+    * Contains the synset "payment"
+    * Contains the synset "data"
+    * Contains the synset "payment"
+    * Contains an hyponym of "cost"
+    * Contains an hyponym of "expenditure"
+    * Contains an hyponym of "accumulation"
+    * Contains an hyponym of "group"
+    * Contains an hyponym of "cost"
+    * Contains an hyponym of "expenditure"
+    * Contains the noun "payment"
+    * Contains the noun "information"
+    * Contains the noun "payment"
+
+
+Sentence  2 :
+"If he wants an individual membership , he must prepare his personal information ."
+Task  2 :
+"Prepare personal information"
+Matching score: 0.7502347417840375
+
+    Comon features: 
+
+    * Contains the synset "personal"
+    * Contains the synset "data"
+    * Contains an hyponym of "accumulation"
+    * Contains an hyponym of "group"
+    * Contains the verb "prepare"
+    * Contains the adjective "personal"
+    * Contains the noun "information"
+    * Contains the action "prepare"
+    * The direct object of verb "prepare" is "information" (noun)
+    * The object of verb "prepare" contains the adjective "personal"
+    * The object of verb "prepare" contains the noun "information"
+
+
+Sentence  10 :
+"In_the_meantime , the Marketing department makes a request to mail the Zoo_Club \\s magazine to the visitor \\s home ."
+Task  3 :
+"Mail ZooClub magazine"
+Matching score: 0.1382716049382716
+
+    Comon features: 
+
+    * Contains the synset "mag"
+    * Contains an hyponym of "06263369-n:06589574-n"
+    * Contains the noun "magazine"
+
+
+Sentence  7 :
+"The billing department sends the payment request to the bank ."
+Task  4 :
+"Send payment request"
+Matching score: 0.5868096940802543
+
+    Comon features: 
+
+    * Contains the synset "mail"
+    * Contains the synset "payment"
+    * Contains the synset "asking"
+    * Contains an hyponym of "speech_act"
+    * Contains an hyponym of "transfer"
+    * Contains an hyponym of "displace"
+    * Contains an hyponym of "cost"
+    * Contains an hyponym of "expenditure"
+    * Contains an hyponym of "speech_act"
+    * Contains an hyponym of "act"
+    * Contains the verb "send"
+    * Contains the noun "payment"
+    * Contains the noun "request"
+    * Contains the action "send"
+    * The agent of verb "send" contains the noun "billing"
+    * The agent of verb "send" contains the noun "department"
+    * The direct object of verb "send" is "request" (noun)
+    * The direct object of verb "request" is "payment" (noun)
+    * The object of verb "send" contains the noun "payment"
+    * The object of verb "send" contains the noun "request"
+    * The object of verb "request" contains the noun "payment"
+
+
+Sentence  8 :
+"The bank processes the payment information and , if everything is correct , charges the payment into user \\s account ."
+Task  5 :
+"Charge account"
+Matching score: 0.18337730870712401
+
+    Comon features: 
+
+    * Contains the synset "account"
+    * Contains an hyponym of "financial_statement"
+    * Contains an hyponym of "commercial_document"
+    * Contains the noun "account"
+    * The agent of verb "charge" contains the noun "bank"
+
+
+Sentence  5 :
+"The ZooClub department introduces the visitor \\s personal data into the system and takes the payment request to the Billing department ."
+Task  6 :
+"Enter information into the system"
+Matching score: 0.08826479438314946
+
+    Comon features: 
+
+    * Contains the synset "data"
+    * Contains the synset "system"
+    * Contains an hyponym of "accumulation"
+    * Contains an hyponym of "group"
+    * Contains an hyponym of "matter"
+    * Contains an hyponym of "physical_entity"
+    * Contains the noun "system"
+
+
+Sentence  11 :
+"Once the visitor receives the card , he can go home ."
+Task  7 :
+"Go home"
+Matching score: 0.6539792387543253
+
+    Comon features: 
+
+    * Contains the synset "family"
+    * Contains an hyponym of "social_unit"
+    * Contains an hyponym of "organisation"
+    * Contains the verb "go"
+    * Contains the noun "home"
+    * Contains the action "go"
+
+
+Sentence  11 :
+"Once the visitor receives the card , he can go home ."
+Task  8 :
+"Wait for card"
+Matching score: 0.07672301690507152
+
+    Comon features: 
+
+    * Contains the synset "card"
+    * Contains an hyponym of "positive_identification"
+    * Contains an hyponym of "identification"
+    * Contains the noun "card"
+
+
+Sentence  4 :
+"The customer must then give this information to the ZooClub department ."
+Task  9 :
+"Send information to the ZooClub department"
+Matching score: 0.19411123227917124
+
+    Comon features: 
+
+    * Contains the synset "data"
+    * Contains the synset "department"
+    * Contains an hyponym of "accumulation"
+    * Contains an hyponym of "group"
+    * Contains an hyponym of "division"
+    * Contains an hyponym of "administrative_body"
+    * Contains the noun "information"
+    * Contains the particle "to"
+    * Contains the noun "zooclub"
+    * Contains the noun "department"
+
+
+Sentence  7 :
+"The billing department sends the payment request to the bank ."
+Task  10 :
+"Send request to billing department"
+Matching score: 0.4403892944038929
+
+    Comon features: 
+
+    * Contains the synset "billing"
+    * Contains the synset "department"
+    * Contains the synset "mail"
+    * Contains the synset "asking"
+    * Contains an hyponym of "asking"
+    * Contains an hyponym of "speech_act"
+    * Contains an hyponym of "speech_act"
+    * Contains an hyponym of "division"
+    * Contains an hyponym of "administrative_body"
+    * Contains an hyponym of "transfer"
+    * Contains an hyponym of "displace"
+    * Contains an hyponym of "speech_act"
+    * Contains an hyponym of "speech_act"
+    * Contains an hyponym of "act"
+    * Contains the noun "billing"
+    * Contains the noun "department"
+    * Contains the verb "send"
+    * Contains the noun "request"
+    * Contains the particle "to"
+    * Contains the action "send"
+    * The agent of verb "billing" contains the noun "department"
+    * The agent of verb "send" contains the noun "department"
+    * The direct object of verb "send" is "request" (noun)
+    * The object of verb "send" contains the noun "request"
+    * The object of verb "send" contains the particle "to"
+
+
+Sentence  3 :
+"If he wants a family membership instead , he should prepare the information for its spouse and spawn as_well ."
+Task  11 :
+"Prepare family's information"
+Matching score: 0.6046511627906976
+
+    Comon features: 
+
+    * Contains the synset "family"
+    * Contains the synset "data"
+    * Contains an hyponym of "social_unit"
+    * Contains an hyponym of "organisation"
+    * Contains an hyponym of "accumulation"
+    * Contains an hyponym of "group"
+    * Contains the noun "family"
+    * Contains the verb "prepare"
+    * Contains the noun "information"
+    * Contains the action "prepare"
+    * The direct object of verb "prepare" is "information" (noun)
+    * The object of verb "prepare" contains the noun "information"
+
+
+Sentence  1 :
+"First of all , the customer must decide whether he wants an individual or family membership ."
+Task  12 :
+"Decide individual or family ticket"
+Matching score: 0.4036608863198459
+
+    Comon features: 
+
+    * Contains the synset "decide"
+    * Contains the synset "individual"
+    * Contains the synset "family"
+    * Contains an hyponym of "social_unit"
+    * Contains an hyponym of "organisation"
+    * Contains the verb "decide"
+    * Contains the adjective "individual"
+    * Contains the noun "family"
+    * Contains the action "decide"
+    * The object of verb "decide" contains the adjective "individual"
+    * The object of verb "decide" contains the noun "family"
+
+
+Sentence  6 :
+"The ZooClub department also forwards the visitor \\s information to the marketing department ."
+Task  13 :
+"Forward information to Marketing department"
+Matching score: 0.40038684719535783
+
+    Comon features: 
+
+    * Contains the synset "department"
+    * Contains the synset "data"
+    * Contains the synset "marketing"
+    * Contains the synset "department"
+    * Contains an hyponym of "division"
+    * Contains an hyponym of "administrative_body"
+    * Contains an hyponym of "accumulation"
+    * Contains an hyponym of "group"
+    * Contains an hyponym of "commerce"
+    * Contains an hyponym of "dealing"
+    * Contains an hyponym of "division"
+    * Contains an hyponym of "administrative_body"
+    * Contains the noun "department"
+    * Contains the noun "information"
+    * Contains the particle "to"
+    * Contains the noun "marketing"
+    * Contains the noun "department"
+
+
+Sentence  9 :
+"Once the payment is confirmed , the ZooClub department can print the card and deliver it to the visitor ."
+Task  14 :
+"Wait for payment"
+Matching score: 0.0504704875962361
+
+    Comon features: 
+
+    * Contains the synset "payment"
+    * Contains an hyponym of "cost"
+    * Contains an hyponym of "expenditure"
+    * Contains the noun "payment"
+
+
+
+========================
+Tasks with no good match
+========================
+

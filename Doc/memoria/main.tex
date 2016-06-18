@@ -1,0 +1,122 @@
+\documentclass[10pt,a4paper]{report}
+
+\usepackage[style=numeric]{biblatex}
+\usepackage[utf8]{inputenc}
+\usepackage[english, catalan]{babel}
+\usepackage[pdftex]{graphicx}
+\usepackage[margin=1.5in]{geometry}
+\usepackage[style=english]{csquotes}
+\usepackage[gen]{eurosym}
+\usepackage[pdftex, pdfborderstyle={/S/U/W 0}]{hyperref} % this disables the boxes around links
+\usepackage[]{import}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{newtxmath}
+\usepackage{pdflscape}
+\usepackage{listings}
+\usepackage{pgffor}
+\usepackage{fancyhdr}
+\setlength{\parskip}{0.6em}
+\addbibresource{./refs.bib}
+\DeclareUnicodeCharacter{20AC}{\euro{}}
+\title{TFG - Memòria}
+\author{Josep Sànchez Ferreres}
+\date{April 2016}
+
+\DeclareUnicodeCharacter{2010}{-}
+
+% -------------------- END PREAMBLE ---------------------------
+
+\begin{document}
+
+\begin{titlepage}
+
+    \begin{center}
+        \huge
+        
+        \includegraphics[width=\textwidth, height=0.1981\textwidth]{figures/logo3.png}
+
+        \vspace{3.5cm}
+
+        \textbf{Comparació de descripcions textuals i formals de models de processos}
+
+        \vspace{3cm}
+
+        \textbf{Treball de fi Grau}
+
+
+
+        \textbf{Enginyeria informàtica}
+
+        
+        %\textbf{Josep Sánchez Ferreres}
+
+        \vfill
+        
+        \flushleft{
+        \Large
+        \textbf{Alumne:} Josep Sánchez Ferreres\\
+        \textbf{Director:} Josep Carmona\\
+        \textbf{Co-Director:} Lluís Padró\\
+        %Facultat d'Informàtica Barcelona\\
+        21 de Juny de 2016 
+        }
+
+        \vspace{1cm}
+        
+    \end{center}
+    
+\end{titlepage}
+
+\import{capitols/}{abstract.tex}
+
+\tableofcontents
+\clearpage
+
+%TODO: Restart de numeració?
+
+%TODO: El numero de pagina ha d'anar coherentment a les pagines de títol i les de no-títol
+% Paràmetres de header i footer.
+% NOTA: Si no definim com son els headers fins que no ha passat l'abstract l'abstract no tindrà headers 
+\pagestyle{fancy}
+\fancyheadoffset{0.08\textwidth} %Mida del header
+\fancyhead{}
+\fancyhead[LO,LE]{\normalsize{Comparació de descripcions textuals i formals de models de processos}}
+\fancyhead[RO,RE]{Capítol \thechapter}
+\fancyfootoffset{0.08\textwidth} % Mida del footer
+\fancyfoot{}
+\fancyfoot[RE,RO]{\thepage}
+\fancyfoot[LO,LE]{}
+
+\fancypagestyle{plain}{
+    \fancyhead{}
+    \fancyfoot{}
+    \fancyfoot[RE,RO]{\thepage}
+    \fancyfoot[LO,LE]{}
+    \renewcommand{\headrulewidth}{0pt}
+}
+
+\import{capitols/}{introduccio.tex}
+
+\import{capitols/}{enfoc.tex}
+
+\import{capitols/}{implementacio.tex}
+
+\import{capitols/}{experiments.tex}
+
+\import{capitols/}{gestio_projecte.tex}
+
+\import{capitols/}{conclusions.tex}
+
+\printbibliography[heading=bibliography]{}
+
+\fancyhead[RO,RE]{Annex \thechapter}
+\import{appendixs/}{benchmark.tex}
+
+\fancyheadoffset{-0.1\textwidth} %Mida del header
+\fancyfootoffset{-0.1\textwidth} % Mida del footer
+\import{appendixs/}{logs.tex}
+
+
+\end{document}

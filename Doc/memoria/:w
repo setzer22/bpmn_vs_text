@@ -1,0 +1,32 @@
+\chapter{Implementació}
+
+% A l'introducció es descriu l'algoritme a trets generals,
+% A l'enfoc s'explica com seran les diferents parts de la solució
+% En aquesta secció s'expliquen els detalls de l'implementació, i alternatives plantejades.
+
+\section{Llenguatge de programació}
+%TODO: Revisar
+El llenguatge de programació és un punt important a considerar a l'hora d'implementar qualsevol software. Diferents tipus de llenguatges ofereixen un nivell diferent d'abstracció i expressivitat. D'altra banda, el llenguatge també pot determinar en gran mesura el rendiment d'un codi. Un altre aspecte a considerar és la compatibilitat i portabilitat que requereix el producte esperat. A l'hora de decidir el llenguatge de programació per aquest projecte, s'han tingut en compte aquests factors. En aquesta secció s'ofereix una justificació del fet d'haver escollit \emph{Clojure} com a llenguatge de programació principal del projecte.
+
+Clojure és un llenguatge de programació funcional i dinàmic\footnote{Tot i suportar tipat estàtic amb un sistema de tipus similar al de Haskell, aquest és opcional i no es fa servir per aquest projecte.} per a la JVM\footnote{Java Virtual Machine, l'intèrpret de bytecode que permet executar programes en Java bytecode. Llenguatges com Java, Clojure o Scala compilen per al set d'instruccions de la JVM.}. Això fa que els programes en Clojure siguin totalment compatibles amb programes fets en Java en tots dos sentits. D'altra banda, Clojure és també un dialecte modern de LISP. Per una banda mostra els típics avantatges que aquesta família de llenguatges ofereix: Macros, homoiconicitat, funcions \emph{first-class}, etc. D'altra banda, Clojure es diferencia d'altres dialectes de LISP oferint una varietat major d'estructures de dades: No tot són llistes. A més, amb la característica que totes les seves estructures de dades són immutables\footnote{Una estructura de dades immutable és aquella que no pot ser modificada una vegada s'ha creat. En comptes de modificar-la se'n crea una de nova.}. Tot i això, Clojure no és un llenguatge funcional pur ja que, tot i estar desaconsellat, es permet fer funcions que generin efectes secundaris\footnote{Si no fós així seria molt difícil l'interoperabilitat amb Java, i aquest és un dels objectius del llenguatge.}.
+
+L'expressivitat és el punt fort de Clojure. En aquest projecte es tracta amb estructures de dades dinàmiques i complexes. Per exemple: Ha estat típic en el codi el recórrer diverses vegades l'estructura JSON que retorna el \emph{Textserver} buscant diferents patrons, a l'hora d'extreure característiques. La flexibilitat de Clojure ha permès estructurar aquest codi en forma de queries declaratives sobre l'estructura JSON, com si es tractés de les operacions SELECT i UPDATE típiques de SQL, utilitzant exactament la mateixa sintaxi que la del llenguatge base.
+
+Pel que fa al rendiment, Clojure és aproximadament tant ràpid com Java si es limita l'ús de certes funcionalitats. Quan s'utilitzen construccions de molt alt nivell, aquestes poden portar un cert \emph{overhead}. En tot cas, a nivell de temps d'execució, podem dir que Clojure està al nivell de Java dins un ordre de magnitud. D'altra banda, el que sí que resulta un problema amb Clojure és el temps d'inicialització\footnote{Aquest problema ja és present a Java, però amb Clojure empitjora.}. Per arrancar un programa cal carregar primer el runtime de Java i després del runtime de Clojure, cosa que porta uns segons. Això fa que aquest llenguatge no sigui adient com a llenguatge de scripting. No obstant això, com que aquest no és el cas d'aquest projecte, ja que el programa es carregarà una vegada en un servidor i no pararà d'executar-se, aquest temps d'inicialització es pot veure com a negligible.
+
+Finalment, quant a la compatibilitat, com que aquest TFG forma part d'un projecte més gran, calia assegurar-se que fós fàcil d'integrar amb els altres codis que en formen part. Com que la majoria dels codis d'altres projectes eren en Java, s'ha escollit un llenguatge totalment compatible amb aquest.
+
+\section{Mètriques de similaritat}
+\subsection{...}
+
+\section{Features}
+\subsection{...}
+
+\section{Ordenació de models i textos}
+\subsection{...}
+
+\section{Algorismes d'optimització}
+\subsection{...}
+
+\section{Detecció d'inconsistències}
+\subsection{...}

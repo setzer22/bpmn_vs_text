@@ -1,0 +1,245 @@
+=========
+Sentences
+=========
+Text.0) Whenever a company makes the decision to go public , its first task is to select the underwriters .
+Text.1) Underwriters act as financial midwives to a new issue .
+Text.2) Usually they play a triple role : First they provide the company with procedural and financial advice , then they buy the issue , and finally they resell it to the public .
+Text.3) Established underwriters are careful of their reputation and will not handle a new issue unless they believe the facts have been presented fairly .
+Text.4) Thus , in_addition to handling the sale of a company ? s issue , the underwriters in effect give their seal of approval to it .
+Text.5) They prepare a registration statement for the approval of the Securities and Exchange_Commission ( SEC ) .
+Text.6) In_addition to registering the issue with the SEC , they need to check that the issue complies with the so-called blue-sky laws of each state that regulate sales of securities within the state .
+Text.7) While the registration statement is awaiting approval , underwriters begin to firm up the issue price .
+Text.8) They arrange a road show to talk to potential investors .
+Text.9) Immediately after they receive clearance from the SEC , underwriters fix the issue price .
+Text.10) After that they enter into a firm commitment to buy the stock and then offer it to the public , when they haven ? t still found any reason not to do it .
+
+=====
+Tasks
+=====
+Task.0) Check Facts Presented
+Task.1) Fix Issue Price
+Task.2) Check Compliance with Laws
+Task.3) Offer to Public
+Task.4) Buy Stock
+Task.5) Prepare Registration Statement for Approval of SEC
+Task.6) Talk to Potential Investors
+
+=================
+Similarity Matrix
+=================
+
+|    0 |    1 |    2 |    3 |    4 |    5 |    6 |
+|------+------+------+------+------+------+------|
+| 0.01 | 0.00 | 0.00 | 0.00 | 0.18 | 0.00 | 0.04 |
+| 0.03 | 0.00 | 0.00 | 0.00 | 0.18 | 0.00 | 0.04 |
+| 0.05 | 0.00 | 0.00 | 0.00 | 0.53 | 0.20 | 0.04 |
+| 0.01 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 |
+| 0.01 | 0.00 | 0.00 | 0.00 | 0.18 | 0.00 | 0.04 |
+| 0.01 | 0.00 | 0.04 | 0.00 | 0.00 | 0.00 | 0.19 |
+| 0.01 | 0.00 | 0.00 | 0.00 | 0.20 | 0.00 | 0.04 |
+| 0.01 | 0.00 | 0.00 | 0.00 | 0.18 | 0.00 | 0.04 |
+| 0.04 | 0.00 | 0.00 | 0.00 | 0.18 | 0.00 | 0.04 |
+| 0.01 | 0.00 | 0.31 | 0.00 | 0.00 | 0.00 | 0.03 |
+| 0.60 | 0.00 | 0.00 | 0.00 | 0.53 | 0.90 | 0.04 |
+
+=========
+threshold
+=========
+-0.0012815381953119598
+
+=========
+Matchings
+=========
+Sentence  10 :
+"After that they enter into a firm commitment to buy the stock and then offer it to the public , when they haven ? t still found any reason not to do it ."
+Task  0 :
+"Check Facts Presented"
+Matching score: 0.5972526838277733
+
+    Comon features: 
+
+    * Contains the synset "enrol"
+    * Contains the synset "business_firm"
+    * Contains the synset "commitment"
+    * Contains the synset "buy"
+    * Contains the synset "stock"
+    * Contains the synset "and_so"
+    * Contains the synset "populace"
+    * Contains the synset "harbor"
+    * Contains the synset "all_the_same"
+    * Contains the synset "find"
+    * Contains the synset "ground"
+    * Contains the synset "non"
+    * Contains the synset "arrange"
+    * Contains an hyponym of "register"
+    * Contains an hyponym of "enter"
+    * Contains an hyponym of "business"
+    * Contains an hyponym of "enterprise"
+    * Contains an hyponym of "earnestness"
+    * Contains an hyponym of "trait"
+    * Contains an hyponym of "acquire"
+    * Contains an hyponym of "capital"
+    * Contains an hyponym of "assets"
+    * Contains an hyponym of "people"
+    * Contains an hyponym of "group"
+    * Contains an hyponym of "port"
+    * Contains an hyponym of "geographical_point"
+    * Contains an hyponym of "change"
+    * Contains an hyponym of "rational_motive"
+    * Contains an hyponym of "motivation"
+    * Contains an hyponym of "groom"
+    * Contains an hyponym of "beautify"
+    * Contains the pronoun "they"
+    * Contains the pronoun "they"
+    * Contains the verb "enter"
+    * Contains the noun "firm"
+    * Contains the noun "commitment"
+    * Contains the particle "to"
+    * Contains the particle "to"
+    * Contains the particle "to"
+    * Contains the verb "buy"
+    * Contains the noun "stock"
+    * Contains the adverb "then"
+    * Contains the verb "offer"
+    * Contains the pronoun "it"
+    * Contains the pronoun "it"
+    * Contains the particle "to"
+    * Contains the particle "to"
+    * Contains the particle "to"
+    * Contains the noun "public"
+    * Contains the adverb "when"
+    * Contains the pronoun "they"
+    * Contains the pronoun "they"
+    * Contains the noun "haven"
+    * Contains the adverb "t"
+    * Contains the adverb "still"
+    * Contains the verb "find"
+    * Contains the noun "reason"
+    * Contains the adverb "not"
+    * Contains the particle "to"
+    * Contains the particle "to"
+    * Contains the particle "to"
+    * Contains the verb "do"
+    * Contains the pronoun "it"
+    * Contains the pronoun "it"
+    * Contains the action "enter"
+    * Contains the action "buy"
+    * Contains the action "offer"
+    * Contains the action "find"
+    * Contains the action "do"
+    * The direct object of verb "enter" is "into" (preposition)
+    * The direct object of verb "buy" is "stock" (noun)
+    * The direct object of verb "offer" is "it" (pronoun)
+    * The direct object of verb "find" is "reason" (noun)
+    * The direct object of verb "reason" is "to" (particle)
+    * The direct object of verb "do" is "it" (pronoun)
+    * The object of verb "enter" contains the noun "firm"
+    * The object of verb "enter" contains the noun "commitment"
+    * The object of verb "enter" contains the particle "to"
+    * The object of verb "enter" contains the verb "buy"
+    * The object of verb "enter" contains the noun "stock"
+    * The object of verb "buy" contains the noun "stock"
+    * The object of verb "offer" contains the pronoun "it"
+    * The object of verb "find" contains the noun "reason"
+    * The object of verb "find" contains the adverb "not"
+    * The object of verb "find" contains the particle "to"
+    * The object of verb "find" contains the verb "do"
+    * The object of verb "find" contains the pronoun "it"
+    * The object of verb "reason" contains the adverb "not"
+    * The object of verb "reason" contains the particle "to"
+    * The object of verb "reason" contains the verb "do"
+    * The object of verb "reason" contains the pronoun "it"
+    * The object of verb "do" contains the pronoun "it"
+
+
+Sentence  10 :
+"After that they enter into a firm commitment to buy the stock and then offer it to the public , when they haven ? t still found any reason not to do it ."
+Task  1 :
+"Fix Issue Price"
+Matching score: 0.0
+
+    Comon features: 
+
+
+
+Sentence  9 :
+"Immediately after they receive clearance from the SEC , underwriters fix the issue price ."
+Task  2 :
+"Check Compliance with Laws"
+Matching score: 0.31079323797139147
+
+    Comon features: 
+
+    * Contains the synset "cook"
+    * Contains an hyponym of "create_from_raw_material"
+    * Contains an hyponym of "create"
+    * Contains the verb "fix"
+    * Contains the action "fix"
+    * The agent of verb "fix" contains the noun "underwriter"
+
+
+Sentence  10 :
+"After that they enter into a firm commitment to buy the stock and then offer it to the public , when they haven ? t still found any reason not to do it ."
+Task  3 :
+"Offer to Public"
+Matching score: 0.0
+
+    Comon features: 
+
+
+
+Sentence  10 :
+"After that they enter into a firm commitment to buy the stock and then offer it to the public , when they haven ? t still found any reason not to do it ."
+Task  4 :
+"Buy Stock"
+Matching score: 0.5297619047619048
+
+    Comon features: 
+
+    * Contains the synset "populace"
+    * Contains an hyponym of "people"
+    * Contains an hyponym of "group"
+    * Contains the particle "to"
+    * Contains the particle "to"
+    * Contains the noun "public"
+    * Contains the particle "to"
+
+
+Sentence  10 :
+"After that they enter into a firm commitment to buy the stock and then offer it to the public , when they haven ? t still found any reason not to do it ."
+Task  5 :
+"Prepare Registration Statement for Approval of SEC"
+Matching score: 0.896774193548387
+
+    Comon features: 
+
+    * Contains the synset "buy"
+    * Contains the synset "stock"
+    * Contains an hyponym of "acquire"
+    * Contains an hyponym of "capital"
+    * Contains an hyponym of "assets"
+    * Contains the verb "buy"
+    * Contains the noun "stock"
+    * Contains the action "buy"
+    * The direct object of verb "buy" is "stock" (noun)
+    * The object of verb "buy" contains the noun "stock"
+
+
+Sentence  10 :
+"After that they enter into a firm commitment to buy the stock and then offer it to the public , when they haven ? t still found any reason not to do it ."
+Task  6 :
+"Talk to Potential Investors"
+Matching score: 0.03618817852834741
+
+    Comon features: 
+
+    * Contains the particle "to"
+    * Contains the particle "to"
+    * Contains the particle "to"
+
+
+
+========================
+Tasks with no good match
+========================
+

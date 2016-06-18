@@ -1,0 +1,14 @@
+[0] Config.pm:327> INFO - This is Biber 2.2
+[0] Config.pm:330> INFO - Logfile is 'main.blg'
+[49] biber:286> INFO - === Sat May 14, 2016, 11:01:54
+[49] Biber.pm:334> INFO - Reading 'main.bcf'
+[161] Biber.pm:677> INFO - Found 8 citekeys in bib section 0
+[181] Biber.pm:3054> INFO - Processing section 0
+[197] Biber.pm:3193> INFO - Looking for bibtex format file './bibliography.bib' for section 0
+[198] bibtex.pm:1072> INFO - Decoding LaTeX character macros into UTF-8
+[200] bibtex.pm:935> INFO - Found BibTeX data source './bibliography.bib'
+[356] UCollate.pm:66> INFO - Overriding locale 'ca-AD' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[356] UCollate.pm:66> INFO - Overriding locale 'ca-AD' defaults 'variable = shifted' with 'variable = non-ignorable'
+[356] Biber.pm:2931> INFO - Sorting list 'nty' of type 'entry' with scheme 'nty' and locale 'ca-AD'
+[375] bbl.pm:505> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[376] bbl.pm:596> INFO - Output to main.bbl
