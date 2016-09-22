@@ -1,6 +1,6 @@
 # BPMN vs Natural Language Comparison Tool
 
-This is the repository for the source code of **BPMNvsText**. My final degree's thesis project.
+This is the repository for the source code of **BPMNvsText**. My final degree's thesis project. This algorithm combines Natural Language Processing with Process mining techniques in order to compare BPMN business process description with a (potentially) equivalent natural language representation. It can be used in order to detect inconsistencies between both representations or to compute a similarity score of several versions of the same document to the reference model, amongst other uses.
 
 # Folder structure
 
